@@ -52,5 +52,5 @@ The iOS SDK depends on some external libraries:
 
 
 ## License
-checkout-3ds-sdk-ios is released under the MIT license. [See LICENSE](https://github.com/checkout/checkout-3ds-sdk-ios/blob/feature/PIMOB_770_documentation/LICENSE) for details.
+[See LICENSE](https://github.com/checkout/checkout-3ds-sdk-ios/blob/feature/PIMOB_770_documentation/LICENSE) for details.
 
