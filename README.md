@@ -26,8 +26,8 @@ First, integrate the 3DS SDK into your app.
 Then, configure your app to:
 
 1. Initialize the SDK with your preferred user interface options.
-2. Request the SDK to authenticate the cardholder.
-3. Consume the result you get from the SDK to continue your payment flow.
+2. Configure the parameters for an authentication.
+3. Request authentication and handle the result to continue your payment flow.
 
 
 👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://docs.checkout.com/3d-secure-mobile-sdks) for full details.
@@ -52,5 +52,5 @@ The iOS SDK depends on some external libraries:
 
 
 ## License
-[See LICENSE](https://github.com/checkout/checkout-3ds-sdk-ios/blob/feature/PIMOB_770_documentation/LICENSE) for details.
+This software is released under license. See [LICENSE](https://github.com/checkout/checkout-3ds-sdk-ios/blob/feature/PIMOB_770_documentation/LICENSE) for details.
 
