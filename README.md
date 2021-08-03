@@ -6,7 +6,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 
 👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://docs.checkout.com/3d-secure-mobile-sdks)
 
-📚&nbsp;&nbsp;Read the reference documentation
+📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
 
 
 ## Features
@@ -32,7 +32,7 @@ Then, configure your app to:
 
 👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://docs.checkout.com/3d-secure-mobile-sdks) for full details.
 
-📚&nbsp;&nbsp;Read the reference documentation
+📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
 
 ## Dependencies
 
