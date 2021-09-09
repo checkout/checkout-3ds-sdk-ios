@@ -41,6 +41,13 @@ The iOS SDK depends on some external libraries:
 * To help maintain security, we use [JOSESwift](https://github.com/airsidemobile/JOSESwift).
 * To help provide support and monitor the performance of the SDK, we use our own Checkout Event Logger Kit.
 
+## Architecture Support
+
+We support all available architectures in Xcode except i386.
+Cocoapods should handle this for you, but if this is not working you will need to configure your excluded architectures in your build settings as below:
+
+![excluded architectures](screenshots/excludedArchitectures.png)
+
 ## Help and Feedback
 
 **For help using the 3D Secure SDK**, or to pass on your feedback, you can email our team at [support@checkout.com](mailto:support@checkout.com).
