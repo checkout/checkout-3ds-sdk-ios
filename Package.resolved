@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CheckoutEventLoggerKit",
+        "repositoryURL": "https://github.com/checkout/checkout-event-logger-ios-framework.git",
+        "state": {
+          "branch": null,
+          "revision": "d3f87cede558cf229912ceaabe2f4ba3b8cb1e3d",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "JOSESwift",
+        "repositoryURL": "https://github.com/airsidemobile/JOSESwift.git",
+        "state": {
+          "branch": null,
+          "revision": "b5d78b872dc9a7bcf29e9a6bb2d70b5bf51ebd3c",
+          "version": "2.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
