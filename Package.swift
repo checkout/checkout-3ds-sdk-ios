@@ -8,9 +8,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Checkout3DSWrapper",
-            type: .dynamic,
-            targets: ["Checkout3DSWrapper", "Checkout3DS"]
+            name: "Checkout3DS",
+            targets: ["Checkout3DSWrapper"]
         )
     ],
     dependencies: [
