@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Checkout3DS
 import AdSupport
 import AppTrackingTransparency
@@ -12,13 +12,14 @@ import MobileCoreServices
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Checkout3DSService : ObjectiveC.NSObject {
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
   @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
   @available(swift, obsoleted: 1.0)
-  @objc final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (Swift.Error?) -> Swift.Void)
-  final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (Checkout3DS.AuthenticationError?) -> Swift.Void)
+  @objc final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Swift.Error?) -> Swift.Void)
+  final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Checkout3DS.AuthenticationError?) -> Swift.Void)
   @objc public static func handleAppURL(url: Foundation.URL) -> Swift.Bool
   @available(swift, obsoleted: 1.0)
   @objc final public func getWarnings() -> Foundation.NSSet
@@ -31,7 +32,6 @@ import WebKit
   @objc final public let sessionSecret: Swift.String
   @objc final public let scheme: Swift.String
   @objc public init(sessionID: Swift.String, sessionSecret: Swift.String, scheme: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(Checkout3DSButtonCustomizations) public protocol ButtonCustomizations {
@@ -109,7 +109,6 @@ import WebKit
   @objc final public let shadowRadius: CoreGraphics.CGFloat
   @objc final public let shadowOpacity: Swift.Float
   @objc public init(backgroundColor: UIKit.UIColor, cornerRadius: CoreGraphics.CGFloat, cornerCurve: QuartzCore.CALayerCornerCurve?, font: UIKit.UIFont, textColor: UIKit.UIColor, borderWidth: CoreGraphics.CGFloat, borderColor: CoreGraphics.CGColor?, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreGraphics.CGSize = .zero, shadowRadius: CoreGraphics.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultVerifyButtonCustomization) final public class DefaultVerifyButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -362,7 +361,7 @@ import WebKit
 @inline(never) public func positiveCallback(jsonPtr: Swift.UnsafePointer<Swift.CChar>)
 @inline(never) public func negativeCallback(jsonPtr: Swift.UnsafePointer<Swift.CChar>)
 @inline(never) public func probeMethod()
-extension Warning {
+extension Checkout3DS.Warning {
   @objc public enum Severity : Swift.Int {
     case low
     case medium
@@ -416,9 +415,9 @@ extension Warning {
   @objc public init(headingTextColor: UIKit.UIColor = DefaultSystemColor.label, headingFont: UIKit.UIFont = .preferredFont(forTextStyle: .headline), font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = DefaultSystemColor.label)
   @objc deinit
 }
-extension UITextField.BorderStyle : Swift.Codable {
+extension UIKit.UITextField.BorderStyle : Swift.Codable {
 }
-extension CALayerCornerCurve : Swift.Codable {
+extension QuartzCore.CALayerCornerCurve : Swift.Codable {
 }
 @objc(Checkout3DSWhitelistCustomization) public protocol WhitelistCustomization : Checkout3DS.Customization {
   @objc var switchTintColor: UIKit.UIColor? { get }
