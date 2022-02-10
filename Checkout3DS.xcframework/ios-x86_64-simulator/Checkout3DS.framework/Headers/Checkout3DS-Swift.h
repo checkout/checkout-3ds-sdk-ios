@@ -291,6 +291,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, Checkout3DSAuthenticationError, "Authenticat
 /// An error was reported by the 3DS Server.
   Checkout3DSAuthenticationErrorThreeDS2ProtocolError3501 = 3501,
 /// The SDK identified an error in the 3D Secure process.
+  Checkout3DSAuthenticationErrorThreeDS2ProtocolError3505 = 3505,
+/// Sessions API: CA Root certificate is missing in Sessions payload /
   Checkout3DSAuthenticationErrorThreeDS2ProtocolError3514 = 3514,
 /// The SDK identified an error in the 3D Secure process.
   Checkout3DSAuthenticationErrorThreeDS2ProtocolError3515 = 3515,
