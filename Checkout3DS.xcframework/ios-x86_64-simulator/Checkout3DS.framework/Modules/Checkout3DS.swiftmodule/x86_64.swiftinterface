@@ -244,6 +244,7 @@ import _Concurrency
   case threeDS2ProtocolError3402 = 3402
   case threeDS2ProtocolError3500 = 3500
   case threeDS2ProtocolError3501 = 3501
+  case threeDS2ProtocolError3505 = 3505
   case threeDS2ProtocolError3514 = 3514
   case threeDS2ProtocolError3515 = 3515
   case threeDS2ProtocolError3523 = 3523
