@@ -1,0 +1,11 @@
+framework module Checkout3DS {
+  umbrella header "Checkout3DS.h"
+
+  export *
+  module * { export * }
+}
+
+module Checkout3DS.Swift {
+    header "Checkout3DS-Swift.h"
+    requires objc
+}
