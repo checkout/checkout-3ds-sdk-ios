@@ -30,11 +30,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   s.user_target_xcconfig = {
     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
     'VALID_ARCHS' => 'arm64 x86_64',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
   }
 
   s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
     'VALID_ARCHS' => 'arm64 x86_64'
   }
 end
