@@ -4,7 +4,7 @@ The Checkout.com 3D Secure (3DS) mobile SDK allows you to provide a native 3DS2 
 
 The SDK handles the device data collection, communication with the card issuer, and presentation of 3D Secure challenges to the customer when required. 
 
-👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://docs.checkout.com/3d-secure-mobile-sdks)
+👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks)
 
 📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
 
@@ -30,7 +30,7 @@ Then, configure your app to:
 3. Request authentication and handle the result to continue your payment flow.
 
 
-👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://docs.checkout.com/3d-secure-mobile-sdks) for full details.
+👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks) for full details.
 
 📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
 
