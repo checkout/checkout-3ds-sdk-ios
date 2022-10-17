@@ -16,7 +16,10 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/checkout/checkout-event-logger-ios-framework",
-            revision: "1.2.0")
+            revision: "1.2.0"),
+        .package(
+            url: "https://github.com/airsidemobile/JOSESwift",
+            revision: "2.4.0")
     ],
     targets: [
         .target(
@@ -25,7 +28,10 @@ let package = Package(
                 .target(name: "Checkout3DS"),
                 .product(
                     name: "CheckoutEventLoggerKit",
-                    package: "checkout-event-logger-ios-framework")
+                    package: "checkout-event-logger-ios-framework"),
+                .product(
+                    name: "JOSESwift",
+                    package: "JOSESwift")
             ],
             path: "Wrapper"
         ),
