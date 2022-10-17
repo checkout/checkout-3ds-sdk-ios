@@ -14,12 +14,18 @@ let package = Package(
             targets: ["Checkout3DSWrapper"]),
     ],
     dependencies: [
+        .package(
+            url: "https://github.com/checkout/checkout-event-logger-ios-framework",
+            revision: "1.2.0")
     ],
     targets: [
         .target(
             name: "Checkout3DSWrapper",
             dependencies: [
                 .target(name: "Checkout3DS"),
+                .product(
+                    name: "CheckoutEventLoggerKit",
+                    package: "checkout-event-logger-ios-framework")
             ],
             path: "Wrapper"
         ),
