@@ -17,7 +17,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 5. Meets requirements from **EMVCo and the PCI Security Standards Council**, specifically set for 3DS SDKs, so you can be sure it is interoperable with card issuers and that your customers’ sensitive data stays secure.
 
 ## Minimum Requirements
-The 3DS SDK for iOS requires Xcode 12.0 and above with Swift version 5.3 and above, and supports apps targeting iOS 11.0 and above. It also supports Objective-C.
+The 3DS SDK for iOS requires Xcode 13.4 and above with Swift version 5.6.1 and above, and supports apps targeting iOS 12.0 and above. It also supports Objective-C.
 
 ## Getting Started
 
