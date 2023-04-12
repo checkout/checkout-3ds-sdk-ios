@@ -13,6 +13,16 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
+public struct AuthenticationRequestParameters : Swift.Encodable {
+  public let deviceData: Swift.String
+  public let sdkTransactionID: Swift.String
+  public let sdkAppID: Swift.String
+  public let sdkReferenceNumber: Swift.String
+  public let sdkEphemeralPublicKey: Swift.String
+  public let messageVersion: Swift.String
+  public init(deviceData: Swift.String, sdkTransactionID: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkEphemeralPublicKey: Swift.String, mssageVersion: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Checkout3DSService : ObjectiveC.NSObject {
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
@@ -33,6 +43,16 @@ import _Concurrency
   @objc final public let scheme: Swift.String
   @objc public init(sessionID: Swift.String, sessionSecret: Swift.String, scheme: Swift.String)
   @objc deinit
+}
+public struct ChallengeResult : Swift.Equatable {
+  public let sdkTransactionID: Swift.String
+  public let transactionStatus: Swift.String
+  public static func == (a: Checkout3DS.ChallengeResult, b: Checkout3DS.ChallengeResult) -> Swift.Bool
+}
+extension Checkout3DS.Standalone3DSService {
+  public enum Constants {
+    public static let challengeTimeout: Swift.Double
+  }
 }
 @objc(Checkout3DSButtonCustomizations) public protocol ButtonCustomizations {
   @objc var verifyButtonCustomization: Checkout3DS.ButtonCustomization { get }
@@ -84,6 +104,11 @@ import _Concurrency
   public var rawValue: Swift.Int {
     get
   }
+}
+public protocol ThreeDS2Service {
+  func createTransaction() -> Checkout3DS.Transaction
+  func getWarnings() -> Swift.Set<Checkout3DS.Warning>
+  func cleanUp()
 }
 @objc(Checkout3DSButtonCustomization) public protocol ButtonCustomization : Checkout3DS.Customization {
   @objc var backgroundColor: UIKit.UIColor { get }
@@ -217,6 +242,8 @@ import _Concurrency
   case concurrentAuthenticationRequest = 1007
   case sdkPListModified = 1008
   case certificateTransparencyOverriddenByApp = 1009
+  case duplicateSDKInitialised = 1010
+  case sdkNotInitialised = 1011
   case noInternetConnectivity = 2000
   case connectionFailed = 2001
   case connectionTimeout = 2002
@@ -284,6 +311,7 @@ import _Concurrency
   case threeDS2ProtocolError3561 = 3561
   case threeDS2ProtocolError3562 = 3562
   case threeDS2ProtocolError3563 = 3563
+  case threeDS2ProtocolError3564 = 3564
   case internalError4004 = 4004
   case internalError4005 = 4005
   case internalError4018 = 4018
@@ -316,6 +344,7 @@ import _Concurrency
   case internalError4052 = 4052
   case internalError4053 = 4053
   case internalError4054 = 4054
+  case internalError4055 = 4055
   case threeDS1ProtocolError5001 = 5001
   case threeDS1ProtocolError5002 = 5002
   case threeDS1ProtocolError5003 = 5003
@@ -324,6 +353,9 @@ import _Concurrency
   case threeDS1ProtocolError5007 = 5007
   case threeDS1ProtocolError5008 = 5008
   case threeDS1ProtocolError5500 = 5500
+  public var message: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [Checkout3DS.AuthenticationError]
   public typealias RawValue = Swift.Int
@@ -340,6 +372,9 @@ import _Concurrency
 @objc(Checkout3DSCustomization) public protocol Customization {
   @objc var font: UIKit.UIFont { get }
   @objc var textColor: UIKit.UIColor { get }
+}
+public struct ChallengeParameters {
+  public init(threeDSServerTransactionID: Swift.String, acsTransactionID: Swift.String, acsRefNumber: Swift.String, acsSignedContent: Swift.String)
 }
 @objc(Checkout3DSDefaultFooterCustomization) public protocol FooterCustomization : Checkout3DS.Customization {
   @objc var backgroundColor: UIKit.UIColor { get }
@@ -362,6 +397,9 @@ import _Concurrency
 @inline(never) public func positiveCallback(jsonPtr: Swift.UnsafePointer<Swift.CChar>)
 @inline(never) public func negativeCallback(jsonPtr: Swift.UnsafePointer<Swift.CChar>)
 @inline(never) public func probeMethod()
+public enum Standalone3DSService {
+  public static func initialize(with configuration: Checkout3DS.ThreeDS2ServiceConfiguration, environment: Checkout3DS.Environment = .production) throws -> Checkout3DS.ThreeDS2Service
+}
 extension Checkout3DS.Warning {
   @objc public enum Severity : Swift.Int {
     case low
@@ -389,6 +427,26 @@ extension Checkout3DS.Warning {
   @objc convenience override dynamic public init()
   @objc public init(backgroundColor: UIKit.UIColor = UIColor(red: 251/255, green: 251/255, blue: 252/255, alpha: 1), headerTitle: Swift.String? = nil, buttonTitle: Swift.String? = nil, font: UIKit.UIFont = .preferredFont(forTextStyle: .headline), textColor: UIKit.UIColor = DefaultSystemColor.label)
   @objc deinit
+}
+public struct ThreeDS2ServiceConfiguration {
+  public struct ConfigParameters {
+    public let directoryServerData: Checkout3DS.ThreeDS2ServiceConfiguration.DirectoryServerData
+    public let messageVersion: Swift.String
+    public let scheme: Swift.String
+    public init(directoryServerData: Checkout3DS.ThreeDS2ServiceConfiguration.DirectoryServerData, messageVersion: Swift.String, scheme: Swift.String)
+  }
+  public struct DirectoryServerData {
+    public let directoryServerID: Swift.String
+    public let directoryServerPublicKey: Swift.String
+    public let directoryServerRootCertificates: [Swift.String]
+    public init(directoryServerID: Swift.String, directoryServerPublicKey: Swift.String, directoryServerRootCertificates: [Swift.String])
+  }
+  public let configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters
+  public let locale: Foundation.Locale
+  public let uiCustomization: Checkout3DS.UICustomization
+  public let appURL: Foundation.URL?
+  public let challengeTimeout: Foundation.TimeInterval
+  public init(configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil, challengeTimeout: Foundation.TimeInterval = Standalone3DSService.Constants.challengeTimeout)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Checkout3DSDefaultSystemColor) public class DefaultSystemColor : ObjectiveC.NSObject {
   @objc public static var label: UIKit.UIColor {
@@ -457,6 +515,11 @@ extension QuartzCore.CALayerCornerCurve : Swift.Codable {
   public var rawValue: Swift.Int {
     get
   }
+}
+public protocol Transaction {
+  func getAuthenticationRequestParameters(completion: @escaping (Swift.Result<Checkout3DS.AuthenticationRequestParameters, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, completion: @escaping (Swift.Result<Checkout3DS.ChallengeResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  func close()
 }
 @objc(Checkout3DSEntrySelectionCustomization) public protocol EntrySelectionCustomization : Checkout3DS.Customization {
   @objc var borderWidth: CoreGraphics.CGFloat { get }
