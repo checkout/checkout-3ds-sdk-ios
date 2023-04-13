@@ -167,7 +167,7 @@ do {
  self.transaction?.getAuthenticationRequestParameters { result in
      switch result {
      case .success(let params):
-        //Make an Authentication Request to your 3DS Server
+        // Make an Authentication Request to your 3DS Server
      case .failure(let error):
         // handle failure scenario
       }
