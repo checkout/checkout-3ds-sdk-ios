@@ -44,7 +44,6 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'JOSESwift', '2.2.1', :inhibit_warnings => true
   pod 'CheckoutEventLoggerKit', '1.2.3'
   pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.0.0'
 end
