@@ -23,7 +23,7 @@ end
 5. Meets requirements from **EMVCo and the PCI Security Standards Council**, specifically set for 3DS SDKs, so you can be sure it is interoperable with card issuers and that your customers’ sensitive data stays secure.
 
 ## Minimum Requirements
-The 3DS SDK for iOS requires Xcode 13.1 and above with Swift version 5.6.2 and above, and supports apps targeting iOS 11.0 and above. It also supports Objective-C. There are two ways to integrate into our 3DS SDK.
+The 3DS SDK for iOS requires Xcode 13.1 and above with Swift version 5.6.2 and above, and supports apps targeting iOS 12.0 and above. It also supports Objective-C. There are two ways to integrate into our 3DS SDK.
 
 ## Getting Started
 
@@ -126,14 +126,14 @@ Here is a useful diagram that highlights the end-to-end 3DS flow using our `stan
 
 #### Code snippet 
 
-1- Creates an instance of `ThreeDS2Service` through which the 3DS Requestor App can create a transaction object to get the `authenticationRequestParameters` that are required to perform a challenge:
+1. Creates an instance of `ThreeDS2Service` through which the 3DS Requestor App can create a transaction object to get the `authenticationRequestParameters` that are required to perform a challenge:
 
 ```swift
    private var transaction: Transaction?
    private var standalone3DSService: ThreeDS2Service?
 ````
 
-2-Initialize the SDK with your preferred user interface options:
+2. Initialize the SDK with your preferred user interface options:
 
 - `scheme` can be set only as `visa` and `mastercard` in lower case string.
 
