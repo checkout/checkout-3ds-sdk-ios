@@ -7,13 +7,6 @@ The SDK handles the device data collection, communication with the card issuer, 
 👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks)
 
 📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-    end
-  end
-end
 
 ## Features
 1. Supports **3D Secure protocols 2.1.0 and 2.2.0.**
