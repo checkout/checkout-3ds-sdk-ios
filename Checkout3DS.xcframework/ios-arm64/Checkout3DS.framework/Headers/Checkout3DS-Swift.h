@@ -233,6 +233,10 @@ typedef SWIFT_ENUM_NAMED(NSInteger, Checkout3DSAuthenticationError, "Authenticat
   Checkout3DSAuthenticationErrorSdkPListModified = 1008,
 /// Certificate Transparency for Checkout.com domains have been overridden by the app’s info.plist.
   Checkout3DSAuthenticationErrorCertificateTransparencyOverriddenByApp = 1009,
+/// A second SDK initialization request was made before the first request is completed
+  Checkout3DSAuthenticationErrorDuplicateSDKInitialised = 1010,
+/// Standalone SDK is not intialised with required configurations
+  Checkout3DSAuthenticationErrorSdkNotInitialised = 1011,
 /// No internet connectivity.
   Checkout3DSAuthenticationErrorNoInternetConnectivity = 2000,
 /// Connection failed.
@@ -370,6 +374,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, Checkout3DSAuthenticationError, "Authenticat
   Checkout3DSAuthenticationErrorThreeDS2ProtocolError3562 = 3562,
 /// The SDK identified an error in the 3D Secure process.
   Checkout3DSAuthenticationErrorThreeDS2ProtocolError3563 = 3563,
+/// The SDK identified an error in the 3D Secure process.
+  Checkout3DSAuthenticationErrorThreeDS2ProtocolError3564 = 3564,
 /// An internal SDK error occurred.
   Checkout3DSAuthenticationErrorInternalError4004 = 4004,
 /// An internal SDK error occurred.
@@ -434,6 +440,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, Checkout3DSAuthenticationError, "Authenticat
   Checkout3DSAuthenticationErrorInternalError4053 = 4053,
 /// An internal SDK error occurred.
   Checkout3DSAuthenticationErrorInternalError4054 = 4054,
+/// Unable to validate session outcome from Sessions endpoint
+  Checkout3DSAuthenticationErrorInternalError4055 = 4055,
 /// A response from the card issuer could not be validated.
   Checkout3DSAuthenticationErrorThreeDS1ProtocolError5001 = 5001,
 /// The card issuer reported an error.
