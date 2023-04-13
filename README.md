@@ -135,7 +135,7 @@ Here is a useful diagram that highlights the end-to-end 3DS flow using our `stan
 
 2. Initialize the SDK with your preferred user interface options:
 
-- `scheme` can be set only as `visa` and `mastercard` in lower case string.
+- `scheme` can be set only as `visa` and `mastercard` in lowercase string.
 
 ```swift
 // initialise Standalone 3DS Service with required parameters
