@@ -190,8 +190,9 @@ transaction?.doChallenge(challengeParameters: params, completion: { [weak self] 
          // handle failure scenario
        }
       // call close and cleanUp methods after challenge flow is completed. 
-      self?.transaction?.close()
-      self?.standalone3DSService?.cleanUp()
+      guard let self else { return }
+      self.transaction?.close()
+      self.standalone3DSService?.cleanUp()
 })
 
 ```
