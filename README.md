@@ -118,7 +118,7 @@ Standalone 3DS allows our SDKs to be used with any Authentication provider, be i
 1. Initialize the SDK with your preferred user interface options using our `uiCustomization` object.
 2. Create `transaction` object 
 3. Get `authenticationRequestParameters` for the AReq
-4. if a challenge is mandated from the Authentication response from your 3DS server then call the `doChallenge` method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow. 
+4. If a challenge is mandated from the Authentication response from your 3DS server then call the `doChallenge` method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow. 
 
 #### Diagram
 Here is a useful diagram that highlights the end-to-end 3DS flow using our `standalone3DSService`.
