@@ -24,7 +24,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   s.vendored_frameworks = "Checkout3DS.xcframework"
 
-  s.dependency 'CheckoutEventLoggerKit', '~> 1.0'
+  s.dependency 'CheckoutEventLoggerKit', '1.2.3'
   s.dependency 'JOSESwift', '2.2.1'
 
   s.user_target_xcconfig = {
