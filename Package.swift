@@ -8,20 +8,11 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-          .library(
-              name: "Checkout3DS",
-              targets: ["Checkout3DS"])
+        .library(
+            name: "Checkout3DS",
+            targets: ["Checkout3DS"])
     ],
-    dependencies: [
-        .package(
-            url: "https://github.com/airsidemobile/JOSESwift.git",
-            exact:"2.2.1"
-        ),
-        .package(
-            url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
-            from: "1.2.4"
-        )
-    ],
+    dependencies: [],
     targets: [
         .binaryTarget(
             name: "Checkout3DS",
