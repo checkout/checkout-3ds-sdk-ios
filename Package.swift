@@ -9,7 +9,7 @@ let package = Package(
    products: [
         .library(
             name: "Checkout3DS",
-            targets: ["Checkout3DSWrapper"]),
+            targets: ["Checkout3DS"]),
     ],
     dependencies: [
         .package(
@@ -21,7 +21,7 @@ let package = Package(
     ],
     targets: [
 	.target(
-            name: "Checkout3DSWrapper",
+            name: "Checkout3DS",
             dependencies: [
                 .target(name: "Checkout3DS"),
                 .product(
@@ -30,7 +30,8 @@ let package = Package(
                 .product(
                     name: "JOSESwift",
                     package: "JOSESwift")
-            ],
+            ], 
+            path: "Checkout3DS",
             exclude: ["Checkout3DS.podspec"]
         ),
         .binaryTarget(name: "Checkout3DS", 
