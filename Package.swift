@@ -10,6 +10,9 @@ let package = Package(
         .library( name: "Checkout3DS", targets: ["Checkout3DS"])
     ],
     targets: [
-        .binaryTarget( name: "Checkout3DS", url: "https://github.com/checkout/checkout-3ds-sdk-ios/archive/refs/tags/3.0.0.zip" )
+        .binaryTarget(name: "Checkout3DS", 
+                      url: "https://github.com/checkout/checkout-3ds-sdk-ios/archive/refs/tags/3.0.0.zip", 
+                      checksum: "0b62c4355768a064a817f90688f9ba63f27cbee29a61b6bcb8639c2e1c59a0fd"
+        )
     ]
 )
