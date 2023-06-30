@@ -11,7 +11,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "Checkout3DS", 
-                      url: "https://github.com/checkout/checkout-3ds-sdk-ios/archive/refs/tags/3.0.0.zip", 
+                      url: "https://github.com/checkout/checkout-3ds-sdk-ios/files/11918166/Checkout3DS.xcframework.zip", 
                       checksum: "0b62c4355768a064a817f90688f9ba63f27cbee29a61b6bcb8639c2e1c59a0fd"
         )
     ]
