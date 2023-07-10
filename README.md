@@ -216,5 +216,5 @@ Our iOS SDK depends on some external libraries:
 
 
 ## License
-This software is released under license. See [LICENSE](https://github.com/checkout/checkout-3ds-sdk-ios/blob/develop/LICENSE.md) for details.
+This software is released under license. See [LICENSE](https://github.com/checkout/checkout-3ds-sdk-ios/blob/main/LICENSE.md) for details.
 
