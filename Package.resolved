@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "checkout-event-logger-ios-framework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/checkout/checkout-event-logger-ios-framework",
+      "state" : {
+        "branch" : "1.2.0",
+        "revision" : "2ef34662f1525526aeb5681c6af5f69572ab36c9"
+      }
+    },
+    {
+      "identity" : "joseswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airsidemobile/JOSESwift",
+      "state" : {
+        "branch" : "2.4.0",
+        "revision" : "10ed3b6736def7c26eb87135466b1cb46ea7e37f"
+      }
+    }
+  ],
+  "version" : 2
+}
