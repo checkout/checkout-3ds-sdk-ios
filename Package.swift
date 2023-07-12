@@ -9,6 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "Checkout3DS",
+            type: .dynamic,
             targets: ["Checkout3DS"]
         )
     ],
