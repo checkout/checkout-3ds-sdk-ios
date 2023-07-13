@@ -1,0 +1,11 @@
+framework module JOSESwift {
+  umbrella header "JOSESwift.h"
+
+  export *
+  module * { export * }
+}
+
+module JOSESwift.Swift {
+  header "JOSESwift-Swift.h"
+  requires objc
+}

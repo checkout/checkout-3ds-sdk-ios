@@ -1,6 +1,6 @@
 // swift-tools-version:5.3
-import PackageDescription
 
+import PackageDescription
 let package = Package(
     name: "Checkout3DS",
     platforms: [
@@ -9,15 +9,25 @@ let package = Package(
     products: [
         .library(
             name: "Checkout3DS",
-            type: .dynamic,
-            targets: ["Checkout3DS"]
+            targets: ["Checkout3DSTargets"]
         )
     ],
-    dependencies: [],
     targets: [
         .binaryTarget(
             name: "Checkout3DS",
             path: "Checkout3DS.xcframework"
         ),
-    ]
+        .binaryTarget(
+            name: "JOSESwift",
+            path: "Checkout3DS.xcframework"
+        ),
+        .target(name: "Checkout3DSTargets",
+                dependencies: [
+                    .target(name: "JOSESwift", condition: .when(platforms: .some([.iOS]))),
+                    .target(name: "Checkout3DS", condition: .when(platforms: .some([.iOS])))
+                ],
+                path: "Checkout3DSTargets"
+        )
+    ],
+    swiftLanguageVersions: [.v5]
 )
