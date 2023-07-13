@@ -19,7 +19,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JOSESwift",
-            path: "Checkout3DS.xcframework"
+            path: "JOSESwift.xcframework"
         ),
         .target(name: "Checkout3DSTargets",
                 dependencies: [
