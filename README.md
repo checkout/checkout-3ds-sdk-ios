@@ -51,7 +51,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => ''
+  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.1,0'
 end
 
 post_install do |installer|
