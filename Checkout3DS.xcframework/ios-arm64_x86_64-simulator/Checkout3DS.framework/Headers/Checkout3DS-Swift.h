@@ -578,7 +578,7 @@ SWIFT_CLASS("_TtC11Checkout3DS18Checkout3DSService")
 ///
 /// \param error If authentication fails, an <code>NSError</code> indicating the reason for failure, otherwise <code>nil</code>.
 ///
-- (void)authenticateWithAuthenticationParameters:(Checkout3DSAuthenticationParameters * _Nonnull)authenticationParameters completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+- (void)authenticateWithAuthenticationParameters:(Checkout3DSAuthenticationParameters * _Nonnull)authenticationParameters completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use authenticate function with compilation closure (Result<AuthenticationResult, AuthenticationError>) -> Void)");
 /// A method your app can optionally call to bring the challenge UI to the foreground.
 /// That’s useful when the user is returning from their banking app (when they call your appURL) as part of an out-of-band challenge.
 /// The method will return true if an active authentication session is found, or will otherwise return false.
@@ -1701,7 +1701,7 @@ SWIFT_CLASS("_TtC11Checkout3DS18Checkout3DSService")
 ///
 /// \param error If authentication fails, an <code>NSError</code> indicating the reason for failure, otherwise <code>nil</code>.
 ///
-- (void)authenticateWithAuthenticationParameters:(Checkout3DSAuthenticationParameters * _Nonnull)authenticationParameters completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+- (void)authenticateWithAuthenticationParameters:(Checkout3DSAuthenticationParameters * _Nonnull)authenticationParameters completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use authenticate function with compilation closure (Result<AuthenticationResult, AuthenticationError>) -> Void)");
 /// A method your app can optionally call to bring the challenge UI to the foreground.
 /// That’s useful when the user is returning from their banking app (when they call your appURL) as part of an out-of-band challenge.
 /// The method will return true if an active authentication session is found, or will otherwise return false.

@@ -27,8 +27,11 @@ public struct AuthenticationRequestParameters : Swift.Encodable {
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
   @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
+  final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  @available(*, deprecated, message: "Use authenticate function with compilation closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
   @available(swift, obsoleted: 1.0)
   @objc final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Swift.Error?) -> Swift.Void)
+  @available(*, deprecated, message: "Use authenticate function with compilation closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
   final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Checkout3DS.AuthenticationError?) -> Swift.Void)
   @objc public static func handleAppURL(url: Foundation.URL) -> Swift.Bool
   @available(swift, obsoleted: 1.0)
@@ -44,10 +47,10 @@ public struct AuthenticationRequestParameters : Swift.Encodable {
   @objc public init(sessionID: Swift.String, sessionSecret: Swift.String, scheme: Swift.String)
   @objc deinit
 }
-public struct ChallengeResult : Swift.Equatable {
+public struct AuthenticationResult : Swift.Equatable {
   public let sdkTransactionID: Swift.String
-  public let transactionStatus: Swift.String
-  public static func == (a: Checkout3DS.ChallengeResult, b: Checkout3DS.ChallengeResult) -> Swift.Bool
+  public let transactionStatus: Swift.String?
+  public static func == (a: Checkout3DS.AuthenticationResult, b: Checkout3DS.AuthenticationResult) -> Swift.Bool
 }
 extension Checkout3DS.Standalone3DSService {
   public enum Constants {
@@ -518,7 +521,7 @@ extension QuartzCore.CALayerCornerCurve : Swift.Codable {
 }
 public protocol Transaction {
   func getAuthenticationRequestParameters(completion: @escaping (Swift.Result<Checkout3DS.AuthenticationRequestParameters, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, completion: @escaping (Swift.Result<Checkout3DS.ChallengeResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
   func close()
 }
 @objc(Checkout3DSEntrySelectionCustomization) public protocol EntrySelectionCustomization : Checkout3DS.Customization {
