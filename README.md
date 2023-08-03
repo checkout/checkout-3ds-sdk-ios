@@ -1,28 +1,42 @@
-# iOS 3D Secure SDK from Checkout.com
+![Checkout.com](https://github.com/checkout/checkout-3ds-sdk-ios/assets/102961713/32457abd-3bac-47da-8fad-f3db684a58ae)
+
+
+# iOS 3D Secure SDK
 
 The Checkout.com 3D Secure (3DS) mobile SDK allows you to provide a native 3DS2 experience in your mobile app, with visual styling that you can control. 
 
 The SDK handles the device data collection, communication with the card issuer, and presentation of 3D Secure challenges to the customer when required. 
 
+- [Features](#features)
+- [Minimum Requirements](#minimum-requirements)
+- [Installation](#installation)
+  - [CocoaPods](#cocoapods)
+- [Integration](#integration)
+  - [Checkout.com's 3DS server](#checkoutcoms-3ds-server)
+  - [Any 3DS provider](#any-3ds-provider)
+- [Payment Authorisation](#payment-authorisation)
+- [Dependencies](#dependencies)
+- [Help and Feedback](#help-and-feedback)
+- [License](#license)
+  
 👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks)
 
 📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
 
+
 ## Features
-1. Supports **3D Secure protocols 2.1.0 and 2.2.0.**
-2. Presents **native 3DS2 challenge screens to the user, with styling that you can customise** to best fit your apps and branding.
-3. Optionally **falls back to 3DS1** when 3DS2 is not available, returning the same authentication result to your app as for 3DS2. (This option can be configured by Checkout.com for your account.)
-4. Supports a **range of local languages and accessibility needs**, and allows you to set your own string translations.
-5. Meets requirements from **EMVCo and the PCI Security Standards Council**, specifically set for 3DS SDKs, so you can be sure it is interoperable with card issuers and that your customers’ sensitive data stays secure.
+- Supports **3D Secure protocols 2.1.0 and 2.2.0.**
+- Presents **native 3DS2 challenge screens to the user, with styling that you can customise** to best fit your apps and branding.
+- Optionally **falls back to 3DS1** when 3DS2 is not available, returning the same authentication result to your app as for 3DS2. (This option can be configured by Checkout.com for your account.)
+- Supports a **range of local languages and accessibility needs**, and allows you to set your own string translations.
+- Meets requirements from **EMVCo and the PCI Security Standards Council**, specifically set for 3DS SDKs, so you can be sure it is interoperable with card issuers and that your customers’ sensitive data stays secure.
 
 ## Minimum Requirements
 The 3DS SDK for iOS requires Xcode 13.1 and above with Swift version 5.6.2 and above, and supports apps targeting iOS 12.0 and above. It also supports Objective-C. There are two ways to integrate our 3DS SDK.
 
-## Getting Started
+## Installation
 
-First, integrate the 3DS SDK into your app.
-
-### Integrating with CocoaPods
+### CocoaPods
 [CocoaPods](http://cocoapods.org) is the traditional dependency manager for Apple projects. We still support it, but we're not always able to validate all its peculiar ways.
 
 Make sure cocoapods is installed on your machine by running
@@ -37,8 +51,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'CheckoutEventLoggerKit', '1.2.3'
-  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.0.0'
+  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.1,0'
 end
 
 post_install do |installer|
@@ -66,12 +79,17 @@ $ pod update
 
 Then, configure your app to:
 
-### Integrating with Checkout 3DS servers
+## Integration
+
+### Checkout.com's 3DS server
 This integration method involves one call to our `authenticate` method, which will perform an entire Authentication flow using Checkout.com's 3DS servers.
 
 1. Initialize the SDK with your preferred user interface options using our `uiCustomization` object.
 2. Configure the parameters for an authentication.
 3. Request authentication and handle the result to continue your payment flow.
+4. The authenticate function now returns `Result` type with two cases
+    - `AuthenticationResult` with `transactionStatus` and `sdkTransactionID`  👉&nbsp;&nbsp;[More info about transaction status](https://www.checkout.com/docs/business-operations/use-the-dashboard/payment-activity/track-3ds-events#Transaction_status)
+    - `AuthenticationError` with a `message`.
 
 #### Code snippet
 
@@ -92,40 +110,41 @@ let authenticationParameters = AuthenticationParameters(
     sessionSecret: sessionSecret,
     scheme: scheme)
 
-checkout3DS.authenticate(authenticationParameters: authenticationParameters) { error in
-    if let error = error {
-        // Handle error.
-    } else {
-        // Continue with payment.
-    }
+checkout3DS.authenticate(authenticationParameters: authenticationParameters) { result in
+    switch authenticationResult {
+    case .success(let authenticationResult):
+        // handle authentication result. Checkout Payment Authorisation section.
+    case .failure(let error):
+        // handle failure scenarios
+     }
 }
 ```
 👉&nbsp;&nbsp;[See the Integration Guide with Code Examples](https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks) for full details.
 
 📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
 
-### Integrating with any 3DS provider
+### Any 3DS provider
 Standalone 3DS allows our SDKs to be used with any Authentication provider, be it Checkout.com or otherwise. This is a higher touch integration that breaks up the 3DS flow more granularly. In order to integrate with the Standalone 3DS service:
 
 1. Initialize the SDK with your preferred user interface options using our `uiCustomization` object.
 2. Create `transaction` object 
 3. Get `authenticationRequestParameters` for the AReq
-4. If a challenge is mandated from the Authentication response from your 3DS server then call the `doChallenge` method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow. 
+4. if a challenge is mandated from the Authentication response from your 3DS server then call the `doChallenge` method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow. 
 
-#### Diagram
+#### End-to-end 3DS flow
 Here is a useful diagram that highlights the end-to-end 3DS flow using our `standalone3DSService`.
 ![E2E Standalone SDK Flow](https://user-images.githubusercontent.com/102961713/226956636-d39b7bff-9fb8-4701-a3bc-86d932b306f0.jpg)
 
 #### Code snippet 
 
-1. Creates an instance of `ThreeDS2Service` through which the 3DS Requestor App can create a transaction object to get the `authenticationRequestParameters` that are required to perform a challenge:
+1- Creates an instance of `ThreeDS2Service` through which the 3DS Requestor App can create a transaction object to get the `authenticationRequestParameters` that are required to perform a challenge:
 
 ```swift
    private var transaction: Transaction?
    private var standalone3DSService: ThreeDS2Service?
 ````
 
-2. Initialize the SDK with your preferred user interface options:
+2-Initialize the SDK with your preferred user interface options:
 
 - `scheme` can be set only as `visa` and `mastercard` in lowercase string.
 
@@ -159,7 +178,7 @@ do {
  self.transaction?.getAuthenticationRequestParameters { result in
      switch result {
      case .success(let params):
-        // Make an Authentication Request to your 3DS Server
+        // make an Authentication Request to your 3DS Server
      case .failure(let error):
         // handle failure scenario
       }
@@ -169,23 +188,26 @@ do {
 5. Handle the `doChallenge` flow: 
 
 - If the Authentication response that is returned indicates that the Challenge Flow must be applied, the 3DS Requestor App calls the `doChallenge` method with the required input `ChallengeParameters`. The `doChallenge` method initiates the challenge process.
-- The `doChallenge` function now returns a `ChallengeResult` object with `transactionStatus` and `sdkTransactionID`.
+- The `doChallenge` function now returns `Result` type with two cases
+  - `AuthenticationResult` with `transactionStatus` and `sdkTransactionID`  👉&nbsp;&nbsp;[More info about transaction status](https://www.checkout.com/docs/business-operations/use-the-dashboard/payment-activity/track-3ds-events#Transaction_status)
+  - `AuthenticationError` with a `message`.
+
+
 ```swift
 let params = ChallengeParameters(threeDSServerTransactionID: response.transactionId,
                                  acsTransactionID: response.acs.transactionId,
                                  acsRefNumber: response.acs.referenceNumber,
                                  acsSignedContent: response.acs.signedContent)
 transaction?.doChallenge(challengeParameters: params, completion: { [weak self]  result in
-     guard let self else { return }
      switch result {
-      case .success(let result):
-          // handle success scenario
+      case .success(let authenticationResult):
+         // handle authentication result. Checkout Payment Authorisation section.
       case .failure(let error):
          // handle failure scenario
        }
       // call close and cleanUp methods after challenge flow is completed. 
-      self.transaction?.close()
-      self.standalone3DSService?.cleanUp()
+      self?.transaction?.close()
+      self?.standalone3DSService?.cleanUp()
 })
 
 ```
@@ -197,6 +219,20 @@ transaction?.doChallenge(challengeParameters: params, completion: { [weak self] 
     transaction?.close()
     standalone3DSService?.cleanUp()
 ```
+
+## Payment Authorisation
+After initiating the authentication process and obtaining the `AuthenticationResult` object, you can continue the authentication flow based on the value of `transStatus`:
+
+| `transStatus` | Description                            | Proceed with Payment Authorisation Request |
+| :------------------ | :-------------------------------------- | :--------------------|
+| `Y`                 | Authentication verification successful.| Yes |
+| `A`                 | Attempt at processing performed.       | Yes |
+| `I`                 | Informational only.                    | Yes |
+| `N`                 | Not authenticated or account not verified.| No  |
+| `R`                 | Authentication or account verification rejected.| No  |
+| `U`                 | Authentication or account verification could not be performed.| No  |
+
+ 👉&nbsp;&nbsp;[More info about transaction status](https://www.checkout.com/docs/business-operations/use-the-dashboard/payment-activity/track-3ds-events#Transaction_status)
 
 ## Dependencies
 
