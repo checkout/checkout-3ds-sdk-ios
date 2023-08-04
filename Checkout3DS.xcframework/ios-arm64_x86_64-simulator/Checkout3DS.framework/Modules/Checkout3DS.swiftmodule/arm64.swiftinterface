@@ -28,10 +28,10 @@ public struct AuthenticationRequestParameters : Swift.Encodable {
   @objc convenience override dynamic public init()
   @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
   final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  @available(*, deprecated, message: "Use authenticate function with compilation closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
+  @available(*, deprecated, message: "Use authenticate function with completion closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
   @available(swift, obsoleted: 1.0)
   @objc final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Swift.Error?) -> Swift.Void)
-  @available(*, deprecated, message: "Use authenticate function with compilation closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
+  @available(*, deprecated, message: "Use authenticate function with completion closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
   final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Checkout3DS.AuthenticationError?) -> Swift.Void)
   @objc public static func handleAppURL(url: Foundation.URL) -> Swift.Bool
   @available(swift, obsoleted: 1.0)
