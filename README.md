@@ -198,7 +198,7 @@ let params = ChallengeParameters(threeDSServerTransactionID: response.transactio
                                  acsTransactionID: response.acs.transactionId,
                                  acsRefNumber: response.acs.referenceNumber,
                                  acsSignedContent: response.acs.signedContent)
-transaction?.doChallenge(challengeParameters: params, completion: { result in
+transaction?.doChallenge(challengeParameters: params, completion: { [weak self] result in
      switch result {
       case .success(let authenticationResult):
          // handle authentication result. Checkout Payment Authorisation section.
@@ -206,8 +206,8 @@ transaction?.doChallenge(challengeParameters: params, completion: { result in
          // handle failure scenario
        }
       // call close and cleanUp methods after challenge flow is completed. 
-      self.transaction?.close()
-      self.standalone3DSService?.cleanUp()
+      self?.transaction?.close()
+      self?.standalone3DSService?.cleanUp()
 })
 
 ```
