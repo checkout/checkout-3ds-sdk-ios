@@ -51,7 +51,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.1,0'
+  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.1.1'
 end
 
 post_install do |installer|
@@ -129,7 +129,7 @@ Standalone 3DS allows our SDKs to be used with any Authentication provider, be i
 1. Initialize the SDK with your preferred user interface options using our `uiCustomization` object.
 2. Create `transaction` object 
 3. Get `authenticationRequestParameters` for the AReq
-4. if a challenge is mandated from the Authentication response from your 3DS server then call the `doChallenge` method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow. 
+4. If a challenge is mandated from the Authentication response from your 3DS server then call the `doChallenge` method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow. 
 
 #### End-to-end 3DS flow
 Here is a useful diagram that highlights the end-to-end 3DS flow using our `standalone3DSService`.
@@ -198,7 +198,7 @@ let params = ChallengeParameters(threeDSServerTransactionID: response.transactio
                                  acsTransactionID: response.acs.transactionId,
                                  acsRefNumber: response.acs.referenceNumber,
                                  acsSignedContent: response.acs.signedContent)
-transaction?.doChallenge(challengeParameters: params, completion: { [weak self]  result in
+transaction?.doChallenge(challengeParameters: params, completion: { [weak self] result in
      switch result {
       case .success(let authenticationResult):
          // handle authentication result. Checkout Payment Authorisation section.
