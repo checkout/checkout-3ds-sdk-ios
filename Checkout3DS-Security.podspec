@@ -16,7 +16,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                    DESC
   s.author       = { "Checkout.com Integration" => "integration@checkout.com" }
   s.platform     = :ios, "12.0"
-  s.source       = { :git => "https://github.com/checkout/checkout-3ds-sdk-ios.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/checkout/checkout-3ds-sdk-ios.git", :tag => s.version }
 
   s.vendored_frameworks = "Checkout3DS-Security.xcframework"
 
