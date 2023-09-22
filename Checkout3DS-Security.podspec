@@ -1,13 +1,9 @@
 Pod::Spec.new do |s|
-  s.name         = "Checkout3DS"
+  s.name         = "Checkout3DS-Security"
   s.version      = "3.2.0"
-  s.summary      = "Checkout 3DS SDK"
-  s.description  = <<-DESC
-  The Checkout.com 3D Secure (3DS) mobile SDK allows you to provide a native 3DS2 experience in your mobile app, with visual styling that you can control.
-
-  The SDK handles the device data collection, communication with the card issuer, and presentation of 3D Secure challenges to the customer when required.
-                   DESC
+  s.summary      = "Checkout 3DS SDK Security"
   s.homepage     = "https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html"
+
   s.swift_version = "5.0"
   s.license      = <<-DESC
                         Copyright (c) 2021 Checkout.com
@@ -22,10 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   s.platform     = :ios, "12.0"
   s.source       = { :git => "https://github.com/checkout/checkout-3ds-sdk-ios.git", :tag => "#{s.version}" }
 
-  s.vendored_frameworks = "Checkout3DS.xcframework"
-
-  s.dependency 'CheckoutEventLoggerKit', '1.2.4'
-  s.dependency 'JOSESwift', '2.2.1'
+  s.vendored_frameworks = "Checkout3DS-Security.xcframework"
 
   s.user_target_xcconfig = {
     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
