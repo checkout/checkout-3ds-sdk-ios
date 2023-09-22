@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                    DESC
   s.author       = { "Checkout.com Integration" => "integration@checkout.com" }
   s.platform     = :ios, "12.0"
-  s.source       = { :git => "https://github.com/checkout/checkout-3ds-sdk-ios.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/checkout/checkout-3ds-sdk-ios.git", :tag => s.version }
 
   s.vendored_frameworks = "Checkout3DS.xcframework"
 
@@ -29,12 +29,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   s.user_target_xcconfig = {
     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-    'VALID_ARCHS' => 'arm64 x86_64',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
+    'VALID_ARCHS' => 'arm64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64'
   }
 
   s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
-    'VALID_ARCHS' => 'arm64 x86_64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64',
+    'VALID_ARCHS' => 'arm64'
   }
 end
