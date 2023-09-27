@@ -26,6 +26,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   s.dependency 'CheckoutEventLoggerKit', '1.2.4'
   s.dependency 'JOSESwift', '2.2.1'
+  s.dependency 'Checkout3DS-Security', '3.2.0'
 
   s.user_target_xcconfig = {
     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
