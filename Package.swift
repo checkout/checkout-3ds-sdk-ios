@@ -23,7 +23,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JOSESwift",
-            path: "JOSESwift.xcframework"
+            path: "Dependencies/JOSESwift.xcframework"
         ),
     .binaryTarget(
             name: "CheckoutEventLoggerKit",
