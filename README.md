@@ -11,6 +11,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 - [Minimum Requirements](#minimum-requirements)
 - [Installation](#installation)
   - [CocoaPods](#cocoapods)
+  - [Swift Package Manager](#swift-package-manager)
 - [Integration](#integration)
   - [Checkout.com's 3DS server](#checkoutcoms-3ds-server)
   - [Any 3DS provider](#any-3ds-provider)
@@ -44,9 +45,9 @@ We've done our best to support the most common distribution methods on iOS. We a
 
 If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
 
-- Checkout3DS Package URL (https://github.com/checkout/checkout-3ds-sdk-ios) with exact version `3.2.0`
-- CheckoutLoggerKit Package URL (https://github.com/checkout/checkout-event-logger-ios-framework) with exact version `1.2.4`
-
+```swift
+.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "3.2.0")
+```
 
 ### CocoaPods
 [CocoaPods](http://cocoapods.org) is the traditional dependency manager for Apple projects. We still support it, but we're not always able to validate all its peculiar ways.
