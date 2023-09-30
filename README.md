@@ -37,6 +37,17 @@ The SDK handles the device data collection, communication with the card issuer, 
 
 ## Installation
 
+We've done our best to support the most common distribution methods on iOS. We are in strong favour of [SPM](#Swift-Package-Manager) (Swift Package Manager) but if for any reason this doesn't work for you, we also support [Cocoapods](#Cocoapods).
+
+### Swift Package Manager
+[Swift Package Manager](https://swift.org/package-manager/) integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. It should work out of the box on latest Xcode projects since Xcode 11 and has had a lot of community support, seeing huge adoption over the recent years. This is our preferred distribution method for Frames iOS and is the easiest one to integrate, keep updated and build around.
+
+If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
+
+- Checkout3DS Package URL (https://github.com/checkout/checkout-3ds-sdk-ios) with exact version `3.2.0`
+- CheckoutLoggerKit Package URL (https://github.com/checkout/checkout-event-logger-ios-framework) with exact version `1.2.4`
+
+
 ### CocoaPods
 [CocoaPods](http://cocoapods.org) is the traditional dependency manager for Apple projects. We still support it, but we're not always able to validate all its peculiar ways.
 

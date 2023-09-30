@@ -12,6 +12,11 @@ let package = Package(
             targets: ["Checkout3DSPackages"]
         )
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
+            from: "1.2.4"
+        )],
     targets: [
         .binaryTarget(
             name: "Checkout3DS",
@@ -25,20 +30,16 @@ let package = Package(
             name: "JOSESwift",
             path: "Dependencies/JOSESwift.xcframework"
         ),
-    .binaryTarget(
-            name: "CheckoutEventLoggerKit",
-            url: "https://github.com/checkout/checkout-event-logger-ios-framework/releases/download/1.2.4/CheckoutEventLoggerKit.xcframework.zip",
-            checksum: "5db418477fc07baef7acceeb0e831f00872bc4fc9ba980e039ac1684cecbc145"
-        ),
         .target(name: "Checkout3DSPackages",
                 dependencies: [
+                    .product(name: "CheckoutEventLoggerKit",
+                             package: "checkout-event-logger-ios-framework"),
                     .target(name: "JOSESwift", condition: .when(platforms: .some([.iOS]))),
-                    .target(name: "CheckoutEventLoggerKit", condition: .when(platforms: .some([.iOS]))),
                     .target(name: "Checkout3DS", condition: .when(platforms: .some([.iOS]))),
                     .target(name: "Checkout3DS-Security", condition: .when(platforms: .some([.iOS])))
                 ],
-                path: "Checkout3DSPackages"
-        )
+                path: "Checkout3DSPackages",
+                linkerSettings: [.linkedFramework("CheckoutEventLoggerKit")])
     ],
     swiftLanguageVersions: [.v5]
 )
