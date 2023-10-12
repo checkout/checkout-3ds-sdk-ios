@@ -29709,7 +29709,7 @@
       "kind": "StringLiteral",
       "offset": 844,
       "length": 7,
-      "value": "\"3.2.0\""
+      "value": "\"3.2.1\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Checkout3DS\/Checkout3DSService+Constants.swift",
