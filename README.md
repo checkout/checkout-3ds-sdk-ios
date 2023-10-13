@@ -46,7 +46,7 @@ We've done our best to support the most common distribution methods on iOS. We a
 If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
 
 ```swift
-.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "3.2.0")
+.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "3.2.1")
 ```
 
 ### CocoaPods
