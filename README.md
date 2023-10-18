@@ -262,7 +262,7 @@ After initiating the authentication process and obtaining the `AuthenticationRes
 
 Our iOS SDK depends on some external libraries:
 
-* To help maintain security, we use [JOSESwift](https://github.com/airsidemobile/JOSESwift).
+* To help maintain security, we use [JOSESwift](https://github.com/airsidemobile/JOSESwift). To overcome the limitation in Swift Package Manager (SPM) related to binary target dependencies, we've integrated JOSESwift as an xcframework sourced from the same [JOSESwift](https://github.com/airsidemobile/JOSESwift).
 * To help provide support and monitor the performance of the SDK, we use our own Checkout Event Logger Kit.
 
 ## Help and Feedback
