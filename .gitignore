@@ -1,2 +1,80 @@
 
+
+### macOS ###
+# General macOS-related files and directories
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Swift ###
+# Xcode user settings
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Xcode compatibility with versions prior to 9
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Obj-C/Swift specific
+*.hmap
+
+# App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+ Packages/
+ Package.pins
+ *.xcodeproj
+ .swiftpm
+.build/
+Package.resolved
+**/.build
+
+# Bad sorts get generated if the package .xcscheme is not regenerated.
+# Anything committed to xcshareddata gets propagated to clients. (#8167)
+.swiftpm/xcode/xcshareddata/
+
+
+### Xcode ###
+# Xcode files
+contents.xcworkspacedata
+
+
+### Xcode Patch ###
+# Xcode project-specific files
+*.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+*/IDEWorkspaceChecks.plist
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings

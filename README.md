@@ -11,6 +11,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 - [Minimum Requirements](#minimum-requirements)
 - [Installation](#installation)
   - [CocoaPods](#cocoapods)
+  - [Swift Package Manager](#swift-package-manager)
 - [Integration](#integration)
   - [Checkout.com's 3DS server](#checkoutcoms-3ds-server)
   - [Any 3DS provider](#any-3ds-provider)
@@ -36,6 +37,17 @@ The SDK handles the device data collection, communication with the card issuer, 
 - Discontinued support for intel machines ( x86_64 )
 
 ## Installation
+
+We've done our best to support the most common distribution methods on iOS. We are in strong favour of [SPM](#Swift-Package-Manager) (Swift Package Manager) but if for any reason this doesn't work for you, we also support [Cocoapods](#Cocoapods).
+
+### Swift Package Manager
+[Swift Package Manager](https://swift.org/package-manager/) integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. It should work out of the box on latest Xcode projects since Xcode 11 and has had a lot of community support, seeing huge adoption over the recent years. This is our preferred distribution method for Frames iOS and is the easiest one to integrate, keep updated and build around.
+
+If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
+
+```swift
+.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "3.2.1")
+```
 
 ### CocoaPods
 [CocoaPods](http://cocoapods.org) is the traditional dependency manager for Apple projects. We still support it, but we're not always able to validate all its peculiar ways.
@@ -250,7 +262,7 @@ After initiating the authentication process and obtaining the `AuthenticationRes
 
 Our iOS SDK depends on some external libraries:
 
-* To help maintain security, we use [JOSESwift](https://github.com/airsidemobile/JOSESwift).
+* To help maintain security, we use [JOSESwift](https://github.com/airsidemobile/JOSESwift). To overcome the limitation in Swift Package Manager (SPM) related to binary target dependencies, we've integrated JOSESwift as an xcframework sourced from the same [JOSESwift](https://github.com/airsidemobile/JOSESwift).
 * To help provide support and monitor the performance of the SDK, we use our own Checkout Event Logger Kit.
 
 ## Help and Feedback
