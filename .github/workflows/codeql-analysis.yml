@@ -9,21 +9,27 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL"
+name: "Run CodeQL"
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - 'main'
+      - 'develop'
+      - 'release/*'
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ main ]
+    branches:
+      - 'main'
+      - 'develop'
+      - 'release/*'
   schedule:
     - cron: '34 2 * * 0'
 
 jobs:
   analyze:
     name: Analyze
-    runs-on: [ self-hosted, checkout-default-runners-github-runners ]
+    runs-on: [ macos-latest ]
     permissions:
       actions: read
       contents: read
@@ -32,9 +38,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'ruby' ]
-        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
-        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+        language: [ 'swift' ]
 
     steps:
     - name: Checkout repository
@@ -49,14 +53,9 @@ jobs:
         languages: ${{ matrix.language }}
         queries: security-and-quality
 
-        # If you wish to specify custom queries, you can do so here or in a config file.
-        # By default, queries listed here will override any specified in a config file.
-        # Prefix the list here with "+" to use these queries and those in the config file.
-
-        # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-        # queries: security-extended,security-and-quality
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+    - name: Build
+      run: |
+        xcodebuild -scheme Frames -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=latest"
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
