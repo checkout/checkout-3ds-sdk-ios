@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Checkout3DS-Security"
-  s.version      = "3.2.1"
+  s.version      = "3.2.2"
   s.summary      = "Checkout 3DS SDK Security"
   s.homepage     = "https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html"
 

@@ -24802,7 +24802,7 @@
       "kind": "StringLiteral",
       "offset": 611,
       "length": 31,
-      "value": "\"3DS_LOA_SDK_CHLT_020200_00458\""
+      "value": "\"3DS_LOA_SDK_CHLT_020200_00779\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Checkout3DS\/Networking\/Models\/SessionDetailsResponse\/SessionDetailsResponse.swift",
@@ -29688,7 +29688,7 @@
       "kind": "StringLiteral",
       "offset": 670,
       "length": 31,
-      "value": "\"3DS_LOA_SDK_CHLT_020200_00458\""
+      "value": "\"3DS_LOA_SDK_CHLT_020200_00779\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Checkout3DS\/Checkout3DSService+Constants.swift",

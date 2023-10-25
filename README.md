@@ -46,7 +46,7 @@ We've done our best to support the most common distribution methods on iOS. We a
 If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
 
 ```swift
-.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "3.2.1")
+.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "3.2.2")
 ```
 
 ### CocoaPods
@@ -64,8 +64,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.2.1'
-  pod 'Checkout3DS-Security', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.2.1'
+  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.2.2'
 
 end
 
