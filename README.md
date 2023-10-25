@@ -32,7 +32,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 - Meets requirements from **EMVCo and the PCI Security Standards Council**, specifically set for 3DS SDKs, so you can be sure it is interoperable with card issuers and that your customers’ sensitive data stays secure.
 
 ## Minimum Requirements
-The 3DS SDK for iOS requires Xcode 13.1 and above with Swift version 5.6.2 and above, and supports apps targeting iOS 12.0 and above. It also supports Objective-C. There are two ways to integrate our 3DS SDK.
+The 3DS SDK for iOS requires Xcode 14.1 and above with Swift version 5.8 and above, and supports apps targeting iOS 12.0 and above. It also supports Objective-C. There are two ways to integrate our 3DS SDK.
 
 ## Installation
 
@@ -51,7 +51,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.1.1'
+  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.1.2'
 end
 
 post_install do |installer|
