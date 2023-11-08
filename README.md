@@ -34,7 +34,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 
 ## Minimum Requirements
 - The 3DS SDK for iOS requires Xcode 14.1 and above with Swift version 5.8 and above, and supports apps targeting iOS 12.0 and above. It also supports Objective-C. 
-- We have discontinued support for intel machines (x86_64 architecture based environment). You must use ARM64 architecture based environments to compile our 3DS iOS SDK.
+- We have discontinued support for intel machines (x86_64 architecture based environments). You must use ARM64 architecture based environments to compile our 3DS iOS SDK.
 
 ## Installation
 
