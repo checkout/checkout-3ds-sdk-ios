@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kgAC9dG+wZFXAg/7WHSk/f0+pY8=
+		AyIf2wDwqKuk6vGYq6XT+SZ7Q9E=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		dKt/44H0F9g1TACLfMuD/Gql/cY=
+		VqgnseLIYR9DQ5hp8XM35T5jb9Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,6 +71,10 @@
 		<key>OutOfBandViewController.nib</key>
 		<data>
 		e2hRAVGEPFd6a5E3d1LRCDHy1d4=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		aTYWVsOU6zpwUIBZPZEPrCiu0XI=
 		</data>
 		<key>ProcessingViewController.nib</key>
 		<data>
@@ -536,7 +540,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQNYsEbWTti9KqsVqHssudXBkIomPfg64Nj8Sz11fwg=
+			qaODFrM8PCxETnnslLiRi0b5aphR11CNz5nyOSRs/Ys=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -551,6 +555,13 @@
 			<key>hash2</key>
 			<data>
 			n4b3xYJjFMNX2NV/2lN/jOYW82JG8C7hP/b4dwOj77k=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MLu36RogkG5T5cmY/KfnSzRfyNVBJcH4A02U5Uv4DMA=
 			</data>
 		</dict>
 		<key>ProcessingViewController.nib</key>
