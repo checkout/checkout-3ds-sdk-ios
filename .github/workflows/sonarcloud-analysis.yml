@@ -1,0 +1,43 @@
+name: “Run SonarCloud Analysis”
+
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'develop'
+      - 'release/*'
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches:
+      - 'main'
+      - 'develop'
+      - 'release/*'
+  schedule:
+    - cron: '34 2 * * 0'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Build and analyze
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
+
+    - name: Build
+      run: |
+        xcodebuild -scheme Checkout3DSPackages -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=latest"
+
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
