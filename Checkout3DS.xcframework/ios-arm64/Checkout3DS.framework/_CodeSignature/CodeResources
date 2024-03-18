@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AyIf2wDwqKuk6vGYq6XT+SZ7Q9E=
+		jWyovePUb5HmJve0xNOGnqedxC8=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VqgnseLIYR9DQ5hp8XM35T5jb9Q=
+		+PRg2gvR4uEw9r3+nobEmKVA5ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -540,7 +540,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qaODFrM8PCxETnnslLiRi0b5aphR11CNz5nyOSRs/Ys=
+			ISwpU5fTOlMJvhhLC/CX3mefchlyvmkzDbBdVqgWfWU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
