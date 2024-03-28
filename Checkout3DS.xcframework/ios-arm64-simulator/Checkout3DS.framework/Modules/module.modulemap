@@ -1,7 +1,7 @@
 framework module Checkout3DS {
   umbrella header "Checkout3DS.h"
-
   export *
+
   module * { export * }
 }
 
