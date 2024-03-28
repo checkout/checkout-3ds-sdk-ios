@@ -1,20 +1,22 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Checkout3DS
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Checkout3DS
 import AdSupport
 import AppTrackingTransparency
 @_exported import Checkout3DS
 import CheckoutEventLoggerKit
 import CommonCrypto
+import DeveloperToolsSupport
 import Foundation
 import JOSESwift
 import MobileCoreServices
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public struct AuthenticationRequestParameters : Swift.Encodable {
   public let deviceData: Swift.String
   public let sdkTransactionID: Swift.String
@@ -23,16 +25,16 @@ public struct AuthenticationRequestParameters : Swift.Encodable {
   public let sdkEphemeralPublicKey: Swift.String
   public let messageVersion: Swift.String
   public init(deviceData: Swift.String, sdkTransactionID: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkEphemeralPublicKey: Swift.String, mssageVersion: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Checkout3DSService : ObjectiveC.NSObject {
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
+  @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
   final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
   @available(*, deprecated, message: "Use authenticate function with completion closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
   @available(swift, obsoleted: 1.0)
-  @objc final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Swift.Error?) -> Swift.Void)
+  @objc final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: (any Swift.Error)?) -> Swift.Void)
   @available(*, deprecated, message: "Use authenticate function with completion closure (Result<AuthenticationResult, AuthenticationError>) -> Void)")
   final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completionHandler: @escaping (_ error: Checkout3DS.AuthenticationError?) -> Swift.Void)
   @objc public static func handleAppURL(url: Foundation.URL) -> Swift.Bool
@@ -60,41 +62,41 @@ extension Checkout3DS.Standalone3DSService {
   }
 }
 @objc(Checkout3DSButtonCustomizations) public protocol ButtonCustomizations {
-  @objc var verifyButtonCustomization: Checkout3DS.ButtonCustomization { get }
-  @objc var continueFlowButtonCustomization: Checkout3DS.ButtonCustomization { get }
-  @objc var nextButtonCustomization: Checkout3DS.ButtonCustomization { get }
-  @objc var cancelButtonCustomization: Checkout3DS.ButtonCustomization { get }
-  @objc var resendButtonCustomization: Checkout3DS.ButtonCustomization { get }
+  @objc var verifyButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var nextButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var cancelButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var resendButtonCustomization: any Checkout3DS.ButtonCustomization { get }
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultButtonCustomizations) final public class DefaultButtonCustomizations : ObjectiveC.NSObject, Checkout3DS.ButtonCustomizations {
-  @objc final public let verifyButtonCustomization: Checkout3DS.ButtonCustomization
-  @objc final public let continueFlowButtonCustomization: Checkout3DS.ButtonCustomization
-  @objc final public let nextButtonCustomization: Checkout3DS.ButtonCustomization
-  @objc final public let cancelButtonCustomization: Checkout3DS.ButtonCustomization
-  @objc final public let resendButtonCustomization: Checkout3DS.ButtonCustomization
+  @objc final public let verifyButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let nextButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let cancelButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let resendButtonCustomization: any Checkout3DS.ButtonCustomization
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @objc public init(verifyButtonCustomization: Checkout3DS.ButtonCustomization = DefaultVerifyButtonCustomization(), continueFlowButtonCustomization: Checkout3DS.ButtonCustomization = DefaultContinueButtonCustomization(), nextButtonCustomization: Checkout3DS.ButtonCustomization = DefaultNextButtonCustomization(), cancelButtonCustomization: Checkout3DS.ButtonCustomization = DefaultCancelButtonCustomization(), resendButtonCustomization: Checkout3DS.ButtonCustomization = DefaultResendButtonCustomization())
+  @objc public init(verifyButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultVerifyButtonCustomization(), continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultContinueButtonCustomization(), nextButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultNextButtonCustomization(), cancelButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultCancelButtonCustomization(), resendButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultResendButtonCustomization())
   @objc deinit
 }
 @objc(Checkout3DSUICustomization) public protocol UICustomization {
-  @objc var toolbarCustomization: Checkout3DS.ToolbarCustomization { get }
-  @objc var labelCustomization: Checkout3DS.LabelCustomization { get }
-  @objc var entrySelectionCustomization: Checkout3DS.EntrySelectionCustomization { get }
-  @objc var buttonCustomizations: Checkout3DS.ButtonCustomizations { get }
-  @objc var footerCustomization: Checkout3DS.FooterCustomization { get }
-  @objc var whitelistCustomization: Checkout3DS.WhitelistCustomization { get }
+  @objc var toolbarCustomization: any Checkout3DS.ToolbarCustomization { get }
+  @objc var labelCustomization: any Checkout3DS.LabelCustomization { get }
+  @objc var entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization { get }
+  @objc var buttonCustomizations: any Checkout3DS.ButtonCustomizations { get }
+  @objc var footerCustomization: any Checkout3DS.FooterCustomization { get }
+  @objc var whitelistCustomization: any Checkout3DS.WhitelistCustomization { get }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Checkout3DSDefaultUICustomization) final public class DefaultUICustomization : ObjectiveC.NSObject, Checkout3DS.UICustomization {
-  @objc final public let toolbarCustomization: Checkout3DS.ToolbarCustomization
-  @objc final public let labelCustomization: Checkout3DS.LabelCustomization
-  @objc final public let entrySelectionCustomization: Checkout3DS.EntrySelectionCustomization
-  @objc final public let buttonCustomizations: Checkout3DS.ButtonCustomizations
-  @objc final public var footerCustomization: Checkout3DS.FooterCustomization
-  @objc final public var whitelistCustomization: Checkout3DS.WhitelistCustomization
+  @objc final public let toolbarCustomization: any Checkout3DS.ToolbarCustomization
+  @objc final public let labelCustomization: any Checkout3DS.LabelCustomization
+  @objc final public let entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization
+  @objc final public let buttonCustomizations: any Checkout3DS.ButtonCustomizations
+  @objc final public var footerCustomization: any Checkout3DS.FooterCustomization
+  @objc final public var whitelistCustomization: any Checkout3DS.WhitelistCustomization
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @objc public init(toolbarCustomization: Checkout3DS.ToolbarCustomization = DefaultToolbarCustomization(), labelCustomization: Checkout3DS.LabelCustomization = DefaultLabelCustomization(), entrySelectionCustomization: Checkout3DS.EntrySelectionCustomization = DefaultEntrySelectionCustomization(), buttonCustomizations: Checkout3DS.ButtonCustomizations = DefaultButtonCustomizations(), footerCustomization: Checkout3DS.FooterCustomization = DefaultFooterCustomization(), whitelistCustomization: Checkout3DS.WhitelistCustomization = DefaultWhitelistCustomization())
+  @objc public init(toolbarCustomization: any Checkout3DS.ToolbarCustomization = DefaultToolbarCustomization(), labelCustomization: any Checkout3DS.LabelCustomization = DefaultLabelCustomization(), entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization = DefaultEntrySelectionCustomization(), buttonCustomizations: any Checkout3DS.ButtonCustomizations = DefaultButtonCustomizations(), footerCustomization: any Checkout3DS.FooterCustomization = DefaultFooterCustomization(), whitelistCustomization: any Checkout3DS.WhitelistCustomization = DefaultWhitelistCustomization())
   @objc deinit
 }
 @objc(Checkout3DSEnvironment) public enum Environment : Swift.Int, Swift.Equatable, Swift.CaseIterable {
@@ -111,7 +113,7 @@ extension Checkout3DS.Standalone3DSService {
   }
 }
 public protocol ThreeDS2Service {
-  func createTransaction() -> Checkout3DS.Transaction
+  func createTransaction() -> any Checkout3DS.Transaction
   func getWarnings() -> Swift.Set<Checkout3DS.Warning>
   func cleanUp()
 }
@@ -402,7 +404,7 @@ public struct ChallengeParameters {
   @objc deinit
 }
 public enum Standalone3DSService {
-  public static func initialize(with configuration: Checkout3DS.ThreeDS2ServiceConfiguration, environment: Checkout3DS.Environment = .production) throws -> Checkout3DS.ThreeDS2Service
+  public static func initialize(with configuration: Checkout3DS.ThreeDS2ServiceConfiguration, environment: Checkout3DS.Environment = .production) throws -> any Checkout3DS.ThreeDS2Service
 }
 extension Checkout3DS.Warning {
   @objc public enum Severity : Swift.Int {
@@ -447,10 +449,10 @@ public struct ThreeDS2ServiceConfiguration {
   }
   public let configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters
   public let locale: Foundation.Locale
-  public let uiCustomization: Checkout3DS.UICustomization
+  public let uiCustomization: any Checkout3DS.UICustomization
   public let appURL: Foundation.URL?
   public let challengeTimeout: Foundation.TimeInterval
-  public init(configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil, challengeTimeout: Foundation.TimeInterval = Standalone3DSService.Constants.challengeTimeout)
+  public init(configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil, challengeTimeout: Foundation.TimeInterval = Standalone3DSService.Constants.challengeTimeout)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Checkout3DSDefaultSystemColor) public class DefaultSystemColor : ObjectiveC.NSObject {
   @objc public static var label: UIKit.UIColor {
