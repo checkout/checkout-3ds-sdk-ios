@@ -26,7 +26,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 
 
 ## Features
-- Supports **3D Secure protocols 2.1.0 and 2.2.0.**
+- Supports **3D Secure protocol 2.2.0.**
 - Presents **native 3DS2 challenge screens to the user, with styling that you can customise** to best fit your apps and branding.
 - Optionally **falls back to 3DS1** when 3DS2 is not available, returning the same authentication result to your app as for 3DS2. (This option can be configured by Checkout.com for your account.)
 - Supports a **range of local languages and accessibility needs**, and allows you to set your own string translations.
