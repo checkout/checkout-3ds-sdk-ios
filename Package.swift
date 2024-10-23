@@ -19,7 +19,7 @@ let package = Package(
         ),
             .package(
                 name: "JOSESwiftDynamic",
-                path: "../Dependencies/JOSESwiftDynamic")
+                path: "https://github.com/checkout/checkout-3ds-sdk-ios/blob/ehab-al-cko-patch-1/Dependencies/JOSESwiftDynamic")
     ],
     targets: [
         .binaryTarget(
