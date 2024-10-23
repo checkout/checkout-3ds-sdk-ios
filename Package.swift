@@ -19,7 +19,7 @@ let package = Package(
         ),
             .package(
                 name: "JOSESwiftDynamic",
-                path: "Dependencies/JOSESwiftDynamic")
+                path: "./Dependencies/JOSESwiftDynamic")
     ],
     targets: [
         .binaryTarget(
