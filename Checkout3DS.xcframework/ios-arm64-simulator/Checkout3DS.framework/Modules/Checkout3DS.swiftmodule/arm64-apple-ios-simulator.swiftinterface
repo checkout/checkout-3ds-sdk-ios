@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Checkout3DS
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Checkout3DS
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AdSupport
 import AppTrackingTransparency
 @_exported import Checkout3DS
@@ -105,7 +106,7 @@ extension Checkout3DS.Standalone3DSService {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [Checkout3DS.Environment]
   public typealias RawValue = Swift.Int
-  public static var allCases: [Checkout3DS.Environment] {
+  nonisolated public static var allCases: [Checkout3DS.Environment] {
     get
   }
   public var rawValue: Swift.Int {
@@ -157,9 +158,7 @@ public protocol ThreeDS2Service {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @available(iOS 13.0, *)
   @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultContinueButtonCustomization) final public class DefaultContinueButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -176,9 +175,7 @@ public protocol ThreeDS2Service {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @available(iOS 13.0, *)
   @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultNextButtonCustomization) final public class DefaultNextButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -195,9 +192,7 @@ public protocol ThreeDS2Service {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @available(iOS 13.0, *)
   @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultResendButtonCustomization) final public class DefaultResendButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -214,9 +209,7 @@ public protocol ThreeDS2Service {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @available(iOS 13.0, *)
   @objc public init(backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc public init(backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultCancelButtonCustomization) final public class DefaultCancelButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -234,9 +227,7 @@ public protocol ThreeDS2Service {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @available(iOS 13.0, *)
   @objc public init(text: Swift.String = "Cancel", backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc public init(text: Swift.String = "Cancel", backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
   @objc deinit
 }
 @objc(Checkout3DSAuthenticationError) public enum AuthenticationError : Swift.Int, Swift.Error, Swift.Equatable, Swift.CaseIterable {
@@ -371,7 +362,7 @@ public protocol ThreeDS2Service {
   public static var _nsErrorDomain: Swift.String {
     get
   }
-  public static var allCases: [Checkout3DS.AuthenticationError] {
+  nonisolated public static var allCases: [Checkout3DS.AuthenticationError] {
     get
   }
   public var rawValue: Swift.Int {
@@ -517,7 +508,7 @@ extension QuartzCore.CALayerCornerCurve : Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [Checkout3DS.Warning]
   public typealias RawValue = Swift.Int
-  public static var allCases: [Checkout3DS.Warning] {
+  nonisolated public static var allCases: [Checkout3DS.Warning] {
     get
   }
   public var rawValue: Swift.Int {
@@ -552,10 +543,7 @@ public protocol Transaction {
   @objc final public let selectedColor: UIKit.UIColor
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  @available(iOS 13, *)
-  @objc public init(borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor = UIColor.systemGray.cgColor, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .label, borderStyle: UIKit.UITextField.BorderStyle = .roundedRect, backgroundColor: UIKit.UIColor = .white, unselectedColor: UIKit.UIColor = .systemGray, selectedColor: UIKit.UIColor = .systemBlue)
-  @available(iOS, introduced: 11, obsoleted: 13)
-  @objc public init(borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor = UIColor.systemGray.cgColor, cornerRadius: CoreFoundation.CGFloat = 5, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = DefaultSystemColor.label, borderStyle: UIKit.UITextField.BorderStyle = .roundedRect, backgroundColor: UIKit.UIColor = .white, unselectedColor: UIKit.UIColor = .systemGray, selectedColor: UIKit.UIColor = .systemBlue)
+  public init(borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor = UIColor.systemGray.cgColor, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .label, borderStyle: UIKit.UITextField.BorderStyle = .roundedRect, backgroundColor: UIKit.UIColor = .white, unselectedColor: UIKit.UIColor = .systemGray, selectedColor: UIKit.UIColor = .systemBlue)
   @objc deinit
 }
 extension Checkout3DS.Environment : Swift.Hashable {}

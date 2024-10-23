@@ -22,7 +22,7 @@ concurrency:
 jobs:
   analyze:
     name: Analyze
-    runs-on: [ macos-latest ]
+    runs-on: [ macos-14-xlarge ]
     permissions:
       actions: read
       contents: read
