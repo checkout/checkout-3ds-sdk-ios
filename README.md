@@ -107,7 +107,7 @@ This integration method involves one call to our `authenticate` method, which wi
     - `AuthenticationResult` with `transactionStatus` and `sdkTransactionID`  👉&nbsp;&nbsp;[More info about transaction status](https://www.checkout.com/docs/business-operations/use-the-dashboard/payment-activity/track-3ds-events#Transaction_status)
     - `AuthenticationError` with a `message`.
 
-👉&nbsp;&nbsp;Strongly recommend providing the `appURL` parameter as a universal link. [Apple Documenation](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content)
+👉&nbsp;&nbsp;Strongly recommend providing the `appURL` parameter as a universal link. [Apple Documentation](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content)
 
 #### Code snippet
 
