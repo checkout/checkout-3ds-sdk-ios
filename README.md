@@ -33,7 +33,7 @@ The SDK handles the device data collection, communication with the card issuer, 
 - Meets requirements from **EMVCo and the PCI Security Standards Council**, specifically set for 3DS SDKs, so you can be sure it is interoperable with card issuers and that your customers’ sensitive data stays secure.
 
 ## Minimum Requirements
-- The 3DS SDK for iOS requires Xcode 14.1 and above with Swift version 5.8 and above, and supports apps targeting iOS 12.0 and above. It also supports Objective-C. 
+- The 3DS SDK for iOS requires Xcode 16.1 and above with Swift version 6.1.2 and above, and supports apps targeting iOS 13.0 and above. It also supports Objective-C. 
 - We have discontinued support for intel machines (x86_64 architecture based environments). You must use ARM64 architecture based environments to compile our 3DS iOS SDK.
 
 
@@ -47,7 +47,7 @@ We've done our best to support the most common distribution methods on iOS. We a
 If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
 
 ```swift
-.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "3.2.5")
+.package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "X.Y.Z")
 ```
 
 ### CocoaPods
@@ -61,11 +61,11 @@ Any version newer than **1.10.0** is a good sign. If not installed, or unsupport
 
 Once Cocoapods of a valid version is on your machine, to integrate Frames into your Xcode project, update your `Podfile`:
 ```ruby
-platform :ios, '12.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => '3.2.5'
+  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => 'X.Y.Z'
 end
 
 post_install do |installer|
@@ -73,7 +73,7 @@ post_install do |installer|
     target.build_configurations.each do |config|
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'i386  x86_64'
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
     end
   end
 end
@@ -107,6 +107,8 @@ This integration method involves one call to our `authenticate` method, which wi
     - `AuthenticationResult` with `transactionStatus` and `sdkTransactionID`  👉&nbsp;&nbsp;[More info about transaction status](https://www.checkout.com/docs/business-operations/use-the-dashboard/payment-activity/track-3ds-events#Transaction_status)
     - `AuthenticationError` with a `message`.
 
+👉&nbsp;&nbsp;Strongly recommend providing the `appURL` parameter as a universal link. [Apple Documentation](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content)
+
 #### Code snippet
 
 ```swift
@@ -118,7 +120,7 @@ let checkout3DS = Checkout3DSService(
     environment: .production,
     locale: Locale(identifier: "en_GB"),
     uiCustomization: uiCustomization,
-    appURL: URL(string: "myapp://my-app-url")!
+    appURL: URL(string: "https://www.MerchantRequestorAppUniversalLink.com")
 )
 
 let authenticationParameters = AuthenticationParameters(
