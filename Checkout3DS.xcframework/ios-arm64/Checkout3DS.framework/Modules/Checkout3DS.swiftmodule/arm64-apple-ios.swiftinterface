@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Checkout3DS
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Checkout3DS
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AdSupport
 import AppTrackingTransparency
 @_exported import Checkout3DS
@@ -396,6 +396,24 @@ public struct ChallengeParameters {
 }
 public enum Standalone3DSService {
   public static func initialize(with configuration: Checkout3DS.ThreeDS2ServiceConfiguration, environment: Checkout3DS.Environment = .production) throws -> any Checkout3DS.ThreeDS2Service
+}
+public struct MessageExtension : Swift.Codable, Swift.Equatable {
+  public static func == (a: Checkout3DS.MessageExtension, b: Checkout3DS.MessageExtension) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageExtensionData : Swift.Codable, Swift.Equatable {
+  public struct ChallengeData : Swift.Codable, Swift.Equatable {
+    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public static func == (a: Checkout3DS.MessageExtensionData.ChallengeData, b: Checkout3DS.MessageExtensionData.ChallengeData) -> Swift.Bool
+  }
+  public static func == (a: Checkout3DS.MessageExtensionData, b: Checkout3DS.MessageExtensionData) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension Checkout3DS.MessageExtension {
+  public static let mastercard: Checkout3DS.MessageExtension
 }
 extension Checkout3DS.Warning {
   @objc public enum Severity : Swift.Int {
