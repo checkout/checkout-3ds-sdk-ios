@@ -48,7 +48,7 @@ jobs:
 
     - name: Build
       run: |
-        xcodebuild -scheme Checkout3DSPackages -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=latest"
+        xcodebuild -scheme Checkout3DSPackages -destination "platform=iOS Simulator,name=iPhone 16 Pro,OS=latest"
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
