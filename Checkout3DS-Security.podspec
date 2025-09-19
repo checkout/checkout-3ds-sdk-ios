@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Checkout3DS-Security"
-  s.version      = "3.2.6"
+  s.version      = "3.2.7"
   s.summary      = "Checkout 3DS SDK Security"
   s.homepage     = "https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html"
 
@@ -15,7 +15,7 @@ Except as expressly provided in the foregoing paragraph, the person to whom the 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                    DESC
   s.author       = { "Checkout.com Integration" => "integration@checkout.com" }
-  s.platform     = :ios, "12.0"
+  s.platform     = :ios, "13.0"
   s.source       = { :git => "https://github.com/checkout/checkout-3ds-sdk-ios.git", :tag => s.version }
 
   s.vendored_frameworks = "Checkout3DS-Security.xcframework"
