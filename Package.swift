@@ -39,7 +39,8 @@ let package = Package(
                     .target(name: "Checkout3DS-Security", condition: .when(platforms: .some([.iOS])))
                 ],
                 path: "Checkout3DSPackages",
-                linkerSettings: [.linkedFramework("CheckoutEventLoggerKit")])
+                linkerSettings: [.linkedFramework("CheckoutEventLoggerKit"),
+                                 .linkedFramework("Checkout3DS-Security")])
     ],
     swiftLanguageVersions: [.v5]
 )
