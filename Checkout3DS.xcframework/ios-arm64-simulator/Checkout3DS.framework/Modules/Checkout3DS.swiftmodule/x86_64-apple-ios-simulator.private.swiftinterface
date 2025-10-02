@@ -535,7 +535,7 @@ extension QuartzCore.CALayerCornerCurve : Swift.Codable {
 }
 public protocol Transaction {
   func getAuthenticationRequestParameters(completion: @escaping (Swift.Result<Checkout3DS.AuthenticationRequestParameters, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, messageExtension: [Checkout3DS.MessageExtension]?, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
   func close()
 }
 @objc(Checkout3DSEntrySelectionCustomization) public protocol EntrySelectionCustomization : Checkout3DS.Customization {

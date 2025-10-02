@@ -50,19 +50,19 @@
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WKJKIpInKgUy9Oof3bJZyMq2+go=
+		rcbFVulNqO5Jh9WTFskGiRaT54c=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		leoVIH+NyoMxz+RdvYZKHzc/LVA=
+		lAAV3+DFQaUak9kWoaVct34b6U0=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WKJKIpInKgUy9Oof3bJZyMq2+go=
+		rcbFVulNqO5Jh9WTFskGiRaT54c=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Qy1p1hkeJS7EbIlxAzsmWIwhKao=
+		Hun+JnWwG0GPIF03hpBDXLlbYYQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -519,28 +519,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DOe1nZJp5RPVBIXA7qh09feoeZjH7kPjdxlqaWWXsTo=
+			vhNfUOASD4vKp9pnqcwh/gpCH2pTot6C7UFfZK87AEQ=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cc090PB92kq4DTrUqzE9TH2NgRDVmZ+5qujaohzY/Ng=
+			JJFAFt5rPtyTv2dUd5shWYQhcvB+MRaDgLCuGh7+4Zs=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DOe1nZJp5RPVBIXA7qh09feoeZjH7kPjdxlqaWWXsTo=
+			vhNfUOASD4vKp9pnqcwh/gpCH2pTot6C7UFfZK87AEQ=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0/bAOEho3QQpMTKcbjZUWGpkmE6AZ6iXg3PjsDY3khU=
+			3AXqsMl1GvAjSnKGDaaO+DQ8IyDXqfmEa2XhcRV5LlI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
