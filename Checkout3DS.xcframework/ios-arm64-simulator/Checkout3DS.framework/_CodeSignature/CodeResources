@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/Checkout3DS-Swift.h</key>
 		<data>
-		pyNxQInW++n2yrInCcpRVV1N5mo=
+		ZiFwOQ96foKfk1wJSQJf6P2Qw4k=
 		</data>
 		<key>Headers/Checkout3DS.h</key>
 		<data>
@@ -42,27 +42,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dnHPVxwTMFt9u4+gfj2sSJ+T7Y0=
+		uh+/xYMgRhIBTljkT+x/TqW7mbc=
 		</data>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
 		gcwBsH4BgyFY4sVtNt+/xOKS3vY=
 		</data>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		r9pBRf224npVRrGhXxRe7vOnkvo=
+		sz9AHVBeP9V0tR/Y5bDBIiFLT4c=
 		</data>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DJGQyAnk3m8F/zWUNy4TWPFvgEM=
+		5vLIcz17iTai6f6/3GW62JyZmS8=
 		</data>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		r9pBRf224npVRrGhXxRe7vOnkvo=
+		sz9AHVBeP9V0tR/Y5bDBIiFLT4c=
 		</data>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p4dG677YL6+dpwC0MqP7Nze2U0Y=
+		QYmagHMrTjmG2RFn4IcL29nz/oc=
+		</data>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		gcwBsH4BgyFY4sVtNt+/xOKS3vY=
+		</data>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		oOQucgF1Pj132Hrc11TqxupvM+M=
+		</data>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		HScnpsbMuJ87uD4dBZYyf+pLrYk=
+		</data>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		oOQucgF1Pj132Hrc11TqxupvM+M=
+		</data>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		5cG/ovj8H6GOzWrdg4QwSQ2W3w0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -491,7 +511,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXSiuCfNtUAD39TCuy7DTSzJdCSo/HgcAyBtJ/jFXD0=
+			abgZ8rKbyxx7twlrayC9h1Rjrl+BMn8WG1oLC+/RkTs=
 			</data>
 		</dict>
 		<key>Headers/Checkout3DS.h</key>
@@ -508,39 +528,74 @@
 			ObLSsbf4uT/gm68ScTq7vdr6KtUOfGgBvWRW27OSIGk=
 			</data>
 		</dict>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
 			</data>
 		</dict>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			siwsI/2R04OYHeDaa2UNaWZIJrKfqBTeXIyY3L+Z9cA=
+			wuEMJQ68V59aG2NZ8GF2eKbWrG9n5hdVBQwZsGLopM4=
 			</data>
 		</dict>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zhIPoFv+jlvXL79hf1hVYFBs29Z01+3V4U8VU1Q+pw4=
+			Lr0vhyFQgvXEIs+EU7rbao0cOHiEngyDjgeZ1T75oNg=
 			</data>
 		</dict>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			siwsI/2R04OYHeDaa2UNaWZIJrKfqBTeXIyY3L+Z9cA=
+			wuEMJQ68V59aG2NZ8GF2eKbWrG9n5hdVBQwZsGLopM4=
 			</data>
 		</dict>
-		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RTSsyEz7ShR4aYEygWwzAx2Dh/Z8d5Qwl28pthg7ty0=
+			BVB2V/5EEMsGUAbk75LTM8y5v6OOXnptSjfmbZytGqc=
+			</data>
+		</dict>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
+			</data>
+		</dict>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uh2hmDQzFDRnzjA5/kMSxtSiCCZfKuEtkoOt95tlxYE=
+			</data>
+		</dict>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mspOQcvuMT50EyRKViKanJYfKMzRRLCfX2xPPzsxbPs=
+			</data>
+		</dict>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uh2hmDQzFDRnzjA5/kMSxtSiCCZfKuEtkoOt95tlxYE=
+			</data>
+		</dict>
+		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rC5AT9wmujWJPpcZ77pWgQpCuo82+GZYCn8NJ4lN8yw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
