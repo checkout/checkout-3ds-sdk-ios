@@ -50,6 +50,29 @@ If you've never used it before, get started with Apple's step by step guide into
 .package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "X.Y.Z")
 ```
 
+`⚙️ Adding Environment Variable for SPM Integration`
+
+You may need to add the following environment variable to your Run Scheme if `Checkout3DS-Security.framework` fails to load:
+
+```swift
+<EnvironmentVariable
+    key="DYLD_INSERT_LIBRARIES"
+    value="$(TARGET_BUILD_DIR)/Checkout3DS.framework/Checkout3DS:$(TARGET_BUILD_DIR)/Checkout3DS-Security.framework/Checkout3DS-Security"
+    isEnabled="YES">
+</EnvironmentVariable>
+```
+
+This environment variable ensures the dynamic libraries are correctly loaded at runtime.
+
+How to add this environment variable:
+- Open your Xcode project.
+- Go to Edit Scheme for your target.
+- Select the Run action.
+- Under Environment Variables, add a new entry:
+  -  Key: DYLD_INSERT_LIBRARIES
+  - Value: ```$(TARGET_BUILD_DIR)/Checkout3DS.framework/Checkout3DS:$(TARGET_BUILD_DIR)/Checkout3DS-Security.framework/Checkout3DS-Security```
+  - Ensure the checkbox is enabled.
+
 ### CocoaPods
 [CocoaPods](http://cocoapods.org) is the traditional dependency manager for Apple projects. We still support it, but we're not always able to validate all its peculiar ways.
 
