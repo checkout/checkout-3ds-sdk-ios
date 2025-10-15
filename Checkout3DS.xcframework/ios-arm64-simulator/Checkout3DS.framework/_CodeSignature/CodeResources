@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uh+/xYMgRhIBTljkT+x/TqW7mbc=
+		cv6aHk1WTn55RNZEdGsMedp+tqo=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QYmagHMrTjmG2RFn4IcL29nz/oc=
+		3i45YS+EWqkXnziusQBBztOxQdk=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5cG/ovj8H6GOzWrdg4QwSQ2W3w0=
+		t0UcQUH+moGurEHzMrMd1MqYrWc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -560,7 +560,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BVB2V/5EEMsGUAbk75LTM8y5v6OOXnptSjfmbZytGqc=
+			DrD2bluYMgJIzEaxYU95hnVxoqSSQqpro45BnZxNCNM=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -595,7 +595,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rC5AT9wmujWJPpcZ77pWgQpCuo82+GZYCn8NJ4lN8yw=
+			2btb+vWZbzH+4CxH/IMlKH+4Y8yhVZAIEC9WhUZBs+0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
