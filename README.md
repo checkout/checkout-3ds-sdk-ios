@@ -14,7 +14,6 @@ The SDK handles the device data collection, communication with the card issuer, 
   - [Swift Package Manager](#swift-package-manager)
 - [Integration](#integration)
   - [Checkout.com's 3DS server](#checkoutcoms-3ds-server)
-  - [Any 3DS provider](#any-3ds-provider)
 - [Payment Authorisation](#payment-authorisation)
 - [Dependencies](#dependencies)
 - [Help and Feedback](#help-and-feedback)
@@ -120,7 +119,6 @@ Then, configure your app to:
 
 ## Integration
 
-### Checkout.com's 3DS server
 This integration method involves one call to our `authenticate` method, which will perform an entire Authentication flow using Checkout.com's 3DS servers.
 
 1. Initialize the SDK with your preferred user interface options using our `uiCustomization` object.
@@ -164,102 +162,6 @@ checkout3DS.authenticate(authenticationParameters: authenticationParameters) { r
 
 📚&nbsp;&nbsp;[Read the reference documentation](https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html)
 
-### Any 3DS provider
-Standalone 3DS allows our SDKs to be used with any Authentication provider, be it Checkout.com or otherwise. This is a higher touch integration that breaks up the 3DS flow more granularly. In order to integrate with the Standalone 3DS service:
-
-1. Initialize the SDK with your preferred user interface options using our `uiCustomization` object.
-2. Create `transaction` object 
-3. Get `authenticationRequestParameters` for the AReq
-4. If a challenge is mandated from the Authentication response from your 3DS server then call the `doChallenge` method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow. 
-
-#### End-to-end 3DS flow
-Here is a useful diagram that highlights the end-to-end 3DS flow using our `standalone3DSService`.
-![E2E Standalone SDK Flow](https://user-images.githubusercontent.com/102961713/226956636-d39b7bff-9fb8-4701-a3bc-86d932b306f0.jpg)
-
-#### Code snippet 
-
-1- Creates an instance of `ThreeDS2Service` through which the 3DS Requestor App can create a transaction object to get the `authenticationRequestParameters` that are required to perform a challenge:
-
-```swift
-   private var transaction: Transaction?
-   private var standalone3DSService: ThreeDS2Service?
-````
-
-2-Initialize the SDK with your preferred user interface options:
-
-- `scheme` can be set only as `visa` and `mastercard` in lowercase string.
-
-```swift
-// initialise Standalone 3DS Service with required parameters
-
-do {
-   let directoryServerData = ThreeDS2ServiceConfiguration.DirectoryServerData(directoryServerID: <directoryServerID>,
-                                                                              directoryServerPublicKey: <ds_public>,
-                                                                              directoryServerRootCertificates: [<caPublic>])
-   let configParameters = ThreeDS2ServiceConfiguration.ConfigParameters(directoryServerData: directoryServerData,
-                                                                        messageVersion: <messageVersion>,
-                                                                        scheme: <scheme>)
-    let serviceConfiguration = ThreeDS2ServiceConfiguration(configParameters: configParameters)
-      
-    self.standalone3DSService = try Standalone3DSService.initialize(with: serviceConfiguration)
-   }  catch let error {
-      // handle failure scenario
-   }
-```
-
-3. Create `transaction` using created `ThreeDS2Service` object:
-
-```swift
-  self.transaction = self.standalone3DSService?.createTransaction()
-```
-
-4. Retrieve the `authenticationRequestParameters`:
-```swift
- // get Authentication Request parameters
- self.transaction?.getAuthenticationRequestParameters { result in
-     switch result {
-     case .success(let params):
-        // make an Authentication Request to your 3DS Server
-     case .failure(let error):
-        // handle failure scenario
-      }
-}
-
-```
-5. Handle the `doChallenge` flow: 
-
-- If the Authentication response that is returned indicates that the Challenge Flow must be applied, the 3DS Requestor App calls the `doChallenge` method with the required input `ChallengeParameters`. The `doChallenge` method initiates the challenge process.
-- The `doChallenge` function now returns `Result` type with two cases
-  - `AuthenticationResult` with `transactionStatus` and `sdkTransactionID`  👉&nbsp;&nbsp;[More info about transaction status](https://www.checkout.com/docs/business-operations/use-the-dashboard/payment-activity/track-3ds-events#Transaction_status)
-  - `AuthenticationError` with a `message`.
-
-
-```swift
-let params = ChallengeParameters(threeDSServerTransactionID: response.transactionId,
-                                 acsTransactionID: response.acs.transactionId,
-                                 acsRefNumber: response.acs.referenceNumber,
-                                 acsSignedContent: response.acs.signedContent)
-transaction?.doChallenge(challengeParameters: params, completion: { [weak self] result in
-     switch result {
-      case .success(let authenticationResult):
-         // handle authentication result. Checkout Payment Authorisation section.
-      case .failure(let error):
-         // handle failure scenario
-       }
-      // call close and cleanUp methods after challenge flow is completed. 
-      self?.transaction?.close()
-      self?.standalone3DSService?.cleanUp()
-})
-
-```
-
-6. Service `cleanUp` and transaction `close`:  
-
-- After a challenge/frictionless flow is completed, you should call:
-```swift
-    transaction?.close()
-    standalone3DSService?.cleanUp()
-```
 
 ## Payment Authorisation
 After initiating the authentication process and obtaining the `AuthenticationResult` object, you can continue the authentication flow based on the value of `transStatus`:
