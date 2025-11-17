@@ -16,7 +16,11 @@ let package = Package(
         .package(
             url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
             from: "1.2.4"
-        )],
+        ),
+        .package(
+             url: "https://github.com/microsoft/plcrashreporter.git",
+             from: "1.12.0"
+           )],
     targets: [
         .binaryTarget(
             name: "Checkout3DS",
@@ -34,6 +38,7 @@ let package = Package(
                 dependencies: [
                     .product(name: "CheckoutEventLoggerKit",
                              package: "checkout-event-logger-ios-framework"),
+                    .product(name: "CrashReporter", package: "plcrashreporter"),
                     .target(name: "JOSESwift", condition: .when(platforms: .some([.iOS]))),
                     .target(name: "Checkout3DS", condition: .when(platforms: .some([.iOS]))),
                     .target(name: "Checkout3DS-Security", condition: .when(platforms: .some([.iOS])))
