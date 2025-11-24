@@ -10,7 +10,6 @@ The SDK handles the device data collection, communication with the card issuer, 
 - [Features](#features)
 - [Minimum Requirements](#minimum-requirements)
 - [Installation](#installation)
-  - [CocoaPods](#cocoapods)
   - [Swift Package Manager](#swift-package-manager)
 - [Integration](#integration)
   - [Checkout.com's 3DS server](#checkoutcoms-3ds-server)
@@ -38,9 +37,10 @@ The SDK handles the device data collection, communication with the card issuer, 
 
 ## Installation
 
-We've done our best to support the most common distribution methods on iOS. We are in strong favour of [SPM](#Swift-Package-Manager) (Swift Package Manager) but if for any reason this doesn't work for you, we also support [Cocoapods](#Cocoapods).
-
 ### Swift Package Manager
+>**⚠️ Important** <br>
+> SPM (Swift Package Manager) and CocoaPods can usually coexist in the same project without issues. That said, since CocoaPods is now in maintenance mode, the iOS team made a tech decision to officially support only SPM going forward. It’s simpler to manage and already works well alongside CocoaPods if needed.
+
 [Swift Package Manager](https://swift.org/package-manager/) integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. It should work out of the box on latest Xcode projects since Xcode 11 and has had a lot of community support, seeing huge adoption over the recent years. This is our preferred distribution method for Frames iOS and is the easiest one to integrate, keep updated and build around.
 
 If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
@@ -71,49 +71,6 @@ How to add this environment variable:
   -  Key: DYLD_INSERT_LIBRARIES
   - Value: ```$(TARGET_BUILD_DIR)/Checkout3DS.framework/Checkout3DS:$(TARGET_BUILD_DIR)/Checkout3DS-Security.framework/Checkout3DS-Security```
   - Ensure the checkbox is enabled.
-
-### CocoaPods
-[CocoaPods](http://cocoapods.org) is the traditional dependency manager for Apple projects. We still support it, but we're not always able to validate all its peculiar ways.
-
-Make sure cocoapods is installed on your machine by running
-```bash
-$ pod --version
-```
-Any version newer than **1.10.0** is a good sign. If not installed, or unsupported, follow [Cocoapods Getting Started](https://guides.cocoapods.org/using/getting-started.html)
-
-Once Cocoapods of a valid version is on your machine, to integrate Frames into your Xcode project, update your `Podfile`:
-```ruby
-platform :ios, '13.0'
-use_frameworks!
-
-target '<Your Target Name>' do
-  pod 'Checkout3DS', :git => 'git@github.com:checkout/checkout-3ds-sdk-ios.git', :tag => 'X.Y.Z'
-end
-
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'i386  x86_64'
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
-    end
-  end
-end
-
-```
-
-Then, run the following command in terminal:
-
-```bash
-$ pod install
-```
-Note: your Pod setup may have the following [issue](https://github.com/checkout/checkout-3ds-sdk-ios/issues/4)
-
-To update your existing Cocoapod dependencies, use:
-```bash
-$ pod update
-```
-
 
 Then, configure your app to:
 
