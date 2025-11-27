@@ -32,9 +32,9 @@ let package = Package(
         ),
         .target(name: "Checkout3DSPackages",
                 dependencies: [
-                    .product(name: "CheckoutEventLoggerKit",
-                             package: "checkout-event-logger-ios-framework"),
                     .product(name: "CrashReporter", package: "plcrashreporter"),
+                    .product(name: "CheckoutEventLoggerKit", package: "checkout-event-logger-ios-framework"),
+                    .product(name: "JOSESwiftDynamic", package: "JOSESwiftDynamic"),
                     .target(name: "Checkout3DS", condition: .when(platforms: .some([.iOS]))),
                     .target(name: "Checkout3DS-Security", condition: .when(platforms: .some([.iOS])))
                 ],
