@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
-            from: "1.2.4"),
+            from: "1.2.5"),
         .package(
              url: "https://github.com/microsoft/plcrashreporter.git",
              from: "1.12.0"),
