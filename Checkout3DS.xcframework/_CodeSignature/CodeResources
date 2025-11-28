@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64-simulator/Checkout3DS.framework/Checkout3DS</key>
 		<data>
-		GEcaXea2876mfVnrDOyaYbJQOTE=
+		sAwyg5cWcmpqLrWoI6Q50amzhjU=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DS.framework/FooterView.nib</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5nqDogglcopxe/yeZT81DCV0nKc=
+		67aF15i3YkaIFYogybSZ+kA6D/U=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-arm64-simulator/Checkout3DS.framework/_CodeSignature/CodeResources</key>
 		<data>
-		iuWrO6A+FfONQVJcdHhi8cfpB90=
+		1MvhZ+j5xzrXiNW95yMydWDDAoA=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DS.framework/ar.lproj/Localizable.strings</key>
 		<dict>
@@ -465,7 +465,7 @@
 		</data>
 		<key>ios-arm64/Checkout3DS.framework/Checkout3DS</key>
 		<data>
-		dQTTJBKK0rHhRqeKtS8je+2KKRg=
+		tMFaBDY/9L1yzrtLGNOBaJ3VaqA=
 		</data>
 		<key>ios-arm64/Checkout3DS.framework/FooterView.nib</key>
 		<data>
@@ -481,7 +481,7 @@
 		</data>
 		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		35rVEf5ghAIVq6WQJXh+lfJxzsI=
+		w/7hZtLX5m9AwBnCquMmvuKdnSk=
 		</data>
 		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -529,7 +529,7 @@
 		</data>
 		<key>ios-arm64/Checkout3DS.framework/_CodeSignature/CodeResources</key>
 		<data>
-		hgpjPnQeOkaDBb8jzJC5ycQRzjc=
+		StZqmT8HqlDTVoU3bC/O3Fl96XU=
 		</data>
 		<key>ios-arm64/Checkout3DS.framework/ar.lproj/Localizable.strings</key>
 		<dict>
@@ -944,11 +944,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GEcaXea2876mfVnrDOyaYbJQOTE=
+			sAwyg5cWcmpqLrWoI6Q50amzhjU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qcVNyLPlMa1zeetRd2vPW3xyoHVA/ZQxTblfTfrYNFY=
+			T2gOBTVoar66V1pyCgIflPS7Xki4POSBc8jsVsEIWes=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DS.framework/FooterView.nib</key>
@@ -988,11 +988,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5nqDogglcopxe/yeZT81DCV0nKc=
+			67aF15i3YkaIFYogybSZ+kA6D/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			f0Mp4bbGiBw5arsTpg+KhgxoRsbaBqF5PH3q1NxHZAo=
+			NH6TWLQCekd0+sk3NsGEuHiA4QCajIYS5bacmd3rCKo=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1120,11 +1120,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iuWrO6A+FfONQVJcdHhi8cfpB90=
+			1MvhZ+j5xzrXiNW95yMydWDDAoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nwkJCzG15UP0iJFILKF33RcUHAscoq46Yq6mr1a58Cc=
+			WsqI37TuMdC/lSsJL/opiPatR3Jqqqr1V8+Uz4vel6c=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DS.framework/ar.lproj/Localizable.strings</key>
@@ -1693,11 +1693,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dQTTJBKK0rHhRqeKtS8je+2KKRg=
+			tMFaBDY/9L1yzrtLGNOBaJ3VaqA=
 			</data>
 			<key>hash2</key>
 			<data>
-			umygIkgZvWdZsQwegOwetvWm2xtrB/MH5ZO4c/GraL0=
+			0LRMFuTJJ/NqaomKOLhu4hOrzV40U7XzVQfxNcsCExE=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DS.framework/FooterView.nib</key>
@@ -1737,11 +1737,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			35rVEf5ghAIVq6WQJXh+lfJxzsI=
+			w/7hZtLX5m9AwBnCquMmvuKdnSk=
 			</data>
 			<key>hash2</key>
 			<data>
-			mQYaIAY12RS5UNRrBWQoVMO5KxIW1QvZeWKfqJsU1qM=
+			bqwgerV+XhO9SYxJlgKMFW4ze//dgp7yOeIAuXxSSW0=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -1869,11 +1869,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hgpjPnQeOkaDBb8jzJC5ycQRzjc=
+			StZqmT8HqlDTVoU3bC/O3Fl96XU=
 			</data>
 			<key>hash2</key>
 			<data>
-			WhyP4Bj83B2Sf07n9INezeyuX697Vp5/vlpg06x/DO0=
+			HtsLj4x2GE0puOuFIBmpaAM1dE6Uuk6rD7AB+5jCZPc=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DS.framework/ar.lproj/Localizable.strings</key>

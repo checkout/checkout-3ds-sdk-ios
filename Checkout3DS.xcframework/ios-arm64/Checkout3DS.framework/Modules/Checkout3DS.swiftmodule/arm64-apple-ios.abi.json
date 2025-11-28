@@ -28617,42 +28617,42 @@
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Errors\/AuthenticationError.swift",
       "kind": "StringLiteral",
-      "offset": 27733,
+      "offset": 28152,
       "length": 28,
       "value": "\"AuthenticationProcessError\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Errors\/AuthenticationError.swift",
       "kind": "StringLiteral",
-      "offset": 27795,
+      "offset": 28214,
       "length": 19,
       "value": "\"ConnectivityError\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Errors\/AuthenticationError.swift",
       "kind": "StringLiteral",
-      "offset": 27852,
+      "offset": 28271,
       "length": 23,
       "value": "\"ThreeDS2ProtocolError\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Errors\/AuthenticationError.swift",
       "kind": "StringLiteral",
-      "offset": 27905,
+      "offset": 28324,
       "length": 15,
       "value": "\"InternalError\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Errors\/AuthenticationError.swift",
       "kind": "StringLiteral",
-      "offset": 27958,
+      "offset": 28377,
       "length": 23,
       "value": "\"ThreeDS1ProtocolError\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Errors\/AuthenticationError.swift",
       "kind": "StringLiteral",
-      "offset": 28010,
+      "offset": 28429,
       "length": 14,
       "value": "\"UnknownError\""
     },
