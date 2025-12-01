@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Checkout3DS
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -enable-bare-slash-regex -module-name Checkout3DS
 import AdSupport
 import AppTrackingTransparency
 import CheckoutEventLoggerKit
@@ -142,9 +141,7 @@ import _SwiftConcurrencyShims
   public var message: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [Checkout3DS.AuthenticationError]
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -175,9 +172,7 @@ import _SwiftConcurrencyShims
   public var severity: Checkout3DS.Warning.Severity {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [Checkout3DS.Warning]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [Checkout3DS.Warning] {
@@ -192,9 +187,7 @@ extension Checkout3DS.Warning {
     case low
     case medium
     case high
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -233,9 +226,7 @@ extension Checkout3DS.MessageExtension {
 @objc(Checkout3DSEnvironment) public enum Environment : Swift.Int, Swift.Equatable, Swift.CaseIterable {
   case sandbox
   case production
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [Checkout3DS.Environment]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [Checkout3DS.Environment] {
@@ -286,9 +277,7 @@ public struct ThreeDS2ServiceConfiguration {
   public let uiCustomization: any Checkout3DS.UICustomization
   public let appURL: Foundation.URL?
   public let challengeTimeout: Foundation.TimeInterval
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil, challengeTimeout: Foundation.TimeInterval = Standalone3DSService.Constants.challengeTimeout)
-  #endif
 }
 public protocol ThreeDS2Service {
   func createTransaction() -> any Checkout3DS.Transaction
@@ -296,12 +285,8 @@ public protocol ThreeDS2Service {
   func cleanUp()
 }
 public protocol Transaction {
-  #if compiler(>=5.3) && $NonescapableTypes
   func getAuthenticationRequestParameters(completion: @escaping (Swift.Result<Checkout3DS.AuthenticationRequestParameters, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  #endif
   func close()
 }
 public enum Standalone3DSService {
@@ -322,16 +307,10 @@ public enum Standalone3DSService {
 @objc(Checkout3DSButtonCustomization) public protocol ButtonCustomization : Checkout3DS.Customization {
   @objc var backgroundColor: UIKit.UIColor { get }
   @objc var cornerRadius: CoreFoundation.CGFloat { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var cornerCurve: QuartzCore.CALayerCornerCurve? { get }
-  #endif
   @objc var borderWidth: CoreFoundation.CGFloat { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var borderColor: CoreGraphics.CGColor? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var shadowColor: CoreGraphics.CGColor? { get }
-  #endif
   @objc var shadowOffset: CoreFoundation.CGSize { get }
   @objc var shadowRadius: CoreFoundation.CGFloat { get }
   @objc var shadowOpacity: Swift.Float { get }
@@ -348,9 +327,7 @@ public enum Standalone3DSService {
   @objc final public let shadowOffset: CoreFoundation.CGSize
   @objc final public let shadowRadius: CoreFoundation.CGFloat
   @objc final public let shadowOpacity: Swift.Float
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(backgroundColor: UIKit.UIColor, cornerRadius: CoreFoundation.CGFloat, cornerCurve: QuartzCore.CALayerCornerCurve?, font: UIKit.UIFont, textColor: UIKit.UIColor, borderWidth: CoreFoundation.CGFloat, borderColor: CoreGraphics.CGColor?, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultVerifyButtonCustomization) final public class DefaultVerifyButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -367,9 +344,7 @@ public enum Standalone3DSService {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultContinueButtonCustomization) final public class DefaultContinueButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -386,9 +361,7 @@ public enum Standalone3DSService {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultNextButtonCustomization) final public class DefaultNextButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -405,9 +378,7 @@ public enum Standalone3DSService {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultResendButtonCustomization) final public class DefaultResendButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -424,9 +395,7 @@ public enum Standalone3DSService {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultCancelButtonCustomization) final public class DefaultCancelButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
@@ -444,9 +413,7 @@ public enum Standalone3DSService {
   @objc final public let shadowOpacity: Swift.Float
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(text: Swift.String = "Cancel", backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  #endif
   @objc deinit
 }
 @objc(Checkout3DSButtonCustomizations) public protocol ButtonCustomizations {
@@ -475,9 +442,7 @@ public enum Standalone3DSService {
   @objc var borderWidth: CoreFoundation.CGFloat { get }
   @objc var borderColor: CoreGraphics.CGColor { get }
   @objc var cornerRadius: CoreFoundation.CGFloat { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var cornerCurve: QuartzCore.CALayerCornerCurve? { get }
-  #endif
   @objc var borderStyle: UIKit.UITextField.BorderStyle { get }
   @objc var backgroundColor: UIKit.UIColor { get }
   @objc var unselectedColor: UIKit.UIColor { get }
@@ -533,12 +498,8 @@ public enum Standalone3DSService {
 }
 @objc(Checkout3DSToolbarCustomization) public protocol ToolbarCustomization : Checkout3DS.Customization {
   @objc var backgroundColor: UIKit.UIColor { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var headerTitle: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var buttonTitle: Swift.String? { get }
-  #endif
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultToolbarCustomization) final public class DefaultToolbarCustomization : ObjectiveC.NSObject, Checkout3DS.ToolbarCustomization {
   @objc final public let backgroundColor: UIKit.UIColor
@@ -548,9 +509,7 @@ public enum Standalone3DSService {
   @objc final public let textColor: UIKit.UIColor
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(backgroundColor: UIKit.UIColor = UIColor(red: 251/255, green: 251/255, blue: 252/255, alpha: 1), headerTitle: Swift.String? = nil, buttonTitle: Swift.String? = nil, font: UIKit.UIFont = .preferredFont(forTextStyle: .headline), textColor: UIKit.UIColor = DefaultSystemColor.label)
-  #endif
   @objc deinit
 }
 @objc(Checkout3DSUICustomization) public protocol UICustomization {
@@ -574,9 +533,7 @@ public enum Standalone3DSService {
   @objc deinit
 }
 @objc(Checkout3DSWhitelistCustomization) public protocol WhitelistCustomization : Checkout3DS.Customization {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var switchTintColor: UIKit.UIColor? { get }
-  #endif
 }
 @_inheritsConvenienceInitializers @objc(Checkout3DSDefaultWhitelistCustomization) final public class DefaultWhitelistCustomization : ObjectiveC.NSObject, Checkout3DS.WhitelistCustomization {
   @objc final public var font: UIKit.UIFont
@@ -584,9 +541,7 @@ public enum Standalone3DSService {
   @objc final public let switchTintColor: UIKit.UIColor?
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(font: UIKit.UIFont = .preferredFont(forTextStyle: .subheadline), textColor: UIKit.UIColor = DefaultSystemColor.secondaryLabel, switchTintColor: UIKit.UIColor? = nil)
-  #endif
   @objc deinit
 }
 extension Foundation.NSNotification.Name {
@@ -596,22 +551,16 @@ public enum PasteboardAction : Swift.Codable {
   case voiceOver(Checkout3DS.VoiceOverAction)
   public enum CodingKeys : Swift.CodingKey {
     case voiceOver
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(intValue: Swift.Int)
-    #endif
     public static func == (a: Checkout3DS.PasteboardAction.CodingKeys, b: Checkout3DS.PasteboardAction.CodingKeys) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
     public var hashValue: Swift.Int {
       get
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
-    #endif
     public var stringValue: Swift.String {
       get
     }
@@ -631,22 +580,16 @@ public enum VoiceOverAction : Swift.Codable {
   case focusElement(accessibilityIdentifier: Swift.String)
   public enum CodingKeys : Swift.CodingKey {
     case focusElement
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(intValue: Swift.Int)
-    #endif
     public static func == (a: Checkout3DS.VoiceOverAction.CodingKeys, b: Checkout3DS.VoiceOverAction.CodingKeys) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
     public var hashValue: Swift.Int {
       get
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
-    #endif
     public var stringValue: Swift.String {
       get
     }
@@ -665,12 +608,8 @@ public enum VoiceOverAction : Swift.Codable {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Checkout3DSService : ObjectiveC.NSObject {
   @available(swift, obsoleted: 1.0)
   @objc convenience override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  #endif
   @objc public static func handleAppURL(url: Foundation.URL) -> Swift.Bool
   @available(swift, obsoleted: 1.0)
   @objc final public func getWarnings() -> Foundation.NSSet

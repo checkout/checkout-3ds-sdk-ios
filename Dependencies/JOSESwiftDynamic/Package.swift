@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "JOSESwiftDynamic", type: .dynamic, targets: ["JOSESwiftDynamic"])
     ],
     dependencies: [
-        .package(url: "https://github.com/airsidemobile/JOSESwift.git", from: "3.0.0")
+      .package(url: "https://github.com/airsidemobile/JOSESwift.git", "2.2.1"..<"2.4.1"),
     ],
     targets: [
         .target(
