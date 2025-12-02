@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
       .package( url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
-          from: "1.2.5"),
+                exact: "1.2.4"),
       .package(url: "https://github.com/microsoft/plcrashreporter.git",
                exact: "1.12.0"),
       .package(name: "JOSESwiftDynamic",
@@ -38,8 +38,7 @@ let package = Package(
                     .target(name: "Checkout3DS-Security",
                             condition: .when(platforms: [.iOS]))
                 ],
-                path: "Checkout3DSPackages",
-                linkerSettings: [.linkedFramework("CheckoutEventLoggerKit")])
+                path: "Checkout3DSPackages")
     ],
     swiftLanguageVersions: [.v5]
 )
