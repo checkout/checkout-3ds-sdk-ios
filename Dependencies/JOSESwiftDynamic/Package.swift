@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.10
 
 import PackageDescription
 
@@ -11,7 +11,8 @@ let package = Package(
         .library(name: "JOSESwiftDynamic", type: .dynamic, targets: ["JOSESwiftDynamic"])
     ],
     dependencies: [
-        .package(url: "https://github.com/airsidemobile/JOSESwift.git", from: "3.0.0")
+      .package(url: "https://github.com/airsidemobile/JOSESwift.git",
+               exact:"2.4.0"),
     ],
     targets: [
         .target(

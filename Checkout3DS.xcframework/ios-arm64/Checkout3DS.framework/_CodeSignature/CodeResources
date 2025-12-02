@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		DuZlxe7ZcNYsp7d9oK7jdeAATow=
+		SAvAnIr7PrytvFRCnHtp8zJi4QA=
 		</data>
 		<key>BankNetworkView.nib</key>
 		<data>
@@ -28,45 +28,33 @@
 		<data>
 		wrBcSoVnUUCorjNqqSDQHtgT2Rg=
 		</data>
-		<key>Headers/Checkout3DS-Swift.h</key>
-		<data>
-		pyNxQInW++n2yrInCcpRVV1N5mo=
-		</data>
-		<key>Headers/Checkout3DS.h</key>
-		<data>
-		V7CUWpvzbLEtZzGe+qBejKYn4O0=
-		</data>
 		<key>HelpHeaderView.nib</key>
 		<data>
 		INx418KtVdpWe6JXkcxrKwFim0U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Hp4HbbSHoF6YnVxO+6EoeFvsXcI=
+		/2dsI0XErqXyqf2xuEV5NiDDPUo=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gcwBsH4BgyFY4sVtNt+/xOKS3vY=
+		svGLzBwMcxJQrbUW9x6iG7nOkkM=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		r9pBRf224npVRrGhXxRe7vOnkvo=
+		amhDy6cK2esLd93kc5AlHFsKn/E=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		DJGQyAnk3m8F/zWUNy4TWPFvgEM=
+		MD1hSxv5+y43wgRwtligc0bVdXI=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		r9pBRf224npVRrGhXxRe7vOnkvo=
+		amhDy6cK2esLd93kc5AlHFsKn/E=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rDDFeOrVqLfijFGw6r5Jms7Aufw=
-		</data>
-		<key>Modules/module.modulemap</key>
-		<data>
-		Lnq9eSVhD+Z+ziO0Z8ODOCv50Y0=
+		PM1jij79pT6tO8kOY+xA2QZOCfY=
 		</data>
 		<key>OutOfBandViewController.nib</key>
 		<data>
@@ -74,7 +62,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		JHvljSlk04psi/ozzZHxc1xkR8Q=
+		vmw0/odEPc3MPhKlYto5SZnEmt4=
 		</data>
 		<key>ProcessingViewController.nib</key>
 		<data>
@@ -94,7 +82,7 @@
 		</data>
 		<key>WebViewController.nib</key>
 		<data>
-		U4T3pWNqu7Q8g6CNNnNwwjYPpAU=
+		qPLrahI/1tDxurPONg0HMU65PtQ=
 		</data>
 		<key>WhitelistView.nib</key>
 		<data>
@@ -132,6 +120,15 @@
 			<key>hash</key>
 			<data>
 			QFS1XrhniAaIF/GRRPQp8NEzVJY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de-DE.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sNFc7W4wt0bQiDMu6ZDTf8EqZc4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -449,7 +446,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lyuUX0bJLP+lrCdGgTJIw+Il0vUyl1E+gwvbW2P4QI0=
+			8ZyGMZpE+ub3hk83PujHySEDdWOQo4PelQJkWpZ7VKY=
 			</data>
 		</dict>
 		<key>BankNetworkView.nib</key>
@@ -487,20 +484,6 @@
 			jPFvwbdtRHbiPfJZKdnM+PThobmOuCt9MBY8HqNZ9EI=
 			</data>
 		</dict>
-		<key>Headers/Checkout3DS-Swift.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eXSiuCfNtUAD39TCuy7DTSzJdCSo/HgcAyBtJ/jFXD0=
-			</data>
-		</dict>
-		<key>Headers/Checkout3DS.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4bb4J5KpCvmv05e9aXVyaL7PtndjXqzwOftYrdjO2tQ=
-			</data>
-		</dict>
 		<key>HelpHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -512,42 +495,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
+			BYp8GqzDaH43UpCV2m6XjgXKVJBvxQGkzhepzLvineg=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			siwsI/2R04OYHeDaa2UNaWZIJrKfqBTeXIyY3L+Z9cA=
+			YEZW6mxfcNSRaBd6dvtZ4N0al5DSYXBM1KC+ycMgpsw=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zhIPoFv+jlvXL79hf1hVYFBs29Z01+3V4U8VU1Q+pw4=
+			iJ2b8TsvsaChYJQtX+sJS1YoUxvSGvNmKzCZMsCMAvE=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			siwsI/2R04OYHeDaa2UNaWZIJrKfqBTeXIyY3L+Z9cA=
+			YEZW6mxfcNSRaBd6dvtZ4N0al5DSYXBM1KC+ycMgpsw=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yT7Yn9SUSjzjG6rMiXgoAh6+0YMQMsaD1mmIqxfcY0g=
-			</data>
-		</dict>
-		<key>Modules/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DhB84VYTSvsL2GkmiFfIONj1DcwIqonEw+rAazfUEMU=
+			hDDfhR1ducRv1JVIuMzrEQ7i3MMPy1Xl1FDDwg+HiCs=
 			</data>
 		</dict>
 		<key>OutOfBandViewController.nib</key>
@@ -561,7 +537,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NA7qS9HWn2+WdhGnZFvCvu6vMNDqun5aPkhue/EFcEg=
+			wQ1yCpD2k2NxezWbTv57KHwwTwwHZ94OWtY82DFBlpQ=
 			</data>
 		</dict>
 		<key>ProcessingViewController.nib</key>
@@ -596,7 +572,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G71o/D93CbyuCxRbnF7EFMLbP+LiFgMPvcu4D3fHBvQ=
+			h4Ax8T+OZgRqQfSipTrn9C3Cyd8s7lig6K69EdvHMv8=
 			</data>
 		</dict>
 		<key>WhitelistView.nib</key>
@@ -638,6 +614,15 @@
 			<key>hash2</key>
 			<data>
 			ojgy4ZOBNPlCXfLyQKERJlNk0DdfLWer3u1kuyDfYig=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de-DE.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ad6i0Cl7CTESdqMVou9kV+zONx4zfNlnvwYC1waXC6U=
 			</data>
 			<key>optional</key>
 			<true/>

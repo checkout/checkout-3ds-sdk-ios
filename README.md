@@ -37,6 +37,8 @@ The SDK handles the device data collection, communication with the card issuer, 
 
 ## Installation
 
+We've done our best to support the most common distribution methods on iOS. We are in strong favour of [SPM](#Swift-Package-Manager) (Swift Package Manager)
+
 ### Swift Package Manager
 >**⚠️ Important** <br>
 > SPM (Swift Package Manager) and CocoaPods can usually coexist in the same project without issues. That said, since CocoaPods is now in maintenance mode, the iOS team made a tech decision to officially support only SPM going forward. It’s simpler to manage and already works well alongside CocoaPods if needed.
@@ -76,6 +78,7 @@ Then, configure your app to:
 
 ## Integration
 
+### Checkout.com's 3DS server
 This integration method involves one call to our `authenticate` method, which will perform an entire Authentication flow using Checkout.com's 3DS servers.
 
 1. Initialize the SDK with your preferred user interface options using our `uiCustomization` object.
