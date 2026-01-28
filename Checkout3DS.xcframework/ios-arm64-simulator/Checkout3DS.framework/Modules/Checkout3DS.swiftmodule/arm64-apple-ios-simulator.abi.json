@@ -5554,6 +5554,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7761,6 +7768,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Checkout3DS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Checkout3DS"
       },
@@ -23361,6 +23375,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -23607,6 +23628,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           }
@@ -24073,6 +24101,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -24319,6 +24354,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           }
@@ -25175,6 +25217,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TopLevelDecoder",
             "printedName": "TopLevelDecoder",
             "children": [
@@ -25197,10 +25253,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "NetworkDecoder",
+            "printedName": "NetworkDecoder",
+            "usr": "s:7Network0A7DecoderP",
+            "mangledName": "$s7Network0A7DecoderP"
           }
         ]
       },
@@ -25248,6 +25304,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TopLevelEncoder",
             "printedName": "TopLevelEncoder",
             "children": [
@@ -25267,6 +25330,13 @@
             ],
             "usr": "s:7Combine15TopLevelEncoderP",
             "mangledName": "$s7Combine15TopLevelEncoderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkEncoder",
+            "printedName": "NetworkEncoder",
+            "usr": "s:7Network0A7EncoderP",
+            "mangledName": "$s7Network0A7EncoderP"
           }
         ]
       },
@@ -25310,6 +25380,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -25449,6 +25526,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -25460,41 +25544,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -25539,6 +25588,41 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -25636,6 +25720,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -25737,6 +25828,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Scheduler",
             "printedName": "Scheduler",
             "children": [
@@ -25769,6 +25867,20 @@
             ],
             "usr": "s:7Combine9SchedulerP",
             "mangledName": "$s7Combine9SchedulerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TaskExecutor",
+            "printedName": "TaskExecutor",
+            "usr": "s:Sch",
+            "mangledName": "$sSch"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Executor",
+            "printedName": "Executor",
+            "usr": "s:ScF",
+            "mangledName": "$sScF"
           }
         ]
       },
@@ -25802,6 +25914,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -25911,6 +26030,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -25923,6 +26049,8 @@
         "moduleName": "Security",
         "declAttributes": [
           "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "Sendable",
           "ObjC",
           "Dynamic"
         ],
@@ -25951,10 +26079,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -26057,6 +26199,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -26325,6 +26474,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -26512,6 +26668,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -26804,6 +26967,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -26901,6 +27071,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -26980,6 +27157,13 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -27109,6 +27293,13 @@
             "printedName": "_HasCustomAnyHashableRepresentation",
             "usr": "s:s35_HasCustomAnyHashableRepresentationP",
             "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -27499,6 +27690,13 @@
             "printedName": "_HasCustomAnyHashableRepresentation",
             "usr": "s:s35_HasCustomAnyHashableRepresentationP",
             "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
@@ -29868,28 +30066,28 @@
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "Array",
-      "offset": 960,
+      "offset": 994,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "StringLiteral",
-      "offset": 2679,
+      "offset": 2982,
       "length": 17,
       "value": "\"sdk_initialised\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "StringLiteral",
-      "offset": 2723,
+      "offset": 3026,
       "length": 13,
       "value": "\"app_request\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "StringLiteral",
-      "offset": 2773,
+      "offset": 3076,
       "length": 24,
       "value": "\"device_data_collection\""
     },
@@ -29976,20 +30174,6 @@
       "offset": 2285,
       "length": 3,
       "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/UI\/Shared\/BankNetworkView\/BankNetworkViewConfigurator.swift",
-      "kind": "StringLiteral",
-      "offset": 4351,
-      "length": 20,
-      "value": "\"bank_network_image\""
-    },
-    {
-      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/UI\/Shared\/BankNetworkView\/BankNetworkViewConfigurator.swift",
-      "kind": "StringLiteral",
-      "offset": 4404,
-      "length": 20,
-      "value": "\"card_network_image\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/UI\/Shared\/ChallengeInformationView\/ChallengeInformationView.swift",
@@ -30435,91 +30619,301 @@
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 467,
+      "offset": 464,
+      "length": 21,
+      "value": "\"otp.bankNetworkView\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 30,
+      "value": "\"otp.challengeInformationView\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 593,
+      "length": 16,
+      "value": "\"otp.footerView\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 644,
+      "length": 19,
+      "value": "\"otp.whitelistView\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 694,
+      "length": 15,
+      "value": "\"otp.infoLabel\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 749,
       "length": 27,
       "value": "\"out_of_band_submit_button\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 531,
+      "offset": 813,
       "length": 22,
       "value": "\"select_submit_button\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 587,
+      "offset": 869,
       "length": 18,
       "value": "\"whitelist_toggle\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 636,
+      "offset": 918,
       "length": 25,
       "value": "\"challenge_cancel_button\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 696,
+      "offset": 974,
+      "length": 25,
+      "value": "\"challenge_submit_button\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1034,
       "length": 19,
       "value": "\"challenge_webview\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1209,
+      "offset": 1088,
+      "length": 20,
+      "value": "\"bank_network_image\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1143,
+      "length": 20,
+      "value": "\"card_network_image\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1200,
+      "length": 22,
+      "value": "\"navigation_bar_title\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1433,
+      "length": 24,
+      "value": "\"challenge_webview_3ds1\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1582,
+      "length": 17,
+      "value": "\"alert_ok_button\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1635,
+      "length": 22,
+      "value": "\"alert_confirm_button\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1692,
+      "length": 21,
+      "value": "\"alert_cancel_button\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1750,
+      "length": 24,
+      "value": "\"alert_input_text_field\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 1923,
+      "length": 23,
+      "value": "\"whitelist_title_label\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2045,
+      "length": 27,
+      "value": "\"footer_content_stack_view\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2239,
+      "length": 26,
+      "value": "\"select_bank_network_view\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2312,
+      "length": 35,
+      "value": "\"select_challenge_information_view\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2379,
+      "length": 19,
+      "value": "\"select_info_label\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2431,
+      "length": 20,
+      "value": "\"select_footer_view\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2487,
+      "length": 23,
+      "value": "\"select_whitelist_view\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2548,
+      "length": 26,
+      "value": "\"select_option_image_view\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2613,
+      "length": 27,
+      "value": "\"select_option_title_label\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2802,
+      "length": 24,
+      "value": "\"help_section_container\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2859,
+      "length": 26,
+      "value": "\"help_section_title_label\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2917,
+      "length": 25,
+      "value": "\"help_section_image_view\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 2976,
+      "length": 27,
+      "value": "\"help_section_detail_label\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 3072,
+      "length": 28,
+      "value": "\"challenge_info_title_label\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 3134,
+      "length": 29,
+      "value": "\"challenge_info_detail_label\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 3195,
+      "length": 27,
+      "value": "\"challenge_info_error_icon\""
+    },
+    {
+      "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
+      "kind": "StringLiteral",
+      "offset": 3722,
       "length": 4,
       "value": "\"ON\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 3748,
       "length": 5,
       "value": "\"OFF\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1267,
+      "offset": 3780,
       "length": 10,
       "value": "\"SELECTED\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1307,
+      "offset": 3820,
       "length": 14,
       "value": "\"NOT_SELECTED\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1348,
+      "offset": 3861,
       "length": 10,
       "value": "\"EXPANDED\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1386,
+      "offset": 3899,
       "length": 11,
       "value": "\"COLLAPSED\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1457,
+      "offset": 3970,
       "length": 22,
       "value": "\"Double tap to expand\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/AccessibilityIdentifier.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 4024,
       "length": 24,
       "value": "\"Double tap to collapse\""
     },
@@ -30960,21 +31354,21 @@
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/ThreeDSLogEvent+LogData.swift",
       "kind": "StringLiteral",
-      "offset": 6187,
+      "offset": 6533,
       "length": 12,
       "value": "\"Successful\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/ThreeDSLogEvent+LogData.swift",
       "kind": "StringLiteral",
-      "offset": 6226,
+      "offset": 6572,
       "length": 8,
       "value": "\"Failed\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Utils\/ThreeDSLogEvent+LogData.swift",
       "kind": "StringLiteral",
-      "offset": 6260,
+      "offset": 6606,
       "length": 7,
       "value": "\"Error\""
     },
@@ -31018,7 +31412,7 @@
       "kind": "StringLiteral",
       "offset": 251,
       "length": 8,
-      "value": "\"3.2.11\""
+      "value": "\"3.2.12\""
     },
     {
       "filePath": "\/Users\/ehab.alsharkawy\/Documents\/Github\/cko-mobile\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
