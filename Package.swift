@@ -41,7 +41,7 @@ let package = Package(
         .target(name: "Checkout3DSCoreWrapper",
                 dependencies: [
                     .product(name: "CheckoutEventLoggerKit", package: "checkout-event-logger-ios-framework"),
-                    .target(name: "Checkout3DSBinary",
+                    .target(name: "Checkout3DSCoreBinary",
                             condition: .when(platforms: [.iOS])),
                     .target(name: "Checkout3DS-SecurityBinary",
                             condition: .when(platforms: [.iOS]))
