@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Checkout3DSCore</key>
 		<data>
-		M10Y1A94Re56MMnFYYAmuVWI8Ok=
+		pL1sgr59h9WoDPLrDszPlpXc/b0=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/FooterView.nib</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hmP0Gv3RLUA5DKFINfzsdPaIaJI=
+		kGeG4Ka3xW1VxiM8Q/QpffiHYgY=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2pSP47T9SmLN7sWjaSr7GlySjQ8=
+		hd6Qo8R8VbwZ39q0HWBoMgFjuvE=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		lm4dm+Gn2amY8zLAKsorj4KCcpM=
+		MNvrSjhzVHzvdMaczhoTUxSlMh4=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2pSP47T9SmLN7sWjaSr7GlySjQ8=
+		hd6Qo8R8VbwZ39q0HWBoMgFjuvE=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		uQa3bO0n6D5Xfl0SSH8ENmvP/Zs=
+		303p81dXA8vNVhUT10fZoi6hZNk=
 		</data>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
 		<dict>
@@ -465,7 +465,7 @@
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/Checkout3DSCore</key>
 		<data>
-		LBqUx+vh1Ta/5oor5Xi4OuAlBck=
+		S54HyYSIl6D365ugT+GnbrSeskU=
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/FooterView.nib</key>
 		<data>
@@ -481,19 +481,19 @@
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		KGojzC7AUn6jNBZ5mZI1yO6t0hs=
+		L87KHkWSxp6yNCWgGtbOVnKt4mY=
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		s5BCuDTRUFW1SYHaX2ROCumfpjI=
+		sMALkBoGU7sgP9+ezXcqKcvJeA4=
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		BtzSkb3hEgc/dbYdxk2viW7YDy8=
+		5p8K2iLK98kQ4X3DkoPtCcaAk1o=
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		s5BCuDTRUFW1SYHaX2ROCumfpjI=
+		sMALkBoGU7sgP9+ezXcqKcvJeA4=
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
 		<data>
@@ -529,7 +529,7 @@
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		v9XNJBrb1iBEFqkJIS0naYn2eew=
+		RFzNk/ucAjkUIpRRLLrHv0kubFU=
 		</data>
 		<key>ios-arm64/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
 		<dict>
@@ -924,7 +924,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nkmulBqekLGsfrTzl8W2Nu7gfgcyOggb8VG52xlyMDs=
+			QfnVy1iio1hC1jAPYv9QPFch31zbgBbuqOu7HMd10Fk=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/FooterView.nib</key>
@@ -952,28 +952,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1JbYK5S54w3hHmklflVv+LCO0BLBjIGJOCN5kH2M/Ig=
+			t+E5P7IPswmAk5VOte/S+mN4xFPyqJ20OaSAC5HkdqI=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S1lDo+4wXuvs9FOZMT19wfbLLLDytHHF+ftbrci1V6s=
+			fzYMC3ZM0TCQH7lxbqXNuf2ncOiN3CuDsIf/f3vmXNA=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SBdOjYcdMC5p98uxHGl+Oj75vXonanuNm/JwDXUfinA=
+			jgSJcETQdnoOxxeIKJT06wkb6q3S6LXIdVq53DvHPe8=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S1lDo+4wXuvs9FOZMT19wfbLLLDytHHF+ftbrci1V6s=
+			fzYMC3ZM0TCQH7lxbqXNuf2ncOiN3CuDsIf/f3vmXNA=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
@@ -1036,7 +1036,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WBFsB3hQcZq6T4bO9+dR9AG5HH4B+Z1BrhRbYOWVDKo=
+			Wi9BEV1XVe6/wMVU7jopqMlu2wurhszOxVzqgj6yr6M=
 			</data>
 		</dict>
 		<key>ios-arm64-simulator/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
@@ -1429,7 +1429,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8nzQMqqZDdVjnZ5n0X4CG7ai1uqvKLYV5QSPnqh1oKg=
+			vNJyS/vmI0xLg/I1CJUlpvUDmMoUghEuCeLU27L81+4=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DSCore.framework/FooterView.nib</key>
@@ -1457,28 +1457,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zwiav0skCvSrUwni4u8bY3ZLJAlbcOdK/3yu28jSIXg=
+			EmSSIAmFh8M2sN+on47r0dL8QzWIUusT6qYA8ECsOdI=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YG/6lEDuOHVsOcHA66HY8X+KZyLyE/h9aQ7jJBLlLwA=
+			v1PZ+nlO9N3ie5MsvdL5o8j5nK3sVt7t25Rtpr/34sQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6FfxwDNPMgM4C9KJKZPh/COOv07yuNJpImfVvqss4qc=
+			X0GMo7PMSLDBE8bF3nWEzb3fMYxH7mGR3NJEjTGUvKQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YG/6lEDuOHVsOcHA66HY8X+KZyLyE/h9aQ7jJBLlLwA=
+			v1PZ+nlO9N3ie5MsvdL5o8j5nK3sVt7t25Rtpr/34sQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
@@ -1541,7 +1541,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			urFLiENfMLvDSm1grYrD2G7hiiPMgExLL8tZWu4cHls=
+			1HVQh3U1mtSOb6zmqw5oX1s0mn/kErUF2L2J1P2HnQg=
 			</data>
 		</dict>
 		<key>ios-arm64/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
