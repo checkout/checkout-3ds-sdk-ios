@@ -1,6 +1,7 @@
 // swift-tools-version:5.10
 
 import PackageDescription
+
 let package = Package(
     name: "Checkout3DS",
     platforms: [
@@ -13,10 +14,14 @@ let package = Package(
                  targets: ["Checkout3DSCoreWrapper"])
     ],
     dependencies: [
-      .package( url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
-                from: "1.2.4"),
+      .package(url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
+               exact: "1.2.4"),
     ],
     targets: [
+        .target(
+            name: "JOSESwift",
+            path: "JOSESwiftStub"
+        ),
         .binaryTarget(
             name: "Checkout3DSBinary",
             path: "Checkout3DS.xcframework"
@@ -31,6 +36,7 @@ let package = Package(
         ),
         .target(name: "Checkout3DSWrapper",
                 dependencies: [
+                    "JOSESwift",
                     .product(name: "CheckoutEventLoggerKit", package: "checkout-event-logger-ios-framework"),
                     .target(name: "Checkout3DSBinary",
                             condition: .when(platforms: [.iOS])),
@@ -40,6 +46,7 @@ let package = Package(
                 path: "Checkout3DSWrapper"),
         .target(name: "Checkout3DSCoreWrapper",
                 dependencies: [
+                    "JOSESwift",
                     .product(name: "CheckoutEventLoggerKit", package: "checkout-event-logger-ios-framework"),
                     .target(name: "Checkout3DSCoreBinary",
                             condition: .when(platforms: [.iOS])),
