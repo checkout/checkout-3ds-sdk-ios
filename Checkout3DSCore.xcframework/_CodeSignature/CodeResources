@@ -4,95 +4,95 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Assets.car</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Assets.car</key>
 		<data>
 		hPGuNsK8zI2udWlOxxMZ7ZScg5Y=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/BankNetworkView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/BankNetworkView.nib</key>
 		<data>
 		3bBXFvj8N6m6sx4aF5VohNRLlS0=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ChallengeInformationView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ChallengeInformationView.nib</key>
 		<data>
 		3j88knnETm2f2+7PlG/x0pH6b1U=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ChallengeProcessingViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ChallengeProcessingViewController.nib</key>
 		<data>
 		shbNKTOHjQcJaUZWCwhNzuEJoIU=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ChallengeViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ChallengeViewController.nib</key>
 		<data>
 		wDLAiOCwj9et8o5jeFMlkzvaLD0=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Checkout3DSCore</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Checkout3DS</key>
 		<data>
-		repDQKa8uSKs5tRhj+zYjzcDvLY=
+		tLjba0F9xFTG7FasXVgMo+qZQIQ=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/FooterView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/FooterView.nib</key>
 		<data>
 		iwLX8z5s9LOWGUFR4t25Jn2WRmM=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/HelpHeaderView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/HelpHeaderView.nib</key>
 		<data>
 		jJZxpFQCZmItnGo/dlTeSXpuCPc=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Info.plist</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Info.plist</key>
 		<data>
-		O64qkdSTaHn56dgjfN2ZQP+2RBE=
+		fSCwr0h0m7Mr+of9zNJliadQHus=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FLA5c384lHlWorbHtjBWRmwvzMI=
+		fB8vGG4P59JCLRFad7LO8v2EIg0=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		i1/T0CNzIXqTQ3MnTk3/t1JFWNU=
+		f2wtdcrxU3j8NpE0gihZ5V6dM4c=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9pd/uWp1WUdhcLvcyWZIHGb5iUI=
+		tZnE+dMJHP+1cQxGevkmfqjqcbI=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		i1/T0CNzIXqTQ3MnTk3/t1JFWNU=
+		f2wtdcrxU3j8NpE0gihZ5V6dM4c=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/OutOfBandViewController.nib</key>
 		<data>
 		lmpMYMq3j+c8lA7PdoZsEwW+f/E=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/PrivacyInfo.xcprivacy</key>
 		<data>
 		vmw0/odEPc3MPhKlYto5SZnEmt4=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ProcessingViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ProcessingViewController.nib</key>
 		<data>
 		13eRpoBHrDJuZ+aL7hjuUKaFJQA=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/SelectView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/SelectView.nib</key>
 		<data>
 		CfmGibpEB9ExesOfYZoucJtBerY=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/SelectViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/SelectViewController.nib</key>
 		<data>
 		atS3gQ2KMRDta+mUbnmR8MAwKfk=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/TextOTPViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/TextOTPViewController.nib</key>
 		<data>
 		DVj+qqaqgI7NWwYDZmuelKsFBrI=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/WebViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/WebViewController.nib</key>
 		<data>
 		U4T3pWNqu7Q8g6CNNnNwwjYPpAU=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/WhitelistView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/WhitelistView.nib</key>
 		<data>
 		r0t1WPuLwSzfrZAd5/cif1SbWAU=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/_CodeSignature/CodeResources</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/_CodeSignature/CodeResources</key>
 		<data>
-		UiK4yMsaqE2ofyXwSDfZp0k4q7w=
+		QSKVwR6MRyEyRD5Nr/6BJvsJecA=
 		</data>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -101,7 +101,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/bg.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/bg.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -110,7 +110,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/cs.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -119,7 +119,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/da.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -128,7 +128,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/de-DE.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/de-DE.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -137,7 +137,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/de.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -146,7 +146,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/el.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/el.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -155,7 +155,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/en-GB.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/en-GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -164,7 +164,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/en.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -173,7 +173,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/es.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -182,7 +182,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/et.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/et.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -191,7 +191,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/fi.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/fi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -200,7 +200,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/fr.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -209,7 +209,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/he.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -218,7 +218,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/hi.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -227,7 +227,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/hr.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -236,7 +236,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/hu.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -245,7 +245,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/it.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -254,7 +254,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ja.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -263,7 +263,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ko.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -272,7 +272,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/lt.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/lt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -281,7 +281,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/lv.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/lv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -290,7 +290,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/mt.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/mt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -299,7 +299,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/nb.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/nb.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -308,7 +308,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/nl.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -317,7 +317,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/pl.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -326,7 +326,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/pt.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -335,7 +335,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ro.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -344,7 +344,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ru.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -353,7 +353,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/si.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/si.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -362,7 +362,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/sk.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -371,7 +371,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/sl.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/sl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -380,7 +380,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/sv.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -389,7 +389,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/te.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/te.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -398,7 +398,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/tr.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -407,7 +407,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/uk.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -416,7 +416,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/zh-Hans-HK.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/zh-Hans-HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -425,7 +425,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/zh-Hant-TW.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/zh-Hant-TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -434,7 +434,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/zh.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/zh.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -443,95 +443,95 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Assets.car</key>
+		<key>ios-arm64/Checkout3DS.framework/Assets.car</key>
 		<data>
 		hPGuNsK8zI2udWlOxxMZ7ZScg5Y=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/BankNetworkView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/BankNetworkView.nib</key>
 		<data>
 		3bBXFvj8N6m6sx4aF5VohNRLlS0=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/ChallengeInformationView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ChallengeInformationView.nib</key>
 		<data>
 		3j88knnETm2f2+7PlG/x0pH6b1U=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/ChallengeProcessingViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ChallengeProcessingViewController.nib</key>
 		<data>
 		shbNKTOHjQcJaUZWCwhNzuEJoIU=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/ChallengeViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ChallengeViewController.nib</key>
 		<data>
 		wDLAiOCwj9et8o5jeFMlkzvaLD0=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/Checkout3DSCore</key>
+		<key>ios-arm64/Checkout3DS.framework/Checkout3DS</key>
 		<data>
-		IlGwuRGWBFZU3Iw2MpKEoYZVs30=
+		UnVrha8OSAySq+B8rLEIC4U05Pc=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/FooterView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/FooterView.nib</key>
 		<data>
 		iwLX8z5s9LOWGUFR4t25Jn2WRmM=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/HelpHeaderView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/HelpHeaderView.nib</key>
 		<data>
 		jJZxpFQCZmItnGo/dlTeSXpuCPc=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/Info.plist</key>
+		<key>ios-arm64/Checkout3DS.framework/Info.plist</key>
 		<data>
-		hNHDRenxlOYib7jeXuKCGaiHIJY=
+		f6xy4COOXmYXQ/Q4eS6YvTsi+CE=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Fv7XOCVYK3ttMI0d4R9Pnq+p5PE=
+		XCoHoi6iSnnDylvMPnMG0GmfDcg=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		iNSyzTeu7N0CIOdbl1gU9lmz6tU=
+		0m5X6WZHFhF4XnUR3ybVvKoLPHM=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		XrrtNret8kl+0D1Au3X53ZWV6N8=
+		xUSspwQNkeJQwswwrNFxC82LKfk=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		iNSyzTeu7N0CIOdbl1gU9lmz6tU=
+		0m5X6WZHFhF4XnUR3ybVvKoLPHM=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/OutOfBandViewController.nib</key>
 		<data>
 		lmpMYMq3j+c8lA7PdoZsEwW+f/E=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64/Checkout3DS.framework/PrivacyInfo.xcprivacy</key>
 		<data>
 		vmw0/odEPc3MPhKlYto5SZnEmt4=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/ProcessingViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ProcessingViewController.nib</key>
 		<data>
 		13eRpoBHrDJuZ+aL7hjuUKaFJQA=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/SelectView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/SelectView.nib</key>
 		<data>
 		CfmGibpEB9ExesOfYZoucJtBerY=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/SelectViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/SelectViewController.nib</key>
 		<data>
 		atS3gQ2KMRDta+mUbnmR8MAwKfk=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/TextOTPViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/TextOTPViewController.nib</key>
 		<data>
 		DVj+qqaqgI7NWwYDZmuelKsFBrI=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/WebViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/WebViewController.nib</key>
 		<data>
 		U4T3pWNqu7Q8g6CNNnNwwjYPpAU=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/WhitelistView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/WhitelistView.nib</key>
 		<data>
 		r0t1WPuLwSzfrZAd5/cif1SbWAU=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/_CodeSignature/CodeResources</key>
+		<key>ios-arm64/Checkout3DS.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gj8xTyXLN9JjuxlsidoAP6Txbxk=
+		B8E2Vl+xCLELCh19MYfjTH6jjOY=
 		</data>
-		<key>ios-arm64/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -540,7 +540,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/bg.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/bg.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -549,7 +549,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/cs.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -558,7 +558,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/da.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -567,7 +567,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/de-DE.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/de-DE.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -576,7 +576,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/de.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -585,7 +585,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/el.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/el.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -594,7 +594,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/en-GB.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/en-GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -603,7 +603,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/en.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -612,7 +612,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/es.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -621,7 +621,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/et.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/et.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -630,7 +630,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/fi.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/fi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -639,7 +639,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/fr.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -648,7 +648,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/he.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -657,7 +657,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/hi.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -666,7 +666,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/hr.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -675,7 +675,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/hu.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -684,7 +684,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/it.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -693,7 +693,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ja.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -702,7 +702,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ko.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -711,7 +711,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/lt.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/lt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -720,7 +720,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/lv.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/lv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -729,7 +729,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/mt.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/mt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -738,7 +738,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/nb.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/nb.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -747,7 +747,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/nl.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -756,7 +756,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/pl.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -765,7 +765,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/pt.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -774,7 +774,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ro.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -783,7 +783,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ru.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -792,7 +792,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/si.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/si.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -801,7 +801,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/sk.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -810,7 +810,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/sl.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/sl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -819,7 +819,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/sv.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -828,7 +828,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/te.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/te.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -837,7 +837,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/tr.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -846,7 +846,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/uk.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -855,7 +855,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/zh-Hans-HK.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/zh-Hans-HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -864,7 +864,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/zh-Hant-TW.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/zh-Hant-TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -873,7 +873,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/zh.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/zh.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -885,161 +885,161 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Assets.car</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			L58mhHF+DoQWqqN0naJNRYRVMh+yb7iWQHwhSzCrAOk=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/BankNetworkView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/BankNetworkView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			gEHK2sB8fY4ZynicbOxGO5KKwePpD8g1nktFFmH71nI=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ChallengeInformationView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ChallengeInformationView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			uD755j74Mlzkx1iHsy5g4baRVA+UFwTRX2bDKB4FZTM=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ChallengeProcessingViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ChallengeProcessingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			BQIOR/VaF3smxxhKl6Jbe2cZUgDZ0PLs+dJtMqFqlZ0=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ChallengeViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ChallengeViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wnGO3zM6czhuVZfwbgBcayf0QLUc6XJYiXMpbHCGkxc=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Checkout3DSCore</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Checkout3DS</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VpwLhNxNbqazlQWzT5TQhAqSkEF9tzJD6K4Q+fpL3ZQ=
+			FmC2EmcNS/fTo2pnAbynuD070hph9879LDov1UhEGvk=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/FooterView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/FooterView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			Tv+EcG4lpZ5Uq8dANFk2O8PAfWgmkmsVRDj5RFODAPY=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/HelpHeaderView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/HelpHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			j29aAsAfDNeUT5Tcv8FeMU0BMQV1XufWFKH2DwA2iek=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Info.plist</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cccdtlHR4ivoqKYCWCLzWA2hdJFoYVnZyKJyG9z3aIk=
+			0v3LBitLA0eat3Sytr7DWvvTiN44/sN1RG9JGFNWUI4=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MT/ygOetNBedJKGzAKlKhb1pd7hxZZWfxlUJ4eqa5g0=
+			ovXEzcytujs8SlAvJlZjJd44PXu3ZL2Xr0393b4G9jM=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u8MrORMwvD7ojGyL6jitTifXSNvFe4Naj9X8azCSNOE=
+			E6KKJMm0bOpyrm3zGeCb5Jt0NcJYDLBjjWK6V1M6BWk=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9ciA0bIqSfE9Libu9IMKwTmxmPuPKBoVCFTPE3aQ9E4=
+			2hxVrtp3shZCEdFuIt5FX2oZy2a8mLM2gIInj/O7WlE=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u8MrORMwvD7ojGyL6jitTifXSNvFe4Naj9X8azCSNOE=
+			E6KKJMm0bOpyrm3zGeCb5Jt0NcJYDLBjjWK6V1M6BWk=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/OutOfBandViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			GwqlCde2doiC1wAkbkpWIuNFjktBgnsR6RxTMvdqoMY=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wQ1yCpD2k2NxezWbTv57KHwwTwwHZ94OWtY82DFBlpQ=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ProcessingViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ProcessingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			NhF3l/PeQMGdM525l3ihkYm/DZnroI9AqROTrYRb7n0=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/SelectView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/SelectView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			hnk7sHJdSaP7TliLnyPbhlZW6J+efV8/nKeojCZK7Uk=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/SelectViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/SelectViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			A82dHKsk+tg8Q9HgTOdWknxOWOZkqYYPllLszXspef0=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/TextOTPViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/TextOTPViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			q9/7tRCYTz3qoZyBEtE9O48lZlnGUttk3qWKZNSf0hg=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/WebViewController.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/WebViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			G71o/D93CbyuCxRbnF7EFMLbP+LiFgMPvcu4D3fHBvQ=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/WhitelistView.nib</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/WhitelistView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			hlrjcq63nkxYm6o9101/9veUaFYP9Yw/lJgyqNQvEJ8=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/_CodeSignature/CodeResources</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			98l3/g2X/3Vzr5kKOBqi5zpGBG6d6BRA1DmGRRMo3Dw=
+			ntTyvKKK2WHuUy99oHL8inV5ppBLIiV69N+0YzqyQyc=
 			</data>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1048,7 +1048,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/bg.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/bg.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1057,7 +1057,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/cs.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1066,7 +1066,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/da.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1075,7 +1075,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/de-DE.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/de-DE.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1084,7 +1084,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/de.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1093,7 +1093,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/el.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/el.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1102,7 +1102,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/en-GB.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/en-GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1111,7 +1111,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/en.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1120,7 +1120,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/es.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1129,7 +1129,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/et.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/et.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1138,7 +1138,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/fi.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/fi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1147,7 +1147,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/fr.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1156,7 +1156,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/he.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1165,7 +1165,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/hi.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1174,7 +1174,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/hr.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1183,7 +1183,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/hu.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1192,7 +1192,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/it.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1201,7 +1201,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ja.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1210,7 +1210,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ko.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1219,7 +1219,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/lt.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/lt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1228,7 +1228,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/lv.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/lv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1237,7 +1237,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/mt.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/mt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1246,7 +1246,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/nb.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/nb.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1255,7 +1255,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/nl.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1264,7 +1264,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/pl.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1273,7 +1273,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/pt.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1282,7 +1282,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ro.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1291,7 +1291,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/ru.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1300,7 +1300,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/si.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/si.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1309,7 +1309,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/sk.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1318,7 +1318,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/sl.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/sl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1327,7 +1327,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/sv.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1336,7 +1336,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/te.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/te.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1345,7 +1345,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/tr.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1354,7 +1354,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/uk.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1363,7 +1363,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/zh-Hans-HK.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/zh-Hans-HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1372,7 +1372,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/zh-Hant-TW.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/zh-Hant-TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1381,7 +1381,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64-simulator/Checkout3DSCore.framework/zh.lproj/Localizable.strings</key>
+		<key>ios-arm64-simulator/Checkout3DS.framework/zh.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1390,161 +1390,161 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Assets.car</key>
+		<key>ios-arm64/Checkout3DS.framework/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			L58mhHF+DoQWqqN0naJNRYRVMh+yb7iWQHwhSzCrAOk=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/BankNetworkView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/BankNetworkView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			gEHK2sB8fY4ZynicbOxGO5KKwePpD8g1nktFFmH71nI=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ChallengeInformationView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ChallengeInformationView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			uD755j74Mlzkx1iHsy5g4baRVA+UFwTRX2bDKB4FZTM=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ChallengeProcessingViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ChallengeProcessingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			BQIOR/VaF3smxxhKl6Jbe2cZUgDZ0PLs+dJtMqFqlZ0=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ChallengeViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ChallengeViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wnGO3zM6czhuVZfwbgBcayf0QLUc6XJYiXMpbHCGkxc=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Checkout3DSCore</key>
+		<key>ios-arm64/Checkout3DS.framework/Checkout3DS</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UN7kMb7w+ju2asGKooACYVzUSVotzt7fPrUtZO2HKGM=
+			5QYOGCNCw47yFGiVZKDWV6/WGLO2gH9ogSfoR0npUq4=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/FooterView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/FooterView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			Tv+EcG4lpZ5Uq8dANFk2O8PAfWgmkmsVRDj5RFODAPY=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/HelpHeaderView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/HelpHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			j29aAsAfDNeUT5Tcv8FeMU0BMQV1XufWFKH2DwA2iek=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Info.plist</key>
+		<key>ios-arm64/Checkout3DS.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ggmLNE0kAkOtpkHvkPl/npqu5uk48681IXyWds08a5E=
+			j87ay+BlpBSvm0mFxMhSL+RAqeExYJJ1wtT6EvO6NjM=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AjSYnSrMGIR68TYVMcu6BYrJRxey6+5h05EyEioZVCg=
+			b6q+afKPqaETC7LFBw93jvHjI0YOP451nQD88CMUqng=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lx9QLI7PEH2mOTgRZKXnzoyr261tMp+S+LW+9DilqF0=
+			v1ywHIwppCCrFeiuwDy8hdtEKqcy8TJw7MqwIWRFCWA=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			asikOjto9AnU09sQVjLepRM6fB5SgGU79FXuFNnY010=
+			vmkT9PL0kZvOmiMSTsFLn2W9nFemRIHC8FHqxG+lq88=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/Modules/Checkout3DSCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>ios-arm64/Checkout3DS.framework/Modules/Checkout3DS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lx9QLI7PEH2mOTgRZKXnzoyr261tMp+S+LW+9DilqF0=
+			v1ywHIwppCCrFeiuwDy8hdtEKqcy8TJw7MqwIWRFCWA=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/OutOfBandViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/OutOfBandViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			GwqlCde2doiC1wAkbkpWIuNFjktBgnsR6RxTMvdqoMY=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64/Checkout3DS.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wQ1yCpD2k2NxezWbTv57KHwwTwwHZ94OWtY82DFBlpQ=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ProcessingViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/ProcessingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			NhF3l/PeQMGdM525l3ihkYm/DZnroI9AqROTrYRb7n0=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/SelectView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/SelectView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			hnk7sHJdSaP7TliLnyPbhlZW6J+efV8/nKeojCZK7Uk=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/SelectViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/SelectViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			A82dHKsk+tg8Q9HgTOdWknxOWOZkqYYPllLszXspef0=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/TextOTPViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/TextOTPViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			q9/7tRCYTz3qoZyBEtE9O48lZlnGUttk3qWKZNSf0hg=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/WebViewController.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/WebViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			G71o/D93CbyuCxRbnF7EFMLbP+LiFgMPvcu4D3fHBvQ=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/WhitelistView.nib</key>
+		<key>ios-arm64/Checkout3DS.framework/WhitelistView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			hlrjcq63nkxYm6o9101/9veUaFYP9Yw/lJgyqNQvEJ8=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/_CodeSignature/CodeResources</key>
+		<key>ios-arm64/Checkout3DS.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3AOu11JRhufxsGkF900JbQoaEFr6PIdTSLWenGh/y0s=
+			N8yCp7ly3UNFRymIU3Xa5PoIg/g7gLJPi/lwmJs1i1U=
 			</data>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ar.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1553,7 +1553,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/bg.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/bg.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1562,7 +1562,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/cs.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1571,7 +1571,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/da.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1580,7 +1580,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/de-DE.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/de-DE.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1589,7 +1589,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/de.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1598,7 +1598,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/el.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/el.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1607,7 +1607,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/en-GB.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/en-GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1616,7 +1616,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/en.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1625,7 +1625,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/es.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1634,7 +1634,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/et.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/et.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1643,7 +1643,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/fi.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/fi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1652,7 +1652,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/fr.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1661,7 +1661,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/he.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1670,7 +1670,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/hi.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1679,7 +1679,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/hr.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1688,7 +1688,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/hu.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1697,7 +1697,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/it.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1706,7 +1706,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ja.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1715,7 +1715,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ko.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1724,7 +1724,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/lt.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/lt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1733,7 +1733,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/lv.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/lv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1742,7 +1742,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/mt.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/mt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1751,7 +1751,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/nb.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/nb.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1760,7 +1760,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/nl.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1769,7 +1769,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/pl.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1778,7 +1778,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/pt.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1787,7 +1787,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ro.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1796,7 +1796,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/ru.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1805,7 +1805,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/si.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/si.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1814,7 +1814,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/sk.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1823,7 +1823,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/sl.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/sl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1832,7 +1832,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/sv.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1841,7 +1841,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/te.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/te.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1850,7 +1850,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/tr.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1859,7 +1859,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/uk.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1868,7 +1868,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/zh-Hans-HK.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/zh-Hans-HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1877,7 +1877,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/zh-Hant-TW.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/zh-Hant-TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1886,7 +1886,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ios-arm64/Checkout3DSCore.framework/zh.lproj/Localizable.strings</key>
+		<key>ios-arm64/Checkout3DS.framework/zh.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>

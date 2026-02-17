@@ -48,6 +48,9 @@ let package = Package(
                 dependencies: [
                     "JOSESwift",
                     .product(name: "CheckoutEventLoggerKit", package: "checkout-event-logger-ios-framework"),
+                    // We point to Checkout3DSCoreBinary, which is physically located in Checkout3DSCore.xcframework.
+                    // Internally, this binary will eventually identify as "Checkout3DS", but for SPM distribution
+                    // we keep the binary target name distinct to avoid Package.swift validation errors about duplicate products/artifacts.
                     .target(name: "Checkout3DSCoreBinary",
                             condition: .when(platforms: [.iOS])),
                     .target(name: "Checkout3DS-SecurityBinary",

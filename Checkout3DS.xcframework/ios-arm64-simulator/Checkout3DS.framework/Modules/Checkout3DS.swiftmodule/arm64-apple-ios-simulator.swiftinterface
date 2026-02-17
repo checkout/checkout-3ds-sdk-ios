@@ -16,20 +16,164 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct ChallengeParameters {
-  public init(threeDSServerTransactionID: Swift.String, acsTransactionID: Swift.String, acsRefNumber: Swift.String, acsSignedContent: Swift.String)
+extension Foundation.NSNotification.Name {
+  public static let NSPasteboardDidChange: Foundation.NSNotification.Name
 }
-extension Checkout3DS.Warning {
-  @objc public enum Severity : Swift.Int {
-    case low
-    case medium
-    case high
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
+public enum PasteboardAction : Swift.Codable {
+  case voiceOver(Checkout3DS.VoiceOverAction)
+  public enum CodingKeys : Swift.CodingKey {
+    case voiceOver
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public static func == (a: Checkout3DS.PasteboardAction.CodingKeys, b: Checkout3DS.PasteboardAction.CodingKeys) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var stringValue: Swift.String {
       get
     }
   }
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public enum PasteboardActionError : Swift.Error {
+    case cannotDecode
+    public static func == (a: Checkout3DS.PasteboardAction.PasteboardActionError, b: Checkout3DS.PasteboardAction.PasteboardActionError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum VoiceOverAction : Swift.Codable {
+  case focusElement(accessibilityIdentifier: Swift.String)
+  public enum CodingKeys : Swift.CodingKey {
+    case focusElement
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public static func == (a: Checkout3DS.VoiceOverAction.CodingKeys, b: Checkout3DS.VoiceOverAction.CodingKeys) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public enum VoiceOverActionError : Swift.Error {
+    case cannotDecode
+    public static func == (a: Checkout3DS.VoiceOverAction.VoiceOverActionError, b: Checkout3DS.VoiceOverAction.VoiceOverActionError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc(Checkout3DSCustomization) public protocol Customization {
+  @objc var font: UIKit.UIFont { get }
+  @objc var textColor: UIKit.UIColor { get }
+}
+public protocol ThreeDS2Service {
+  func createTransaction() -> any Checkout3DS.Transaction
+  func getWarnings() -> Swift.Set<Checkout3DS.Warning>
+  func cleanUp()
+}
+public struct MessageExtension : Swift.Codable, Swift.Equatable {
+  public static func == (a: Checkout3DS.MessageExtension, b: Checkout3DS.MessageExtension) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageExtensionData : Swift.Codable, Swift.Equatable {
+  public struct ChallengeData : Swift.Codable, Swift.Equatable {
+    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public static func == (a: Checkout3DS.MessageExtensionData.ChallengeData, b: Checkout3DS.MessageExtensionData.ChallengeData) -> Swift.Bool
+  }
+  public static func == (a: Checkout3DS.MessageExtensionData, b: Checkout3DS.MessageExtensionData) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension Checkout3DS.MessageExtension {
+  public static let mastercard: Checkout3DS.MessageExtension
+}
+extension Checkout3DS.Standalone3DSService {
+  public enum Constants {
+    public static let challengeTimeout: Swift.Double
+  }
+}
+public protocol Transaction {
+  func getAuthenticationRequestParameters(completion: @escaping (Swift.Result<Checkout3DS.AuthenticationRequestParameters, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  func close()
+}
+public struct AuthenticationRequestParameters : Swift.Encodable {
+  public let deviceData: Swift.String
+  public let sdkTransactionID: Swift.String
+  public let sdkAppID: Swift.String
+  public let sdkReferenceNumber: Swift.String
+  public let sdkEphemeralPublicKey: Swift.String
+  public let messageVersion: Swift.String
+  public init(deviceData: Swift.String, sdkTransactionID: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkEphemeralPublicKey: Swift.String, mssageVersion: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Checkout3DSDefaultSystemColor) public class DefaultSystemColor : ObjectiveC.NSObject {
+  @objc public static var label: UIKit.UIColor {
+    @objc get
+  }
+  @objc public static var secondaryLabel: UIKit.UIColor {
+    @objc get
+  }
+  @objc public static var systemGray6: UIKit.UIColor {
+    @objc get
+  }
+  @objc deinit
+}
+@objc(Checkout3DSLabelCustomization) public protocol LabelCustomization : Checkout3DS.Customization {
+  @objc var headingTextColor: UIKit.UIColor { get }
+  @objc var headingFont: UIKit.UIFont { get }
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultLabelCustomization) final public class DefaultLabelCustomization : ObjectiveC.NSObject, Checkout3DS.LabelCustomization {
+  @objc final public let headingTextColor: UIKit.UIColor
+  @objc final public let headingFont: UIKit.UIFont
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(headingTextColor: UIKit.UIColor = DefaultSystemColor.label, headingFont: UIKit.UIFont = .preferredFont(forTextStyle: .headline), font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = DefaultSystemColor.label)
+  @objc deinit
+}
+@objc(Checkout3DSAuthenticationParameters) final public class AuthenticationParameters : ObjectiveC.NSObject {
+  @objc final public let sessionID: Swift.String
+  @objc final public let sessionSecret: Swift.String
+  @objc final public let scheme: Swift.String
+  @objc public init(sessionID: Swift.String, sessionSecret: Swift.String, scheme: Swift.String)
+  @objc deinit
+}
+@objc(Checkout3DSButtonCustomizations) public protocol ButtonCustomizations {
+  @objc var verifyButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var nextButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var cancelButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+  @objc var resendButtonCustomization: any Checkout3DS.ButtonCustomization { get }
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultButtonCustomizations) final public class DefaultButtonCustomizations : ObjectiveC.NSObject, Checkout3DS.ButtonCustomizations {
+  @objc final public let verifyButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let nextButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let cancelButtonCustomization: any Checkout3DS.ButtonCustomization
+  @objc final public let resendButtonCustomization: any Checkout3DS.ButtonCustomization
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(verifyButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultVerifyButtonCustomization(), continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultContinueButtonCustomization(), nextButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultNextButtonCustomization(), cancelButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultCancelButtonCustomization(), resendButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultResendButtonCustomization())
+  @objc deinit
 }
 @objc(Checkout3DSWhitelistCustomization) public protocol WhitelistCustomization : Checkout3DS.Customization {
   @objc var switchTintColor: UIKit.UIColor? { get }
@@ -43,10 +187,175 @@ extension Checkout3DS.Warning {
   @objc public init(font: UIKit.UIFont = .preferredFont(forTextStyle: .subheadline), textColor: UIKit.UIColor = DefaultSystemColor.secondaryLabel, switchTintColor: UIKit.UIColor? = nil)
   @objc deinit
 }
-public protocol ThreeDS2Service {
-  func createTransaction() -> any Checkout3DS.Transaction
-  func getWarnings() -> Swift.Set<Checkout3DS.Warning>
-  func cleanUp()
+public struct ThreeDS2ServiceConfiguration {
+  public struct ConfigParameters {
+    public let directoryServerData: Checkout3DS.ThreeDS2ServiceConfiguration.DirectoryServerData
+    public let messageVersion: Swift.String
+    public let scheme: Swift.String
+    public init(directoryServerData: Checkout3DS.ThreeDS2ServiceConfiguration.DirectoryServerData, messageVersion: Swift.String, scheme: Swift.String)
+  }
+  public struct DirectoryServerData {
+    public let directoryServerID: Swift.String
+    public let directoryServerPublicKey: Swift.String
+    public let directoryServerRootCertificates: [Swift.String]
+    public init(directoryServerID: Swift.String, directoryServerPublicKey: Swift.String, directoryServerRootCertificates: [Swift.String])
+  }
+  public let configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters
+  public let locale: Foundation.Locale
+  public let uiCustomization: any Checkout3DS.UICustomization
+  public let appURL: Foundation.URL?
+  public let challengeTimeout: Foundation.TimeInterval
+  public init(configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil, challengeTimeout: Foundation.TimeInterval = Standalone3DSService.Constants.challengeTimeout)
+}
+extension Checkout3DS.Checkout3DSService {
+  public static let productVersion: Swift.String
+  public struct Constants {
+  }
+}
+@objc(Checkout3DSDefaultFooterCustomization) public protocol FooterCustomization : Checkout3DS.Customization {
+  @objc var backgroundColor: UIKit.UIColor { get }
+  @objc var labelFont: UIKit.UIFont { get }
+  @objc var labelTextColor: UIKit.UIColor { get }
+  @objc var expandIndicatorColor: UIKit.UIColor { get }
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultFooterCustomization) final public class DefaultFooterCustomization : ObjectiveC.NSObject, Checkout3DS.FooterCustomization {
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @objc final public let labelFont: UIKit.UIFont
+  @objc final public let labelTextColor: UIKit.UIColor
+  @objc final public let expandIndicatorColor: UIKit.UIColor
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(backgroundColor: UIKit.UIColor = .white, font: UIKit.UIFont = .preferredFont(forTextStyle: .subheadline), textColor: UIKit.UIColor = DefaultSystemColor.secondaryLabel, labelFont: UIKit.UIFont = .preferredFont(forTextStyle: .subheadline), labelTextColor: UIKit.UIColor = DefaultSystemColor.label, expandIndicatorColor: UIKit.UIColor = DefaultSystemColor.label)
+  @objc deinit
+}
+extension Checkout3DS.Warning {
+  @objc public enum Severity : Swift.Int {
+    case low
+    case medium
+    case high
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum Standalone3DSService {
+  public static func initialize(with configuration: Checkout3DS.ThreeDS2ServiceConfiguration, environment: Checkout3DS.Environment = .production) throws -> any Checkout3DS.ThreeDS2Service
+}
+@objc(Checkout3DSButtonCustomization) public protocol ButtonCustomization : Checkout3DS.Customization {
+  @objc var backgroundColor: UIKit.UIColor { get }
+  @objc var cornerRadius: CoreFoundation.CGFloat { get }
+  @objc var cornerCurve: QuartzCore.CALayerCornerCurve? { get }
+  @objc var borderWidth: CoreFoundation.CGFloat { get }
+  @objc var borderColor: CoreGraphics.CGColor? { get }
+  @objc var shadowColor: CoreGraphics.CGColor? { get }
+  @objc var shadowOffset: CoreFoundation.CGSize { get }
+  @objc var shadowRadius: CoreFoundation.CGFloat { get }
+  @objc var shadowOpacity: Swift.Float { get }
+}
+@objc(Checkout3DSDefaultButtonCustomization) final public class DefaultButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @objc final public let borderWidth: CoreFoundation.CGFloat
+  @objc final public let borderColor: CoreGraphics.CGColor?
+  @objc final public let shadowColor: CoreGraphics.CGColor?
+  @objc final public let shadowOffset: CoreFoundation.CGSize
+  @objc final public let shadowRadius: CoreFoundation.CGFloat
+  @objc final public let shadowOpacity: Swift.Float
+  @objc public init(backgroundColor: UIKit.UIColor, cornerRadius: CoreFoundation.CGFloat, cornerCurve: QuartzCore.CALayerCornerCurve?, font: UIKit.UIFont, textColor: UIKit.UIColor, borderWidth: CoreFoundation.CGFloat, borderColor: CoreGraphics.CGColor?, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultVerifyButtonCustomization) final public class DefaultVerifyButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @objc final public let borderWidth: CoreFoundation.CGFloat
+  @objc final public let borderColor: CoreGraphics.CGColor?
+  @objc final public let shadowColor: CoreGraphics.CGColor?
+  @objc final public let shadowOffset: CoreFoundation.CGSize
+  @objc final public let shadowRadius: CoreFoundation.CGFloat
+  @objc final public let shadowOpacity: Swift.Float
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultContinueButtonCustomization) final public class DefaultContinueButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @objc final public let borderWidth: CoreFoundation.CGFloat
+  @objc final public let borderColor: CoreGraphics.CGColor?
+  @objc final public let shadowColor: CoreGraphics.CGColor?
+  @objc final public let shadowOffset: CoreFoundation.CGSize
+  @objc final public let shadowRadius: CoreFoundation.CGFloat
+  @objc final public let shadowOpacity: Swift.Float
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultNextButtonCustomization) final public class DefaultNextButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @objc final public let borderWidth: CoreFoundation.CGFloat
+  @objc final public let borderColor: CoreGraphics.CGColor?
+  @objc final public let shadowColor: CoreGraphics.CGColor?
+  @objc final public let shadowOffset: CoreFoundation.CGSize
+  @objc final public let shadowRadius: CoreFoundation.CGFloat
+  @objc final public let shadowOpacity: Swift.Float
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultResendButtonCustomization) final public class DefaultResendButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @objc final public let borderWidth: CoreFoundation.CGFloat
+  @objc final public let borderColor: CoreGraphics.CGColor?
+  @objc final public let shadowColor: CoreGraphics.CGColor?
+  @objc final public let shadowOffset: CoreFoundation.CGSize
+  @objc final public let shadowRadius: CoreFoundation.CGFloat
+  @objc final public let shadowOpacity: Swift.Float
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultCancelButtonCustomization) final public class DefaultCancelButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
+  @objc final public let text: Swift.String
+  @objc final public let backgroundColor: UIKit.UIColor
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
+  @objc final public let font: UIKit.UIFont
+  @objc final public let textColor: UIKit.UIColor
+  @objc final public let borderWidth: CoreFoundation.CGFloat
+  @objc final public let borderColor: CoreGraphics.CGColor?
+  @objc final public let shadowColor: CoreGraphics.CGColor?
+  @objc final public let shadowOffset: CoreFoundation.CGSize
+  @objc final public let shadowRadius: CoreFoundation.CGFloat
+  @objc final public let shadowOpacity: Swift.Float
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(text: Swift.String = "Cancel", backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
+  @objc deinit
 }
 @objc(Checkout3DSAuthenticationError) public enum AuthenticationError : Swift.Int, Swift.Error, Swift.Equatable, Swift.CaseIterable {
   case invalidSessionID = 1000
@@ -187,32 +496,53 @@ public protocol ThreeDS2Service {
     get
   }
 }
-public protocol Transaction {
-  func getAuthenticationRequestParameters(completion: @escaping (Swift.Result<Checkout3DS.AuthenticationRequestParameters, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  func doChallenge(challengeParameters: Checkout3DS.ChallengeParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  func close()
+public struct ChallengeParameters {
+  public init(threeDSServerTransactionID: Swift.String, acsTransactionID: Swift.String, acsRefNumber: Swift.String, acsSignedContent: Swift.String)
 }
-extension Checkout3DS.Checkout3DSService {
-  public static let productVersion: Swift.String
-  public struct Constants {
-  }
+@objc(Checkout3DSUICustomization) public protocol UICustomization {
+  @objc var toolbarCustomization: any Checkout3DS.ToolbarCustomization { get }
+  @objc var labelCustomization: any Checkout3DS.LabelCustomization { get }
+  @objc var entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization { get }
+  @objc var buttonCustomizations: any Checkout3DS.ButtonCustomizations { get }
+  @objc var footerCustomization: any Checkout3DS.FooterCustomization { get }
+  @objc var whitelistCustomization: any Checkout3DS.WhitelistCustomization { get }
 }
-public struct AuthenticationResult : Swift.Equatable {
-  public let sdkTransactionID: Swift.String
-  public let transactionStatus: Swift.String?
-  public static func == (a: Checkout3DS.AuthenticationResult, b: Checkout3DS.AuthenticationResult) -> Swift.Bool
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Checkout3DSDefaultSystemColor) public class DefaultSystemColor : ObjectiveC.NSObject {
-  @objc public static var label: UIKit.UIColor {
-    @objc get
-  }
-  @objc public static var secondaryLabel: UIKit.UIColor {
-    @objc get
-  }
-  @objc public static var systemGray6: UIKit.UIColor {
-    @objc get
-  }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Checkout3DSDefaultUICustomization) final public class DefaultUICustomization : ObjectiveC.NSObject, Checkout3DS.UICustomization {
+  @objc final public let toolbarCustomization: any Checkout3DS.ToolbarCustomization
+  @objc final public let labelCustomization: any Checkout3DS.LabelCustomization
+  @objc final public let entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization
+  @objc final public let buttonCustomizations: any Checkout3DS.ButtonCustomizations
+  @objc final public var footerCustomization: any Checkout3DS.FooterCustomization
+  @objc final public var whitelistCustomization: any Checkout3DS.WhitelistCustomization
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc public init(toolbarCustomization: any Checkout3DS.ToolbarCustomization = DefaultToolbarCustomization(), labelCustomization: any Checkout3DS.LabelCustomization = DefaultLabelCustomization(), entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization = DefaultEntrySelectionCustomization(), buttonCustomizations: any Checkout3DS.ButtonCustomizations = DefaultButtonCustomizations(), footerCustomization: any Checkout3DS.FooterCustomization = DefaultFooterCustomization(), whitelistCustomization: any Checkout3DS.WhitelistCustomization = DefaultWhitelistCustomization())
   @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Checkout3DSService : ObjectiveC.NSObject {
+  @available(swift, obsoleted: 1.0)
+  @objc convenience override dynamic public init()
+  @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
+  final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
+  @objc public static func handleAppURL(url: Foundation.URL) -> Swift.Bool
+  @available(swift, obsoleted: 1.0)
+  @objc final public func getWarnings() -> Foundation.NSSet
+  final public func getWarnings() -> Swift.Set<Checkout3DS.Warning>
+  @objc final public func cleanup()
+  @objc deinit
+}
+@objc(Checkout3DSEnvironment) public enum Environment : Swift.Int, Swift.Equatable, Swift.CaseIterable {
+  case sandbox
+  case production
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [Checkout3DS.Environment]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [Checkout3DS.Environment] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc(Checkout3DSEntrySelectionCustomization) public protocol EntrySelectionCustomization : Checkout3DS.Customization {
   @objc var borderWidth: CoreFoundation.CGFloat { get }
@@ -239,19 +569,6 @@ public struct AuthenticationResult : Swift.Equatable {
   @objc convenience override dynamic public init()
   public init(borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor = UIColor.systemGray.cgColor, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .label, borderStyle: UIKit.UITextField.BorderStyle = .roundedRect, backgroundColor: UIKit.UIColor = .white, unselectedColor: UIKit.UIColor = .systemGray, selectedColor: UIKit.UIColor = .systemBlue)
   @objc deinit
-}
-@objc(Checkout3DSEnvironment) public enum Environment : Swift.Int, Swift.Equatable, Swift.CaseIterable {
-  case sandbox
-  case production
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [Checkout3DS.Environment]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [Checkout3DS.Environment] {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 @objc(Checkout3DSWarning) public enum Warning : Swift.Int, Swift.Equatable, Swift.RawRepresentable, Swift.CaseIterable {
   case appURLTooLong
@@ -281,209 +598,14 @@ public struct AuthenticationResult : Swift.Equatable {
     get
   }
 }
-@objc(Checkout3DSUICustomization) public protocol UICustomization {
-  @objc var toolbarCustomization: any Checkout3DS.ToolbarCustomization { get }
-  @objc var labelCustomization: any Checkout3DS.LabelCustomization { get }
-  @objc var entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization { get }
-  @objc var buttonCustomizations: any Checkout3DS.ButtonCustomizations { get }
-  @objc var footerCustomization: any Checkout3DS.FooterCustomization { get }
-  @objc var whitelistCustomization: any Checkout3DS.WhitelistCustomization { get }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Checkout3DSDefaultUICustomization) final public class DefaultUICustomization : ObjectiveC.NSObject, Checkout3DS.UICustomization {
-  @objc final public let toolbarCustomization: any Checkout3DS.ToolbarCustomization
-  @objc final public let labelCustomization: any Checkout3DS.LabelCustomization
-  @objc final public let entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization
-  @objc final public let buttonCustomizations: any Checkout3DS.ButtonCustomizations
-  @objc final public var footerCustomization: any Checkout3DS.FooterCustomization
-  @objc final public var whitelistCustomization: any Checkout3DS.WhitelistCustomization
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(toolbarCustomization: any Checkout3DS.ToolbarCustomization = DefaultToolbarCustomization(), labelCustomization: any Checkout3DS.LabelCustomization = DefaultLabelCustomization(), entrySelectionCustomization: any Checkout3DS.EntrySelectionCustomization = DefaultEntrySelectionCustomization(), buttonCustomizations: any Checkout3DS.ButtonCustomizations = DefaultButtonCustomizations(), footerCustomization: any Checkout3DS.FooterCustomization = DefaultFooterCustomization(), whitelistCustomization: any Checkout3DS.WhitelistCustomization = DefaultWhitelistCustomization())
-  @objc deinit
-}
-@objc(Checkout3DSDefaultFooterCustomization) public protocol FooterCustomization : Checkout3DS.Customization {
-  @objc var backgroundColor: UIKit.UIColor { get }
-  @objc var labelFont: UIKit.UIFont { get }
-  @objc var labelTextColor: UIKit.UIColor { get }
-  @objc var expandIndicatorColor: UIKit.UIColor { get }
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultFooterCustomization) final public class DefaultFooterCustomization : ObjectiveC.NSObject, Checkout3DS.FooterCustomization {
-  @objc final public let backgroundColor: UIKit.UIColor
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @objc final public let labelFont: UIKit.UIFont
-  @objc final public let labelTextColor: UIKit.UIColor
-  @objc final public let expandIndicatorColor: UIKit.UIColor
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(backgroundColor: UIKit.UIColor = .white, font: UIKit.UIFont = .preferredFont(forTextStyle: .subheadline), textColor: UIKit.UIColor = DefaultSystemColor.secondaryLabel, labelFont: UIKit.UIFont = .preferredFont(forTextStyle: .subheadline), labelTextColor: UIKit.UIColor = DefaultSystemColor.label, expandIndicatorColor: UIKit.UIColor = DefaultSystemColor.label)
-  @objc deinit
-}
-@objc(Checkout3DSButtonCustomization) public protocol ButtonCustomization : Checkout3DS.Customization {
-  @objc var backgroundColor: UIKit.UIColor { get }
-  @objc var cornerRadius: CoreFoundation.CGFloat { get }
-  @objc var cornerCurve: QuartzCore.CALayerCornerCurve? { get }
-  @objc var borderWidth: CoreFoundation.CGFloat { get }
-  @objc var borderColor: CoreGraphics.CGColor? { get }
-  @objc var shadowColor: CoreGraphics.CGColor? { get }
-  @objc var shadowOffset: CoreFoundation.CGSize { get }
-  @objc var shadowRadius: CoreFoundation.CGFloat { get }
-  @objc var shadowOpacity: Swift.Float { get }
-}
-@objc(Checkout3DSDefaultButtonCustomization) final public class DefaultButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
-  @objc final public let backgroundColor: UIKit.UIColor
-  @objc final public let cornerRadius: CoreFoundation.CGFloat
-  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @objc final public let borderWidth: CoreFoundation.CGFloat
-  @objc final public let borderColor: CoreGraphics.CGColor?
-  @objc final public let shadowColor: CoreGraphics.CGColor?
-  @objc final public let shadowOffset: CoreFoundation.CGSize
-  @objc final public let shadowRadius: CoreFoundation.CGFloat
-  @objc final public let shadowOpacity: Swift.Float
-  @objc public init(backgroundColor: UIKit.UIColor, cornerRadius: CoreFoundation.CGFloat, cornerCurve: QuartzCore.CALayerCornerCurve?, font: UIKit.UIFont, textColor: UIKit.UIColor, borderWidth: CoreFoundation.CGFloat, borderColor: CoreGraphics.CGColor?, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultVerifyButtonCustomization) final public class DefaultVerifyButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
-  @objc final public let backgroundColor: UIKit.UIColor
-  @objc final public let cornerRadius: CoreFoundation.CGFloat
-  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @objc final public let borderWidth: CoreFoundation.CGFloat
-  @objc final public let borderColor: CoreGraphics.CGColor?
-  @objc final public let shadowColor: CoreGraphics.CGColor?
-  @objc final public let shadowOffset: CoreFoundation.CGSize
-  @objc final public let shadowRadius: CoreFoundation.CGFloat
-  @objc final public let shadowOpacity: Swift.Float
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultContinueButtonCustomization) final public class DefaultContinueButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
-  @objc final public let backgroundColor: UIKit.UIColor
-  @objc final public let cornerRadius: CoreFoundation.CGFloat
-  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @objc final public let borderWidth: CoreFoundation.CGFloat
-  @objc final public let borderColor: CoreGraphics.CGColor?
-  @objc final public let shadowColor: CoreGraphics.CGColor?
-  @objc final public let shadowOffset: CoreFoundation.CGSize
-  @objc final public let shadowRadius: CoreFoundation.CGFloat
-  @objc final public let shadowOpacity: Swift.Float
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultNextButtonCustomization) final public class DefaultNextButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
-  @objc final public let backgroundColor: UIKit.UIColor
-  @objc final public let cornerRadius: CoreFoundation.CGFloat
-  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @objc final public let borderWidth: CoreFoundation.CGFloat
-  @objc final public let borderColor: CoreGraphics.CGColor?
-  @objc final public let shadowColor: CoreGraphics.CGColor?
-  @objc final public let shadowOffset: CoreFoundation.CGSize
-  @objc final public let shadowRadius: CoreFoundation.CGFloat
-  @objc final public let shadowOpacity: Swift.Float
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(backgroundColor: UIKit.UIColor = .systemBlue, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .white, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultResendButtonCustomization) final public class DefaultResendButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
-  @objc final public let backgroundColor: UIKit.UIColor
-  @objc final public let cornerRadius: CoreFoundation.CGFloat
-  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @objc final public let borderWidth: CoreFoundation.CGFloat
-  @objc final public let borderColor: CoreGraphics.CGColor?
-  @objc final public let shadowColor: CoreGraphics.CGColor?
-  @objc final public let shadowOffset: CoreFoundation.CGSize
-  @objc final public let shadowRadius: CoreFoundation.CGFloat
-  @objc final public let shadowOpacity: Swift.Float
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 2, borderColor: CoreGraphics.CGColor? = UIColor.systemBlue.cgColor, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultCancelButtonCustomization) final public class DefaultCancelButtonCustomization : ObjectiveC.NSObject, Checkout3DS.ButtonCustomization {
-  @objc final public let text: Swift.String
-  @objc final public let backgroundColor: UIKit.UIColor
-  @objc final public let cornerRadius: CoreFoundation.CGFloat
-  @objc final public let cornerCurve: QuartzCore.CALayerCornerCurve?
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @objc final public let borderWidth: CoreFoundation.CGFloat
-  @objc final public let borderColor: CoreGraphics.CGColor?
-  @objc final public let shadowColor: CoreGraphics.CGColor?
-  @objc final public let shadowOffset: CoreFoundation.CGSize
-  @objc final public let shadowRadius: CoreFoundation.CGFloat
-  @objc final public let shadowOpacity: Swift.Float
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(text: Swift.String = "Cancel", backgroundColor: UIKit.UIColor = .white, cornerRadius: CoreFoundation.CGFloat = 5, cornerCurve: QuartzCore.CALayerCornerCurve = .continuous, font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 0, borderColor: CoreGraphics.CGColor? = nil, shadowColor: CoreGraphics.CGColor? = nil, shadowOffset: CoreFoundation.CGSize = .zero, shadowRadius: CoreFoundation.CGFloat = 0, shadowOpacity: Swift.Float = 0)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Checkout3DSService : ObjectiveC.NSObject {
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc convenience public init(environment: Checkout3DS.Environment = .production, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil)
-  final public func authenticate(authenticationParameters: Checkout3DS.AuthenticationParameters, completion: @escaping (Swift.Result<Checkout3DS.AuthenticationResult, Checkout3DS.AuthenticationError>) -> Swift.Void)
-  @objc public static func handleAppURL(url: Foundation.URL) -> Swift.Bool
-  @available(swift, obsoleted: 1.0)
-  @objc final public func getWarnings() -> Foundation.NSSet
-  final public func getWarnings() -> Swift.Set<Checkout3DS.Warning>
-  @objc final public func cleanup()
-  @objc deinit
-}
-public struct MessageExtension : Swift.Codable, Swift.Equatable {
-  public static func == (a: Checkout3DS.MessageExtension, b: Checkout3DS.MessageExtension) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct MessageExtensionData : Swift.Codable, Swift.Equatable {
-  public struct ChallengeData : Swift.Codable, Swift.Equatable {
-    public init(from decoder: any Swift.Decoder) throws
-    public func encode(to encoder: any Swift.Encoder) throws
-    public static func == (a: Checkout3DS.MessageExtensionData.ChallengeData, b: Checkout3DS.MessageExtensionData.ChallengeData) -> Swift.Bool
-  }
-  public static func == (a: Checkout3DS.MessageExtensionData, b: Checkout3DS.MessageExtensionData) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension Checkout3DS.MessageExtension {
-  public static let mastercard: Checkout3DS.MessageExtension
-}
-public struct AuthenticationRequestParameters : Swift.Encodable {
-  public let deviceData: Swift.String
+public struct AuthenticationResult : Swift.Equatable {
   public let sdkTransactionID: Swift.String
-  public let sdkAppID: Swift.String
-  public let sdkReferenceNumber: Swift.String
-  public let sdkEphemeralPublicKey: Swift.String
-  public let messageVersion: Swift.String
-  public init(deviceData: Swift.String, sdkTransactionID: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkEphemeralPublicKey: Swift.String, mssageVersion: Swift.String)
-  public func encode(to encoder: any Swift.Encoder) throws
+  public let transactionStatus: Swift.String?
+  public static func == (a: Checkout3DS.AuthenticationResult, b: Checkout3DS.AuthenticationResult) -> Swift.Bool
 }
-public enum Standalone3DSService {
-  public static func initialize(with configuration: Checkout3DS.ThreeDS2ServiceConfiguration, environment: Checkout3DS.Environment = .production) throws -> any Checkout3DS.ThreeDS2Service
+extension UIKit.UITextField.BorderStyle : Swift.Codable {
 }
-@objc(Checkout3DSAuthenticationParameters) final public class AuthenticationParameters : ObjectiveC.NSObject {
-  @objc final public let sessionID: Swift.String
-  @objc final public let sessionSecret: Swift.String
-  @objc final public let scheme: Swift.String
-  @objc public init(sessionID: Swift.String, sessionSecret: Swift.String, scheme: Swift.String)
-  @objc deinit
-}
-@objc(Checkout3DSCustomization) public protocol Customization {
-  @objc var font: UIKit.UIFont { get }
-  @objc var textColor: UIKit.UIColor { get }
+extension QuartzCore.CALayerCornerCurve : Swift.Codable {
 }
 @objc(Checkout3DSToolbarCustomization) public protocol ToolbarCustomization : Checkout3DS.Customization {
   @objc var backgroundColor: UIKit.UIColor { get }
@@ -501,136 +623,6 @@ public enum Standalone3DSService {
   @objc public init(backgroundColor: UIKit.UIColor = UIColor(red: 251/255, green: 251/255, blue: 252/255, alpha: 1), headerTitle: Swift.String? = nil, buttonTitle: Swift.String? = nil, font: UIKit.UIFont = .preferredFont(forTextStyle: .headline), textColor: UIKit.UIColor = DefaultSystemColor.label)
   @objc deinit
 }
-public struct ThreeDS2ServiceConfiguration {
-  public struct ConfigParameters {
-    public let directoryServerData: Checkout3DS.ThreeDS2ServiceConfiguration.DirectoryServerData
-    public let messageVersion: Swift.String
-    public let scheme: Swift.String
-    public init(directoryServerData: Checkout3DS.ThreeDS2ServiceConfiguration.DirectoryServerData, messageVersion: Swift.String, scheme: Swift.String)
-  }
-  public struct DirectoryServerData {
-    public let directoryServerID: Swift.String
-    public let directoryServerPublicKey: Swift.String
-    public let directoryServerRootCertificates: [Swift.String]
-    public init(directoryServerID: Swift.String, directoryServerPublicKey: Swift.String, directoryServerRootCertificates: [Swift.String])
-  }
-  public let configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters
-  public let locale: Foundation.Locale
-  public let uiCustomization: any Checkout3DS.UICustomization
-  public let appURL: Foundation.URL?
-  public let challengeTimeout: Foundation.TimeInterval
-  public init(configParameters: Checkout3DS.ThreeDS2ServiceConfiguration.ConfigParameters, locale: Foundation.Locale = .autoupdatingCurrent, uiCustomization: any Checkout3DS.UICustomization = DefaultUICustomization(), appURL: Foundation.URL? = nil, challengeTimeout: Foundation.TimeInterval = Standalone3DSService.Constants.challengeTimeout)
-}
-extension Checkout3DS.Standalone3DSService {
-  public enum Constants {
-    public static let challengeTimeout: Swift.Double
-  }
-}
-@objc(Checkout3DSLabelCustomization) public protocol LabelCustomization : Checkout3DS.Customization {
-  @objc var headingTextColor: UIKit.UIColor { get }
-  @objc var headingFont: UIKit.UIFont { get }
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultLabelCustomization) final public class DefaultLabelCustomization : ObjectiveC.NSObject, Checkout3DS.LabelCustomization {
-  @objc final public let headingTextColor: UIKit.UIColor
-  @objc final public let headingFont: UIKit.UIFont
-  @objc final public let font: UIKit.UIFont
-  @objc final public let textColor: UIKit.UIColor
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(headingTextColor: UIKit.UIColor = DefaultSystemColor.label, headingFont: UIKit.UIFont = .preferredFont(forTextStyle: .headline), font: UIKit.UIFont = .preferredFont(forTextStyle: .body), textColor: UIKit.UIColor = DefaultSystemColor.label)
-  @objc deinit
-}
-extension Foundation.NSNotification.Name {
-  public static let NSPasteboardDidChange: Foundation.NSNotification.Name
-}
-public enum PasteboardAction : Swift.Codable {
-  case voiceOver(Checkout3DS.VoiceOverAction)
-  public enum CodingKeys : Swift.CodingKey {
-    case voiceOver
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public static func == (a: Checkout3DS.PasteboardAction.CodingKeys, b: Checkout3DS.PasteboardAction.CodingKeys) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  public enum PasteboardActionError : Swift.Error {
-    case cannotDecode
-    public static func == (a: Checkout3DS.PasteboardAction.PasteboardActionError, b: Checkout3DS.PasteboardAction.PasteboardActionError) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public enum VoiceOverAction : Swift.Codable {
-  case focusElement(accessibilityIdentifier: Swift.String)
-  public enum CodingKeys : Swift.CodingKey {
-    case focusElement
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public static func == (a: Checkout3DS.VoiceOverAction.CodingKeys, b: Checkout3DS.VoiceOverAction.CodingKeys) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  public enum VoiceOverActionError : Swift.Error {
-    case cannotDecode
-    public static func == (a: Checkout3DS.VoiceOverAction.VoiceOverActionError, b: Checkout3DS.VoiceOverAction.VoiceOverActionError) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-extension UIKit.UITextField.BorderStyle : Swift.Codable {
-}
-extension QuartzCore.CALayerCornerCurve : Swift.Codable {
-}
-@objc(Checkout3DSButtonCustomizations) public protocol ButtonCustomizations {
-  @objc var verifyButtonCustomization: any Checkout3DS.ButtonCustomization { get }
-  @objc var continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization { get }
-  @objc var nextButtonCustomization: any Checkout3DS.ButtonCustomization { get }
-  @objc var cancelButtonCustomization: any Checkout3DS.ButtonCustomization { get }
-  @objc var resendButtonCustomization: any Checkout3DS.ButtonCustomization { get }
-}
-@_inheritsConvenienceInitializers @objc(Checkout3DSDefaultButtonCustomizations) final public class DefaultButtonCustomizations : ObjectiveC.NSObject, Checkout3DS.ButtonCustomizations {
-  @objc final public let verifyButtonCustomization: any Checkout3DS.ButtonCustomization
-  @objc final public let continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization
-  @objc final public let nextButtonCustomization: any Checkout3DS.ButtonCustomization
-  @objc final public let cancelButtonCustomization: any Checkout3DS.ButtonCustomization
-  @objc final public let resendButtonCustomization: any Checkout3DS.ButtonCustomization
-  @available(swift, obsoleted: 1.0)
-  @objc convenience override dynamic public init()
-  @objc public init(verifyButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultVerifyButtonCustomization(), continueFlowButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultContinueButtonCustomization(), nextButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultNextButtonCustomization(), cancelButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultCancelButtonCustomization(), resendButtonCustomization: any Checkout3DS.ButtonCustomization = DefaultResendButtonCustomization())
-  @objc deinit
-}
-extension Checkout3DS.Warning : Swift.Hashable {}
-extension Checkout3DS.Warning.Severity : Swift.Equatable {}
-extension Checkout3DS.Warning.Severity : Swift.Hashable {}
-extension Checkout3DS.Warning.Severity : Swift.RawRepresentable {}
-extension Checkout3DS.AuthenticationError : Swift.Hashable {}
-extension Checkout3DS.AuthenticationError : Swift.RawRepresentable {}
-extension Checkout3DS.Environment : Swift.Hashable {}
-extension Checkout3DS.Environment : Swift.RawRepresentable {}
 extension Checkout3DS.PasteboardAction.CodingKeys : Swift.Equatable {}
 extension Checkout3DS.PasteboardAction.CodingKeys : Swift.Hashable {}
 extension Checkout3DS.PasteboardAction.PasteboardActionError : Swift.Equatable {}
@@ -639,3 +631,11 @@ extension Checkout3DS.VoiceOverAction.CodingKeys : Swift.Equatable {}
 extension Checkout3DS.VoiceOverAction.CodingKeys : Swift.Hashable {}
 extension Checkout3DS.VoiceOverAction.VoiceOverActionError : Swift.Equatable {}
 extension Checkout3DS.VoiceOverAction.VoiceOverActionError : Swift.Hashable {}
+extension Checkout3DS.Warning : Swift.Hashable {}
+extension Checkout3DS.Warning.Severity : Swift.Equatable {}
+extension Checkout3DS.Warning.Severity : Swift.Hashable {}
+extension Checkout3DS.Warning.Severity : Swift.RawRepresentable {}
+extension Checkout3DS.AuthenticationError : Swift.Hashable {}
+extension Checkout3DS.AuthenticationError : Swift.RawRepresentable {}
+extension Checkout3DS.Environment : Swift.Hashable {}
+extension Checkout3DS.Environment : Swift.RawRepresentable {}
