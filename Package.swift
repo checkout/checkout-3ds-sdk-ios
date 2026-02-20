@@ -18,6 +18,10 @@ let package = Package(
                exact: "2.4.0")
     ],
     targets: [
+        .target(
+            name: "JOSESwift",
+            path: "JOSESwiftStub"
+        ),
         .binaryTarget(
             name: "Checkout3DS",
             path: "Checkout3DS.xcframework"
