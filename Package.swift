@@ -1,52 +1,46 @@
 // swift-tools-version:5.10
 
 import PackageDescription
-
 let package = Package(
-    name: "Checkout3DS",
-    defaultLocalization: "en-GB",
+    name: "Checkout3DSPackages",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "Checkout3DS",
-            targets: ["Checkout3DSWrapper"]
-        )
+            name: "Checkout3DSPackages",
+            targets: ["Checkout3DSPackages"] )
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
-            from: "1.2.4"
-        ),
-        .package(
-            url: "https://github.com/airsidemobile/JOSESwift.git",
-            from: "2.4.0"
-        )
+      .package( url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
+                exact: "1.2.4"),
+      .package(url: "https://github.com/airsidemobile/JOSESwift.git",
+               exact: "2.4.0")
     ],
     targets: [
-        .target(
-            name: "JOSESwift",
-            path: "JOSESwiftStub"
-        ),
         .binaryTarget(
-            name: "Checkout3DSBinary",
+            name: "Checkout3DS",
             path: "Checkout3DS.xcframework"
         ),
         .binaryTarget(
-            name: "Checkout3DS_SecurityBinary",
+            name: "Checkout3DS-Security",
             path: "Checkout3DS-Security.xcframework"
         ),
         .target(
-            name: "Checkout3DSWrapper",
-            dependencies: [
-                .product(name: "JOSESwift", package: "JOSESwift"),
-                .product(name: "CheckoutEventLoggerKit", package: "checkout-event-logger-ios-framework"),
-                "Checkout3DSBinary",
-                "Checkout3DS_SecurityBinary"
-            ],
-            path: "Checkout3DSWrapper"
-        )
+            name: "JOSESwiftDynamic",
+            dependencies: ["JOSESwift"],
+            path: "Dependencies/JOSESwiftDynamic/Sources"
+        ),
+        .target(name: "Checkout3DSPackages",
+                dependencies: [
+                    .product(name: "CheckoutEventLoggerKit", package: "checkout-event-logger-ios-framework"),
+                    "JOSESwiftDynamic",
+                    .target(name: "Checkout3DS",
+                            condition: .when(platforms: [.iOS])),
+                    .target(name: "Checkout3DS-Security",
+                            condition: .when(platforms: [.iOS]))
+                ],
+                path: "Checkout3DSPackages")
     ],
     swiftLanguageVersions: [.v5]
 )
