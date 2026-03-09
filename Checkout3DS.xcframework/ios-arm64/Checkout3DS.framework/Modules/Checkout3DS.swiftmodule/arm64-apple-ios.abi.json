@@ -8348,16 +8348,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Checkout3DS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "CheckoutEventLoggerKit",
         "printedName": "CheckoutEventLoggerKit",
         "declKind": "Import",
@@ -29839,83 +29829,6 @@
       "value": "\"User-Agent\""
     },
     {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1992,
-      "length": 18,
-      "value": "\"CertificateCheck\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2053,
-      "length": 28,
-      "value": "\"DetectDebuggerHasTracerPid\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2111,
-      "length": 15,
-      "value": "\"CheckSegments\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2173,
-      "length": 32,
-      "value": "\"DetectPotentiallyDangerousApps\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2230,
-      "length": 10,
-      "value": "\"ApkCheck\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2266,
-      "length": 11,
-      "value": "\"FridaLibs\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2305,
-      "length": 13,
-      "value": "\"DetectCydia\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2354,
-      "length": 21,
-      "value": "\"CodeEncryptionCheck\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2407,
-      "length": 17,
-      "value": "\"CheckForSandBox\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2456,
-      "length": 17,
-      "value": "\"CheckForRWPaths\""
-    },
-    {
-      "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/DexProtectorResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2508,
-      "length": 20,
-      "value": "\"CheckAppDebuggable\""
-    },
-    {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "Array",
       "offset": 960,
@@ -29925,21 +29838,21 @@
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "StringLiteral",
-      "offset": 2805,
+      "offset": 2631,
       "length": 17,
       "value": "\"sdk_initialised\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "StringLiteral",
-      "offset": 2849,
+      "offset": 2675,
       "length": 13,
       "value": "\"app_request\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Security\/SecurityChecksManager.swift",
       "kind": "StringLiteral",
-      "offset": 2899,
+      "offset": 2725,
       "length": 24,
       "value": "\"device_data_collection\""
     },
@@ -31263,118 +31176,118 @@
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
       "offset": 251,
-      "length": 8,
-      "value": "\"3.2.14\""
+      "length": 7,
+      "value": "\"3.3.0\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 333,
+      "offset": 332,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 548,
+      "offset": 547,
       "length": 3,
       "value": "900"
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 608,
+      "offset": 607,
       "length": 3,
       "value": "420"
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 716,
+      "offset": 715,
       "length": 31,
       "value": "\"3DS_LOA_SDK_CHLT_020200_00779\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 805,
+      "offset": 804,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 839,
       "length": 13,
       "value": "\"3ds-ios-sdk\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 887,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1083,
       "length": 46,
       "value": "\"checkout-sdk-3ds-ios\/\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1119,
+      "offset": 1118,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1129,
+      "offset": 1128,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 1236,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1385,
+      "offset": 1384,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1576,
+      "offset": 1575,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1656,
+      "offset": 1655,
       "length": 7,
       "value": "\"1.0.2\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1688,
+      "offset": 1687,
       "length": 7,
       "value": "\"2.1.0\""
     },
     {
       "filePath": "\/Users\/Roman.Chugunov\/Documents\/GitHub\/3ds2-sdk-ios\/Sources\/Checkout3DSService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1720,
+      "offset": 1719,
       "length": 7,
       "value": "\"2.2.0\""
     },

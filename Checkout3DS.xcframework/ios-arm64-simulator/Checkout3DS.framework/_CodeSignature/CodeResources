@@ -34,11 +34,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ce/BlTmxvHNG4edAckMx2DFjdDI=
+		iKSjgLmzOuM7JEnoVXRKla0d/R0=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		RtKKN9jR6dtcj/VDlIxaXeDrc6A=
+		1FgPX3w6/LC54s+4Lu/jdbyoEoo=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iZWkY8Mtx2/DMmeckA/xJh0f2hg=
+		vnDaSrHgMJkLQEN9PbQx0nFges8=
 		</data>
 		<key>OutOfBandViewController.nib</key>
 		<data>
@@ -495,7 +495,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gVrp4zxLdkBcytzJc0sLTSpYsN0LHTQOlT3+zbkC5bE=
+			SlCostuqV8qehap42H2WjOxBcUMloGlzz1WuPzuJ5q0=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -523,7 +523,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			weMgF3RLPw3XOFvqyPghoqTbtuu19gpyHk0fHYRI2jU=
+			8Vg8h1e20zNogjX5ZunCkTdP2A58wJwuYxLjBe3tmic=
 			</data>
 		</dict>
 		<key>OutOfBandViewController.nib</key>
