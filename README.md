@@ -43,7 +43,7 @@ We've done our best to support the most common distribution methods on iOS. We a
 >**⚠️ Important** <br>
 > SPM (Swift Package Manager) and CocoaPods can usually coexist in the same project without issues. That said, since CocoaPods is now in maintenance mode, the iOS team made a tech decision to officially support only SPM going forward. It’s simpler to manage and already works well alongside CocoaPods if needed.
 
-[Swift Package Manager](https://swift.org/package-manager/) integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. It should work out of the box on latest Xcode projects since Xcode 11 and has had a lot of community support, seeing huge adoption over the recent years. This is our preferred distribution method for Frames iOS and is the easiest one to integrate, keep updated and build around.
+[Swift Package Manager](https://swift.org/package-manager/) integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. It should work out of the box on latest Xcode projects since Xcode 11 and has had a lot of community support, seeing huge adoption over the recent years. This is our preferred distribution method for the 3DS SDK for iOS and is the easiest one to integrate, keep updated and build around.
 
 If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
 
@@ -110,7 +110,7 @@ let authenticationParameters = AuthenticationParameters(
     scheme: scheme)
 
 checkout3DS.authenticate(authenticationParameters: authenticationParameters) { result in
-    switch authenticationResult {
+    switch result {
     case .success(let authenticationResult):
         // handle authentication result. Checkout Payment Authorisation section.
     case .failure(let error):
