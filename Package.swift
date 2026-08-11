@@ -12,8 +12,6 @@ let package = Package(
             targets: ["Checkout3DSPackages"] )
     ],
     dependencies: [
-      .package( url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
-                exact: "1.2.4"),
       .package(url: "https://github.com/airsidemobile/JOSESwift.git",
                exact: "2.4.0")
     ],
@@ -29,10 +27,6 @@ let package = Package(
         ),
         .target(name: "Checkout3DSPackages",
                 dependencies: [
-                    .product(
-                        name: "CheckoutEventLoggerKit",
-                        package: "checkout-event-logger-ios-framework"
-                    ),
                     "JOSESwiftDynamic",
                     .target(name: "Checkout3DS", condition: .when(platforms: [.iOS])),
                 ],

@@ -37,44 +37,17 @@ The SDK handles the device data collection, communication with the card issuer, 
 
 ## Installation
 
-We've done our best to support the most common distribution methods on iOS. We are in strong favour of [SPM](#Swift-Package-Manager) (Swift Package Manager)
+[SPM](#Swift-Package-Manager) (Swift Package Manager) is our only officially supported distribution method.
 
 ### Swift Package Manager
->**⚠️ Important** <br>
-> SPM (Swift Package Manager) and CocoaPods can usually coexist in the same project without issues. That said, since CocoaPods is now in maintenance mode, the iOS team made a tech decision to officially support only SPM going forward. It’s simpler to manage and already works well alongside CocoaPods if needed.
 
-[Swift Package Manager](https://swift.org/package-manager/) integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. It should work out of the box on latest Xcode projects since Xcode 11 and has had a lot of community support, seeing huge adoption over the recent years. This is our preferred distribution method for Frames iOS and is the easiest one to integrate, keep updated and build around.
+[Swift Package Manager](https://swift.org/package-manager/) integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. It should work out of the box on latest Xcode projects since Xcode 11 and has had a lot of community support, seeing huge adoption over the recent years. It is the easiest distribution method to integrate, keep updated and build around.
 
 If you've never used it before, get started with Apple's step by step guide into [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) . 
 
 ```swift
 .package(url: "https://github.com/checkout/checkout-3ds-sdk-ios", from: "X.Y.Z")
 ```
-
-`⚙️ Adding Environment Variable for SPM Integration`
-
-You may need to add the following environment variable to your Run Scheme if `Checkout3DS-Security.framework` fails to load:
-
-```swift
-<EnvironmentVariable
-    key="DYLD_INSERT_LIBRARIES"
-    value="$(TARGET_BUILD_DIR)/Checkout3DS.framework/Checkout3DS:$(TARGET_BUILD_DIR)/Checkout3DS-Security.framework/Checkout3DS-Security"
-    isEnabled="YES">
-</EnvironmentVariable>
-```
-
-This environment variable ensures the dynamic libraries are correctly loaded at runtime.
-
-How to add this environment variable:
-- Open your Xcode project.
-- Go to Edit Scheme for your target.
-- Select the Run action.
-- Under Environment Variables, add a new entry:
-  -  Key: DYLD_INSERT_LIBRARIES
-  - Value: ```$(TARGET_BUILD_DIR)/Checkout3DS.framework/Checkout3DS:$(TARGET_BUILD_DIR)/Checkout3DS-Security.framework/Checkout3DS-Security```
-  - Ensure the checkbox is enabled.
-
-Then, configure your app to:
 
 ## Integration
 
@@ -139,10 +112,9 @@ After initiating the authentication process and obtaining the `AuthenticationRes
 
 ## Dependencies
 
-Our iOS SDK depends on some external libraries:
+Our iOS SDK depends on one external library:
 
 * To help maintain security, we use [JOSESwift](https://github.com/airsidemobile/JOSESwift). To overcome the limitation in Swift Package Manager (SPM) related to binary target dependencies, we've integrated JOSESwift as an xcframework sourced from the same [JOSESwift](https://github.com/airsidemobile/JOSESwift).
-* To help provide support and monitor the performance of the SDK, we use our own Checkout Event Logger Kit.
 
 ## Help and Feedback
 
