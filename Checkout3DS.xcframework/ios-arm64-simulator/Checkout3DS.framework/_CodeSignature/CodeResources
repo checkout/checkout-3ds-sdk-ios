@@ -38,23 +38,23 @@
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jC3O2VoaMMWawUfFctnupYLMY84=
+		orD6D49iUFI/OY25IHfyXevx4yY=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		PApl+q/4fQbp0HrN8419z99udR0=
+		0VA35zzs6hviAFo505GiFyUDSVU=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/XdPZ4UZyQAtfqiq+YlpL+t9Nkg=
+		i4755ixeGaJ1+QLzIuFVN7DHxPw=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PApl+q/4fQbp0HrN8419z99udR0=
+		0VA35zzs6hviAFo505GiFyUDSVU=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1FlqZaU3gtN7HaUwW6W8cdKmIYw=
+		F3sFhGDFKJuEUEG1I1M760eAGMs=
 		</data>
 		<key>OutOfBandViewController.nib</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>WebViewController.nib</key>
 		<data>
-		U4T3pWNqu7Q8g6CNNnNwwjYPpAU=
+		7/mwpCEQf287uzgS9EQLTKnbe/M=
 		</data>
 		<key>WhitelistView.nib</key>
 		<data>
-		r0t1WPuLwSzfrZAd5/cif1SbWAU=
+		JUY+R19nlOiqbvNgwDHtrDm/HEs=
 		</data>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
@@ -495,35 +495,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jf6UMBwveq7IDvPpYD5RFc9Cm2inySq/LFxR0oNSlw0=
+			tbhLBNn2i7O84pTNTzFL5qMdeDAa6WlT9qSrpu0UX5M=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gw8AKpBxZVnTVwxSVE6KN42bE1i+i1C8Nyp2Xm1wazA=
+			jXYCPoguzsEfs5T1k5Eab6qxtM7LWtvbWk0iLcWVLOI=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kz9KvHsMlJiofV2x2sDoQakGHz9yJZscYB2XPqudCPo=
+			4bNW/bxocnqu6q8KyI+YSmBL0oZYx9vO9q1NGwDcwsc=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gw8AKpBxZVnTVwxSVE6KN42bE1i+i1C8Nyp2Xm1wazA=
+			jXYCPoguzsEfs5T1k5Eab6qxtM7LWtvbWk0iLcWVLOI=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YDpkh3UuMVRGwvdGWnnMpb1YzsqRbJTBKluFv62fhmo=
+			aMV59xwBIb9rve3NfovvliZIuJo41KA3tbtYqScrotQ=
 			</data>
 		</dict>
 		<key>OutOfBandViewController.nib</key>
@@ -572,14 +572,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G71o/D93CbyuCxRbnF7EFMLbP+LiFgMPvcu4D3fHBvQ=
+			1W8z1a3E6BaxweGmIKWypbv+cNujcYEibtP3MUU6KNg=
 			</data>
 		</dict>
 		<key>WhitelistView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hlrjcq63nkxYm6o9101/9veUaFYP9Yw/lJgyqNQvEJ8=
+			YzG6ycxessz7dU4lU0nq6yHCS4lQk2S/bVwBWeKq9/o=
 			</data>
 		</dict>
 		<key>ar.lproj/Localizable.strings</key>
