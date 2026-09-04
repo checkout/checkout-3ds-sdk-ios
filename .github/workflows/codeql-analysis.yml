@@ -46,9 +46,17 @@ jobs:
         languages: ${{ matrix.language }}
         queries: security-and-quality
 
+    - name: Select Xcode
+      run: |
+        sudo xcode-select --switch /Applications/Xcode_26.6.app/Contents/Developer
+        xcode-select --print-path
+
+    - name: List all available simulators
+      run: xcrun simctl list --json devices available
+
     - name: Build
       run: |
-        xcodebuild -scheme Checkout3DSPackages -destination "platform=iOS Simulator,name=iPhone 16 Pro,OS=latest"
+        xcodebuild -scheme Checkout3DSPackages -destination "platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5"
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
