@@ -83,7 +83,7 @@ let authenticationParameters = AuthenticationParameters(
     scheme: scheme)
 
 checkout3DS.authenticate(authenticationParameters: authenticationParameters) { result in
-    switch authenticationResult {
+    switch result {
     case .success(let authenticationResult):
         // handle authentication result. Checkout Payment Authorisation section.
     case .failure(let error):
