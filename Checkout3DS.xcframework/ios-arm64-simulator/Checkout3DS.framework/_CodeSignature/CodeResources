@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		DuZlxe7ZcNYsp7d9oK7jdeAATow=
+		RcY1mo+mw/a4p0iofyzHGlXzNG8=
 		</data>
 		<key>BankNetworkView.nib</key>
 		<data>
@@ -34,27 +34,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5E1g1tuq/2NWq9X6bTS2dbNtrxM=
+		rBrjF/QaQAYZ3mDLWUcI/FaxSU0=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		orD6D49iUFI/OY25IHfyXevx4yY=
+		eoeiYlWe+EPLQJmsUyGj3hSPHUc=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0VA35zzs6hviAFo505GiFyUDSVU=
+		eIGdWIa4qMyXfpSc4jKuPCi7BCc=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		i4755ixeGaJ1+QLzIuFVN7DHxPw=
+		v4AqwHWkQE2wvmTLXlbNg2VPvH8=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0VA35zzs6hviAFo505GiFyUDSVU=
+		eIGdWIa4qMyXfpSc4jKuPCi7BCc=
 		</data>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F3sFhGDFKJuEUEG1I1M760eAGMs=
+		0ug6GBchkp24INB9TF81z/AkR8M=
 		</data>
 		<key>OutOfBandViewController.nib</key>
 		<data>
@@ -446,7 +446,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lyuUX0bJLP+lrCdGgTJIw+Il0vUyl1E+gwvbW2P4QI0=
+			RTbxvSPQRsf1GtrUQikAakpzJodEltcmYjn1OFOvETY=
 			</data>
 		</dict>
 		<key>BankNetworkView.nib</key>
@@ -495,35 +495,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tbhLBNn2i7O84pTNTzFL5qMdeDAa6WlT9qSrpu0UX5M=
+			+uRd5iRdYEdCJQe+YLITFCOtI0C5fK6g2AQ6ROdHIQo=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXYCPoguzsEfs5T1k5Eab6qxtM7LWtvbWk0iLcWVLOI=
+			HgE1VdwlUZMUYMbMKWlJbqJBB1kaT4+jS6aRPDM7n9E=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4bNW/bxocnqu6q8KyI+YSmBL0oZYx9vO9q1NGwDcwsc=
+			nrAlYb5ZyibI14EI6KjVS9RJOSCOT66AZ1H9DdgitMk=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXYCPoguzsEfs5T1k5Eab6qxtM7LWtvbWk0iLcWVLOI=
+			HgE1VdwlUZMUYMbMKWlJbqJBB1kaT4+jS6aRPDM7n9E=
 			</data>
 		</dict>
 		<key>Modules/Checkout3DS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aMV59xwBIb9rve3NfovvliZIuJo41KA3tbtYqScrotQ=
+			BzVwHlVzb6f+cOjGynodL5w58oRQnM8tbbp8KaTcFGU=
 			</data>
 		</dict>
 		<key>OutOfBandViewController.nib</key>
